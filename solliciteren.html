@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Direct Solliciteren | Lead Digitale Transitie | Freep.nl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1e1b4b',
+              'accent-gold': '#c5a059',
+              'background-light': '#f6f7f8',
+              'slate-custom': '#4a5568',
+            },
+            fontFamily: {
+              sans: ['Public Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      input:focus, textarea:focus {
+        outline: none;
+        border-color: #c5a059;
+        box-shadow: 0 0 0 2px rgba(197, 160, 89, 0.1);
+      }
+    </style>
+  </head>
+  <body class="bg-background-light font-sans text-primary">
+    <!-- Mini Header -->
+    <header class="bg-white border-b border-primary/5 px-6 lg:px-20 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-8 md:h-10 w-auto text-primary"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z" id="Fill-265"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z" id="Fill-266"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z" id="Fill-267"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z" id="Fill-268"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z" id="Fill-269"></path></g></g></svg>
+        </a>
+        <div class="flex items-center gap-6">
+          <span class="hidden md:block text-[10px] font-bold uppercase tracking-widest text-slate-custom">Al lid? Log in voor een snelle aanvraag!</span>
+          <a href="/login.html" class="border-2 border-primary text-primary px-6 py-2 rounded-lg text-sm font-bold hover:bg-primary hover:text-white transition-all">
+            Inloggen als Lid
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 lg:px-20 py-12">
+      <!-- Breadcrumbs -->
+      <nav class="flex items-center gap-2 text-xs font-bold text-slate-custom mb-8">
+        <a href="/opdrachten.html" class="hover:text-accent-gold">Vacatures</a>
+        <span class="material-symbols-outlined text-sm">chevron_right</span>
+        <a href="/vacature-detail.html" class="hover:text-accent-gold">Lead Digitale Transitie</a>
+        <span class="material-symbols-outlined text-sm">chevron_right</span>
+        <span class="text-primary">Direct Solliciteren</span>
+      </nav>
+
+      <div class="mb-12">
+        <h1 class="text-4xl font-black text-primary mb-2">Direct Solliciteren</h1>
+        <p class="text-slate-custom font-medium">Functie: <span class="text-primary font-bold">Lead Digitale Transitie</span> bij Ministerie van Financiën</p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Form Section -->
+        <div class="flex-1 space-y-6">
+          <!-- Persoonlijke Gegevens -->
+          <div class="bg-white rounded-2xl border border-primary/5 shadow-sm overflow-hidden">
+            <button class="w-full flex items-center justify-between p-6 text-left hover:bg-background-light/50 transition-colors">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">person</span>
+                </div>
+                <h3 class="text-lg font-black">Persoonlijke Gegevens</h3>
+              </div>
+              <span class="material-symbols-outlined text-slate-custom">expand_less</span>
+            </button>
+            <div class="p-8 pt-0 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="text-xs font-black uppercase tracking-wider text-slate-custom">Voornaam *</label>
+                <input type="text" placeholder="bijv. Jan" class="w-full bg-background-light border border-primary/5 rounded-xl px-4 py-3 text-sm font-medium">
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-black uppercase tracking-wider text-slate-custom">Achternaam *</label>
+                <input type="text" placeholder="bijv. Jansen" class="w-full bg-background-light border border-primary/5 rounded-xl px-4 py-3 text-sm font-medium">
+              </div>
+              <div class="md:col-span-2 space-y-2">
+                <label class="text-xs font-black uppercase tracking-wider text-slate-custom">E-mailadres *</label>
+                <input type="email" placeholder="jan.jansen@voorbeeld.nl" class="w-full bg-background-light border border-primary/5 rounded-xl px-4 py-3 text-sm font-medium">
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-black uppercase tracking-wider text-slate-custom">Telefoonnummer *</label>
+                <input type="tel" placeholder="+31 6 12345678" class="w-full bg-background-light border border-primary/5 rounded-xl px-4 py-3 text-sm font-medium">
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-black uppercase tracking-wider text-slate-custom">Woonplaats</label>
+                <input type="text" placeholder="bijv. Amsterdam" class="w-full bg-background-light border border-primary/5 rounded-xl px-4 py-3 text-sm font-medium">
+              </div>
+            </div>
+          </div>
+
+          <!-- CV & Profiel -->
+          <div class="bg-white rounded-2xl border border-primary/5 shadow-sm overflow-hidden">
+            <button class="w-full flex items-center justify-between p-6 text-left hover:bg-background-light/50 transition-colors">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">description</span>
+                </div>
+                <h3 class="text-lg font-black">CV & Profiel</h3>
+              </div>
+              <span class="material-symbols-outlined text-slate-custom">expand_less</span>
+            </button>
+            <div class="p-8 pt-0 space-y-8">
+              <div class="border-2 border-dashed border-primary/10 rounded-2xl p-10 text-center space-y-4 hover:border-accent-gold/50 transition-colors cursor-pointer group">
+                <div class="w-16 h-16 bg-background-light rounded-2xl flex items-center justify-center mx-auto group-hover:bg-accent-gold/10 transition-colors">
+                  <span class="material-symbols-outlined text-primary group-hover:text-accent-gold transition-colors text-3xl">cloud_upload</span>
+                </div>
+                <div>
+                  <p class="font-black text-primary">Upload je CV (PDF, Word)</p>
+                  <p class="text-xs text-slate-custom mt-1">Sleep je bestand hierheen of klik om te bladeren</p>
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-black uppercase tracking-wider text-slate-custom">LinkedIn Profiel (optioneel)</label>
+                <input type="url" placeholder="https://linkedin.com/in/jouwnaam" class="w-full bg-background-light border border-primary/5 rounded-xl px-4 py-3 text-sm font-medium">
+              </div>
+            </div>
+          </div>
+
+          <!-- Motivatie -->
+          <div class="bg-white rounded-2xl border border-primary/5 shadow-sm overflow-hidden">
+            <button class="w-full flex items-center justify-between p-6 text-left hover:bg-background-light/50 transition-colors">
+              <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined">edit_note</span>
+                </div>
+                <h3 class="text-lg font-black">Motivatie</h3>
+              </div>
+              <span class="material-symbols-outlined text-slate-custom">expand_less</span>
+            </button>
+            <div class="p-8 pt-0 space-y-6">
+              <div class="space-y-2">
+                <label class="text-xs font-black uppercase tracking-wider text-slate-custom">Waarom ben jij de ideale kandidaat? *</label>
+                <textarea rows="6" placeholder="Beschrijf kort je relevante ervaring voor deze opdracht..." class="w-full bg-background-light border border-primary/5 rounded-xl px-4 py-4 text-sm font-medium resize-none"></textarea>
+              </div>
+              <label class="flex items-start gap-4 cursor-pointer group">
+                <div class="relative flex items-center mt-1">
+                  <input type="checkbox" class="peer h-5 w-5 cursor-pointer appearance-none rounded border border-primary/20 bg-background-light transition-all checked:bg-accent-gold checked:border-accent-gold">
+                  <span class="material-symbols-outlined absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-sm opacity-0 peer-checked:opacity-100">check</span>
+                </div>
+                <span class="text-xs text-slate-custom leading-relaxed group-hover:text-primary transition-colors">
+                  Ik ga akkoord met de opslag van mijn gegevens voor deze sollicitatie en de privacyvoorwaarden van freep.nl.
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="w-full lg:w-[380px] space-y-8">
+          <div class="bg-primary rounded-3xl p-8 text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+            <div class="relative z-10 space-y-6">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-black">Klaar om te versturen?</h3>
+                <span class="material-symbols-outlined text-accent-gold text-3xl">rocket_launch</span>
+              </div>
+              <p class="text-white/70 text-sm leading-relaxed">
+                Controleer je gegevens voordat je de sollicitatie definitief verzendt. We reageren doorgaans binnen 24 uur.
+              </p>
+              <button class="w-full bg-accent-gold hover:bg-accent-gold/90 text-primary py-4 rounded-xl font-black text-lg shadow-xl shadow-accent-gold/20 transition-all flex items-center justify-center gap-3">
+                Solliciteer Nu <span class="material-symbols-outlined">send</span>
+              </button>
+              
+              <div class="pt-6 border-t border-white/10 space-y-4">
+                <p class="text-[10px] font-black uppercase tracking-widest text-accent-gold">Sneller solliciteren?</p>
+                <p class="text-xs text-white/60">Al lid? Log in voor een snelle aanvraag met jouw opgeslagen profiel.</p>
+                <a href="/login.html" class="w-full border border-white/20 hover:bg-white/5 py-3 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2">
+                  <span class="material-symbols-outlined text-lg">login</span> Inloggen als Lid
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-3xl p-8 border border-primary/5 shadow-sm space-y-6">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent-gold">info</span>
+              <h4 class="text-xs font-black uppercase tracking-widest text-accent-gold">Hulp nodig?</h4>
+            </div>
+            <p class="text-sm text-slate-custom leading-relaxed">
+              Heb je vragen over deze specifieke opdracht of het proces? Onze recruiters staan klaar om je te helpen.
+            </p>
+            <div class="flex items-center gap-4 p-4 bg-background-light rounded-2xl">
+              <div class="w-12 h-12 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold">
+                <span class="material-symbols-outlined">call</span>
+              </div>
+              <div>
+                <p class="text-[10px] font-black uppercase tracking-wider text-slate-custom">Bel ons direct</p>
+                <p class="text-sm font-black text-primary">+31 (0) 20 123 4567</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-20 mt-20">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-10 md:h-12 w-auto text-accent-gold"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z" id="Fill-265"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z" id="Fill-266"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z" id="Fill-267"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z" id="Fill-268"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z" id="Fill-269"></path></g></g></svg>
+          </div>
+          <p class="text-slate-300 leading-relaxed">
+            De publieke sector naar een hoger niveau tillen door middel van deskundig advies en innovatieve digitale oplossingen.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Professionals</h4>
+          <ul class="space-y-4 text-slate-300">
+            <li><a class="hover:text-white transition-colors" href="/opdrachten.html">Opdrachten Zoeken</a></li>
+            <li><a class="hover:text-white transition-colors" href="/opdrachtgevers.html">Onze Opdrachtgevers</a></li>
+            <li><a class="hover:text-white transition-colors" href="/login.html">Persoonlijk Dashboard</a></li>
+            <li><a class="hover:text-white transition-colors" href="/login.html">Tarieven voor Experts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Organisaties</h4>
+          <ul class="space-y-4 text-slate-300">
+            <li><a class="hover:text-white transition-colors" href="/organisaties.html">Plaats een Opdracht</a></li>
+            <li><a class="hover:text-white transition-colors" href="/organisaties.html">Hoe het Werkt</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Talentoplossingen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Contact</h4>
+          <ul class="space-y-4 text-slate-300">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent-gold">location_on</span>
+              <span>Amsterdam, Nederland</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent-gold">mail</span>
+              <span>info@freep.nl</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-400">
+        <p>© 2024 freep.nl. Alle rechten voorbehouden.</p>
+        <div class="flex gap-8">
+          <a class="hover:text-white" href="#">Privacybeleid</a>
+          <a class="hover:text-white" href="#">Algemene Voorwaarden</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

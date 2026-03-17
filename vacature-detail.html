@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lead Digitale Transitie | Freep.nl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1e1b4b',
+              'accent-gold': '#c5a059',
+              'background-light': '#f6f7f8',
+              'slate-custom': '#4a5568',
+            },
+            fontFamily: {
+              sans: ['Public Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light font-sans">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-10 md:h-12 w-auto text-primary"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z" id="Fill-265"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z" id="Fill-266"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z" id="Fill-267"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z" id="Fill-268"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z" id="Fill-269"></path></g></g></svg>
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachten.html">Opdrachten</a>
+          <div class="relative group">
+            <button class="flex items-center gap-1 text-sm font-semibold hover:text-accent-gold transition-colors py-4">
+              Voor Professionals
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </button>
+            <div class="absolute left-0 top-full hidden group-hover:block w-48 z-50">
+              <div class="bg-white border border-primary/10 rounded-xl shadow-xl py-2 mt-0">
+                <a href="/professionals.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Waarom Freep</a>
+                <a href="/detachering.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Detachering</a>
+                <a href="/freelance.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Freelance</a>
+              </div>
+            </div>
+          </div>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/organisaties.html">Voor Organisaties</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachtgevers.html">Opdrachtgevers</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Kennisbank</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="hidden sm:block text-sm font-bold text-primary px-4">Contact</button>
+          <a href="/login.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden flex items-center justify-center p-2 text-primary">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-[73px] left-0 right-0 bg-white border-b border-primary/10 z-40 shadow-xl overflow-y-auto max-h-[calc(100vh-73px)]">
+      <nav class="flex flex-col p-6 gap-4">
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/opdrachten.html">Opdrachten</a>
+        <div class="flex flex-col border-b border-primary/5">
+          <span class="text-lg font-bold py-2">Voor Professionals</span>
+          <div class="flex flex-col gap-2 pl-4 pb-4">
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/professionals.html">Waarom Freep</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/detachering.html">Detachering</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/freelance.html">Freelance</a>
+          </div>
+        </div>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/organisaties.html">Voor Organisaties</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/opdrachtgevers.html">Opdrachtgevers</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="#">Kennisbank</a>
+        <div class="pt-4 flex flex-col gap-4">
+          <button class="text-left text-lg font-bold text-primary py-2">Contact</button>
+          <a href="/login.html" class="bg-primary text-white px-6 py-4 rounded-xl text-center font-bold shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="relative w-full min-h-[400px] flex flex-col items-center justify-center text-left px-6 lg:px-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <div class="absolute inset-0 bg-primary/80 z-10"></div>
+          <img alt="Kantoor interieur" class="w-full h-full object-cover blur-sm" src="https://picsum.photos/seed/office/1920/1080" referrerPolicy="no-referrer"/>
+        </div>
+        <div class="relative z-20 max-w-7xl mx-auto w-full py-16">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div class="space-y-6">
+              <div class="flex items-center gap-4">
+                <span class="text-[10px] font-black uppercase tracking-[0.2em] text-accent-gold bg-accent-gold/20 px-3 py-1.5 rounded-full border border-accent-gold/30">Rijksoverheid</span>
+                <span class="text-white/60 text-xs font-bold">Ref: 4829-NL</span>
+              </div>
+              <h1 class="text-white text-4xl md:text-6xl font-black tracking-tight leading-tight">Lead Digitale Transitie</h1>
+              <div class="flex flex-wrap items-center gap-6 text-white/80 text-sm font-bold">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-accent-gold">location_on</span> Den Haag / Hybride
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-accent-gold">schedule</span> 36 uur per week
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-accent-gold">payments</span> Marktconform ZZP tarief
+                </div>
+              </div>
+            </div>
+            <a href="/solliciteren.html" class="bg-accent-gold hover:bg-accent-gold/90 text-primary px-10 py-4 rounded-xl font-black text-lg shadow-xl shadow-accent-gold/20 transition-all hover:scale-105 inline-block">
+              Direct Solliciteren
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Section -->
+      <section class="max-w-7xl mx-auto px-6 lg:px-20 py-20">
+        <div class="flex flex-col lg:flex-row gap-16">
+          <!-- Sidebar -->
+          <aside class="w-full lg:w-1/3 space-y-12">
+            <!-- Over de Organisatie -->
+            <div class="bg-white p-8 rounded-3xl border border-primary/5 shadow-sm space-y-8">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-1 bg-accent-gold rounded-full"></span>
+                  <h3 class="text-xl font-black text-primary">Over de Organisatie</h3>
+                </div>
+                <p class="text-slate-custom text-sm leading-relaxed">
+                  Het Ministerie van Financiën bewaakt de schatkist en werkt aan een financieel gezond en welvarend Nederland. Als drijvende kracht achter de digitale transformatie werk je aan projecten met een maatschappelijke impact voor miljoenen burgers.
+                </p>
+              </div>
+
+              <div class="space-y-4">
+                <h4 class="text-xs font-black uppercase tracking-widest text-accent-gold">Onze Kernwaarden</h4>
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-3 text-sm font-bold text-primary">
+                    <span class="material-symbols-outlined text-accent-gold text-lg">check_circle</span> Integriteit & Transparantie
+                  </li>
+                  <li class="flex items-center gap-3 text-sm font-bold text-primary">
+                    <span class="material-symbols-outlined text-accent-gold text-lg">check_circle</span> Innovatie voor de Burger
+                  </li>
+                  <li class="flex items-center gap-3 text-sm font-bold text-primary">
+                    <span class="material-symbols-outlined text-accent-gold text-lg">check_circle</span> Samenwerking over grenzen
+                  </li>
+                </ul>
+              </div>
+
+              <div class="space-y-4 pt-4 border-t border-primary/5">
+                <h4 class="text-xs font-black uppercase tracking-widest text-accent-gold">Voordelen</h4>
+                <div class="grid grid-cols-1 gap-3">
+                  <div class="flex items-center gap-4 bg-background-light p-4 rounded-2xl">
+                    <span class="material-symbols-outlined text-primary">home_work</span>
+                    <span class="text-sm font-bold text-primary">Flexibel Hybride Werken</span>
+                  </div>
+                  <div class="flex items-center gap-4 bg-background-light p-4 rounded-2xl">
+                    <span class="material-symbols-outlined text-primary">rocket_launch</span>
+                    <span class="text-sm font-bold text-primary">Ruim Opleidingsbudget</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meet the Team -->
+            <div class="bg-primary p-8 rounded-3xl text-white space-y-6 relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16"></div>
+              <h3 class="text-xl font-black relative z-10">Meet the Team</h3>
+              <p class="text-white/70 text-sm italic leading-relaxed relative z-10">
+                "Bij Financiën bouwen we niet alleen systemen, we bouwen aan de toekomst van de Nederlandse digitale infrastructuur. Je krijgt hier de ruimte om echt het verschil te maken."
+              </p>
+              <div class="flex items-center gap-4 pt-4 relative z-10">
+                <img src="https://i.pravatar.cc/150?u=sarah" class="w-12 h-12 rounded-full border-2 border-accent-gold" alt="Sarah de Vries">
+                <div>
+                  <p class="font-bold">Sarah de Vries</p>
+                  <p class="text-xs text-accent-gold font-bold uppercase tracking-wider">CTO Digitale Overheid</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Main Content -->
+          <div class="flex-1 space-y-16">
+            <!-- De Uitdaging -->
+            <div class="space-y-6">
+              <h2 class="text-3xl font-black text-primary">De Uitdaging</h2>
+              <div class="space-y-4 text-slate-custom leading-relaxed">
+                <p>
+                  Als Lead Digitale Transitie bij het Ministerie van Financiën sta je aan het roer van een van de meest ambitieuze technologische verschuivingen binnen de overheid. Jouw missie? Het transformeren van onze legacy-architectuur naar een moderne, schaalbare en burgergerichte cloud-native omgeving.
+                </p>
+                <p>
+                  Je bent de brug tussen strategisch beleid en technische uitvoering. Je adviseert de board over technologische keuzes en begeleidt multidisciplinaire teams bij de implementatie van complexe trajecten. Impact is hier geen modewoord; jouw beslissingen beïnvloeden hoe miljoenen burgers hun financiële zaken regelen.
+                </p>
+              </div>
+            </div>
+
+            <!-- Wat ga je doen? -->
+            <div class="space-y-8">
+              <h2 class="text-3xl font-black text-primary">Wat ga je doen?</h2>
+              <div class="space-y-6">
+                <div class="flex gap-6">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold font-black">1</div>
+                  <p class="text-slate-custom leading-relaxed pt-2">Ontwerpen van de langetermijnvisie voor de digitale infrastructuur binnen het ministerie.</p>
+                </div>
+                <div class="flex gap-6">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold font-black">2</div>
+                  <p class="text-slate-custom leading-relaxed pt-2">Leidinggeven aan complexe migratietrajecten naar cloud-omgevingen met focus op security en privacy.</p>
+                </div>
+                <div class="flex gap-6">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold font-black">3</div>
+                  <p class="text-slate-custom leading-relaxed pt-2">Fungeren als technisch geweten en sparringpartner voor directie en externe stakeholders.</p>
+                </div>
+                <div class="flex gap-6">
+                  <div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold font-black">4</div>
+                  <p class="text-slate-custom leading-relaxed pt-2">Coachen en inspireren van development teams om agile en DevOps principes volledig te omarmen.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wat breng je mee? -->
+            <div class="space-y-8">
+              <h2 class="text-3xl font-black text-primary">Wat breng je mee?</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-primary/5 shadow-sm flex gap-4">
+                  <span class="material-symbols-outlined text-accent-gold text-3xl">school</span>
+                  <div>
+                    <h4 class="font-black text-primary mb-1">Opleiding</h4>
+                    <p class="text-slate-custom text-sm">WO werk- en denkniveau (Informatica of vergelijkbaar)</p>
+                  </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-primary/5 shadow-sm flex gap-4">
+                  <span class="material-symbols-outlined text-accent-gold text-3xl">history_edu</span>
+                  <div>
+                    <h4 class="font-black text-primary mb-1">Ervaring</h4>
+                    <p class="text-slate-custom text-sm">Minimaal 10 jaar ervaring in complexe IT-omgevingen</p>
+                  </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-primary/5 shadow-sm flex gap-4">
+                  <span class="material-symbols-outlined text-accent-gold text-3xl">cloud</span>
+                  <div>
+                    <h4 class="font-black text-primary mb-1">Expertise</h4>
+                    <p class="text-slate-custom text-sm">Diepgaande kennis van Azure/AWS en Microservices</p>
+                  </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-primary/5 shadow-sm flex gap-4">
+                  <span class="material-symbols-outlined text-accent-gold text-3xl">groups</span>
+                  <div>
+                    <h4 class="font-black text-primary mb-1">Soft Skills</h4>
+                    <p class="text-slate-custom text-sm">Uitstekende politiek-bestuurlijke sensitiviteit</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-background-light border-2 border-dashed border-primary/10 rounded-3xl p-12 text-center space-y-8">
+              <div class="w-16 h-16 bg-accent-gold rounded-2xl flex items-center justify-center mx-auto shadow-lg shadow-accent-gold/20">
+                <span class="material-symbols-outlined text-white text-3xl">send</span>
+              </div>
+              <div class="space-y-4">
+                <h3 class="text-2xl font-black text-primary">Klaar om impact te maken?</h3>
+                <p class="text-slate-custom max-w-md mx-auto">De sluitingsdatum voor deze vacature is 15 mei 2024. Heb je nog vragen over de functie? Neem gerust contact op.</p>
+              </div>
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="/solliciteren.html" class="w-full sm:w-auto bg-primary text-white px-10 py-4 rounded-xl font-black hover:bg-primary/90 transition-all inline-block">Solliciteer Nu</a>
+                <button class="w-full sm:w-auto bg-white border-2 border-primary/10 text-primary px-10 py-4 rounded-xl font-black hover:bg-background-light transition-all">Stel een vraag</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-20">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-10 md:h-12 w-auto text-accent-gold"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z" id="Fill-265"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z" id="Fill-266"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z" id="Fill-267"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z" id="Fill-268"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z" id="Fill-269"></path></g></g></svg>
+          </div>
+          <p class="text-slate-300 leading-relaxed">
+            De publieke sector naar een hoger niveau tillen door middel van deskundig advies en innovatieve digitale oplossingen.
+          </p>
+          <div class="flex gap-4">
+            <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent-gold transition-colors" href="#">
+              <span class="material-symbols-outlined text-xl">language</span>
+            </a>
+            <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent-gold transition-colors" href="#">
+              <span class="material-symbols-outlined text-xl">share</span>
+            </a>
+            <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent-gold transition-colors" href="#">
+              <span class="material-symbols-outlined text-xl">alternate_email</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Professionals</h4>
+          <ul class="space-y-4 text-slate-300">
+            <li><a class="hover:text-white transition-colors" href="/opdrachten.html">Opdrachten Zoeken</a></li>
+            <li><a class="hover:text-white transition-colors" href="/opdrachtgevers.html">Onze Opdrachtgevers</a></li>
+            <li><a class="hover:text-white transition-colors" href="/login.html">Persoonlijk Dashboard</a></li>
+            <li><a class="hover:text-white transition-colors" href="/login.html">Tarieven voor Experts</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Ondersteuning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Organisaties</h4>
+          <ul class="space-y-4 text-slate-300">
+            <li><a class="hover:text-white transition-colors" href="/organisaties.html">Plaats een Opdracht</a></li>
+            <li><a class="hover:text-white transition-colors" href="/organisaties.html">Hoe het Werkt</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Talentoplossingen</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Casestudies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Contact</h4>
+          <ul class="space-y-4 text-slate-300">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent-gold">location_on</span>
+              <span>Amsterdam, Nederland</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent-gold">mail</span>
+              <span>info@freep.nl</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent-gold">call</span>
+              <span>+31 (0) 20 123 4567</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-400">
+        <p>© 2024 freep.nl. Alle rechten voorbehouden.</p>
+        <div class="flex gap-8">
+          <a class="hover:text-white" href="#">Privacybeleid</a>
+          <a class="hover:text-white" href="#">Algemene Voorwaarden</a>
+          <a class="hover:text-white" href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = menuButton.querySelector('.material-symbols-outlined');
+
+      menuButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        menuIcon.textContent = isHidden ? 'menu' : 'close';
+        document.body.style.overflow = isHidden ? '' : 'hidden';
+      });
+
+      // Close menu when clicking on a link
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.textContent = 'menu';
+          document.body.style.overflow = '';
+        });
+      });
+    </script>
+  </body>
+</html>
