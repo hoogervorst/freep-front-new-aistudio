@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De impact van AI op de Nederlandse overheid in 2024 | Kennisbank | Freep.nl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1e1b4b',
+              'accent-gold': '#c5a059',
+              'background-light': '#f6f7f8',
+              'slate-custom': '#4a5568',
+            },
+            fontFamily: {
+              sans: ['Public Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .prose h2 {
+        font-size: 1.875rem;
+        font-weight: 900;
+        color: #1e1b4b;
+        margin-top: 2.5rem;
+        margin-bottom: 1.25rem;
+        line-height: 1.2;
+      }
+      .prose p {
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+        color: #4a5568;
+      }
+      .prose ul {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        list-style-type: disc;
+      }
+      .prose li {
+        margin-bottom: 0.5rem;
+        color: #4a5568;
+      }
+      .prose blockquote {
+        border-left: 4px solid #c5a059;
+        padding-left: 1.5rem;
+        font-style: italic;
+        margin: 2.5rem 0;
+        color: #1e1b4b;
+        font-size: 1.25rem;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light font-sans text-primary">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-10 md:h-12 w-auto text-primary"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z" id="Fill-265"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z" id="Fill-266"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z" id="Fill-267"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z" id="Fill-268"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z" id="Fill-269"></path></g></g></svg>
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachten.html">Opdrachten</a>
+          <div class="relative group">
+            <button class="flex items-center gap-1 text-sm font-semibold hover:text-accent-gold transition-colors py-4">
+              Voor Professionals
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </button>
+            <div class="absolute left-0 top-full hidden group-hover:block w-48 z-50">
+              <div class="bg-white border border-primary/10 rounded-xl shadow-xl py-2 mt-0">
+                <a href="/professionals.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Waarom Freep</a>
+                <a href="/detachering.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Detachering</a>
+                <a href="/freelance.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Freelance</a>
+              </div>
+            </div>
+          </div>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/organisaties.html">Voor Organisaties</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachtgevers.html">Opdrachtgevers</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors text-accent-gold" href="/kennisbank.html">Kennisbank</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="hidden sm:block text-sm font-bold text-primary px-4">Contact</button>
+          <a href="/login.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+          <button id="mobile-menu-button" class="md:hidden flex items-center justify-center p-2 text-primary">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Breadcrumbs -->
+      <nav class="max-w-4xl mx-auto px-6 pt-12 text-sm font-bold text-slate-custom flex items-center gap-2">
+        <a href="/kennisbank.html" class="hover:text-accent-gold transition-colors">Kennisbank</a>
+        <span class="material-symbols-outlined text-xs">chevron_right</span>
+        <span class="text-primary/40">Digitalisering</span>
+      </nav>
+
+      <!-- Article Header -->
+      <article class="max-w-4xl mx-auto px-6 py-12 space-y-10">
+        <header class="space-y-8">
+          <div class="space-y-4">
+            <div class="flex items-center gap-4">
+              <span class="text-xs font-black uppercase tracking-widest text-accent-gold bg-accent-gold/10 px-3 py-1 rounded-full">Digitalisering</span>
+              <span class="text-slate-custom text-xs font-bold">15 Maart 2024</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black text-primary leading-tight">De impact van AI op de Nederlandse overheid in 2024</h1>
+          </div>
+
+          <div class="flex items-center justify-between py-6 border-y border-primary/5">
+            <div class="flex items-center gap-4">
+              <img src="https://i.pravatar.cc/150?u=mark" class="w-12 h-12 rounded-full border-2 border-accent-gold" alt="Mark">
+              <div>
+                <p class="text-base font-bold text-primary">Mark van Beek</p>
+                <p class="text-xs text-slate-custom">Senior Strategisch Adviseur</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <button class="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center text-primary hover:bg-accent-gold hover:text-white transition-all">
+                <span class="material-symbols-outlined text-xl">share</span>
+              </button>
+              <button class="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center text-primary hover:bg-accent-gold hover:text-white transition-all">
+                <span class="material-symbols-outlined text-xl">bookmark</span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- Article Content -->
+        <div class="prose max-w-none">
+          <p class="text-xl font-medium text-primary leading-relaxed">
+            Kunstmatige intelligentie (AI) is niet langer een futuristisch concept voor de Nederlandse overheid. In 2024 zien we een versnelling in de adoptie van AI-toepassingen die de manier waarop publieke diensten worden geleverd en beleid wordt gevormd, fundamenteel veranderen.
+          </p>
+
+          <img src="https://picsum.photos/seed/tech/1200/800" alt="AI in Overheid" class="w-full rounded-[2.5rem] my-12 shadow-xl" referrerPolicy="no-referrer">
+
+          <h2>De verschuiving naar data-gedreven beleid</h2>
+          <p>
+            Een van de meest significante ontwikkelingen is de verschuiving naar data-gedreven besluitvorming. Overheidsinstanties maken steeds vaker gebruik van voorspellende algoritmen om maatschappelijke trends te analyseren en proactief te reageren op uitdagingen zoals woningnood, stikstofproblematiek en zorgbehoeften.
+          </p>
+
+          <blockquote>
+            "AI is geen vervanging voor menselijk oordeel in de publieke sector, maar een krachtige versterker van onze capaciteit om complexe maatschappelijke problemen te begrijpen en aan te pakken."
+          </blockquote>
+
+          <h2>Efficiëntie in publieke dienstverlening</h2>
+          <p>
+            Aan de voorkant zien we de opkomst van geavanceerde AI-gestuurde chatbots en virtuele assistenten die burgers 24/7 kunnen helpen met eenvoudige vragen en aanvragen. Dit ontlast niet alleen de fysieke loketten, maar zorgt ook voor een snellere en meer consistente afhandeling van burgerzaken.
+          </p>
+
+          <ul>
+            <li>Automatisering van routinematige administratieve taken.</li>
+            <li>Verbeterde fraudedetectie door patroonherkenning in grote datasets.</li>
+            <li>Gepersonaliseerde communicatie met burgers op basis van hun specifieke behoeften.</li>
+            <li>Optimalisatie van logistieke processen binnen gemeentelijke diensten.</li>
+          </ul>
+
+          <h2>Ethische kaders en transparantie</h2>
+          <p>
+            Met de toenemende inzet van AI groeit ook de noodzaak voor strikte ethische kaders en transparantie. De Nederlandse overheid loopt voorop in het ontwikkelen van richtlijnen voor 'verantwoorde AI'. Dit omvat onder meer de eis dat algoritmen uitlegbaar moeten zijn en dat er altijd menselijk toezicht moet blijven op kritieke besluitvormingsprocessen.
+          </p>
+          <p>
+            Het waarborgen van privacy en het voorkomen van bias in algoritmen zijn topprioriteiten. In 2024 zien we de oprichting van gespecialiseerde ethische commissies binnen ministeries die toezien op de implementatie van nieuwe technologieën.
+          </p>
+        </div>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2 pt-10 border-t border-primary/5">
+          <span class="px-4 py-1.5 bg-primary/5 rounded-full text-xs font-bold text-primary">#AI</span>
+          <span class="px-4 py-1.5 bg-primary/5 rounded-full text-xs font-bold text-primary">#Overheid</span>
+          <span class="px-4 py-1.5 bg-primary/5 rounded-full text-xs font-bold text-primary">#Innovatie</span>
+          <span class="px-4 py-1.5 bg-primary/5 rounded-full text-xs font-bold text-primary">#Digitalisering</span>
+        </div>
+
+        <!-- Author Bio -->
+        <div class="bg-white p-8 md:p-12 rounded-[2.5rem] border border-primary/5 shadow-sm flex flex-col md:flex-row items-center gap-8 mt-12">
+          <img src="https://i.pravatar.cc/150?u=mark" class="w-24 h-24 rounded-3xl border-4 border-accent-gold shadow-lg" alt="Mark">
+          <div class="space-y-4 text-center md:text-left">
+            <h4 class="text-xl font-black text-primary">Over Mark van Beek</h4>
+            <p class="text-slate-custom text-sm leading-relaxed">
+              Mark is een ervaren strateeg met meer dan 15 jaar ervaring in de publieke sector. Hij adviseert ministeries en grote gemeenten over de implementatie van opkomende technologieën en de impact daarvan op de organisatiecultuur.
+            </p>
+            <div class="flex justify-center md:justify-start gap-4">
+              <a href="#" class="text-primary hover:text-accent-gold transition-colors font-bold text-sm">LinkedIn &rarr;</a>
+              <a href="#" class="text-primary hover:text-accent-gold transition-colors font-bold text-sm">Alle artikelen &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Related Articles -->
+      <section class="bg-white py-24 px-6 lg:px-20">
+        <div class="max-w-7xl mx-auto space-y-12">
+          <div class="flex items-center justify-between">
+            <h2 class="text-3xl font-black text-primary">Gerelateerde artikelen</h2>
+            <a href="/kennisbank.html" class="text-accent-gold font-bold hover:text-primary transition-colors flex items-center gap-2">
+              Alle artikelen <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <a href="/kennisbank-detail.html" class="group space-y-4">
+              <div class="h-48 rounded-2xl overflow-hidden">
+                <img src="https://picsum.photos/seed/security/600/400" alt="Security" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer">
+              </div>
+              <div class="space-y-2">
+                <span class="text-[10px] font-black uppercase tracking-widest text-accent-gold">Security</span>
+                <h3 class="text-lg font-black text-primary leading-tight group-hover:text-accent-gold transition-colors">De nieuwe AVG-richtlijnen voor de publieke sector</h3>
+              </div>
+            </a>
+            <!-- Article 2 -->
+            <a href="/kennisbank-detail.html" class="group space-y-4">
+              <div class="h-48 rounded-2xl overflow-hidden">
+                <img src="https://picsum.photos/seed/future/600/400" alt="Future" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer">
+              </div>
+              <div class="space-y-2">
+                <span class="text-[10px] font-black uppercase tracking-widest text-accent-gold">Toekomst</span>
+                <h3 class="text-lg font-black text-primary leading-tight group-hover:text-accent-gold transition-colors">De opkomst van de 'Citizen Developer'</h3>
+              </div>
+            </a>
+            <!-- Article 3 -->
+            <a href="/kennisbank-detail.html" class="group space-y-4">
+              <div class="h-48 rounded-2xl overflow-hidden">
+                <img src="https://picsum.photos/seed/data/600/400" alt="Data" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerPolicy="no-referrer">
+              </div>
+              <div class="space-y-2">
+                <span class="text-[10px] font-black uppercase tracking-widest text-accent-gold">Data</span>
+                <h3 class="text-lg font-black text-primary leading-tight group-hover:text-accent-gold transition-colors">Data-gedreven besluitvorming bij provincies</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-20">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="h-10 md:h-12 w-auto text-accent-gold"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Group" fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z" id="Fill-265"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z" id="Fill-266"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z" id="Fill-267"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z" id="Fill-268"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z" id="Fill-269"></path></g></g></svg>
+          </div>
+          <p class="text-slate-300 leading-relaxed">
+            De publieke sector naar een hoger niveau tillen door middel van deskundig advies en innovatieve digitale oplossingen.
+          </p>
+          <div class="flex gap-4">
+            <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent-gold transition-colors" href="#">
+              <span class="material-symbols-outlined text-xl">language</span>
+            </a>
+            <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent-gold transition-colors" href="#">
+              <span class="material-symbols-outlined text-xl">share</span>
+            </a>
+            <a class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent-gold transition-colors" href="#">
+              <span class="material-symbols-outlined text-xl">alternate_email</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Professionals</h4>
+          <ul class="space-y-4 text-slate-300">
+            <li><a class="hover:text-white transition-colors" href="/opdrachten.html">Opdrachten Zoeken</a></li>
+            <li><a class="hover:text-white transition-colors" href="/opdrachtgevers.html">Onze Opdrachtgevers</a></li>
+            <li><a class="hover:text-white transition-colors" href="/login.html">Persoonlijk Dashboard</a></li>
+            <li><a class="hover:text-white transition-colors" href="/login.html">Tarieven voor Experts</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Ondersteuning</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Organisaties</h4>
+          <ul class="space-y-4 text-slate-300">
+            <li><a class="hover:text-white transition-colors" href="/organisaties.html">Plaats een Opdracht</a></li>
+            <li><a class="hover:text-white transition-colors" href="/organisaties.html">Hoe het Werkt</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Talentoplossingen</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Casestudies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Contact</h4>
+          <ul class="space-y-4 text-slate-300">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent-gold">location_on</span>
+              <span>Amsterdam, Nederland</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent-gold">mail</span>
+              <span>info@freep.nl</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent-gold">call</span>
+              <span>+31 (0) 20 123 4567</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-400">
+        <p>© 2024 freep.nl. Alle rechten voorbehouden.</p>
+        <div class="flex gap-8">
+          <a class="hover:text-white" href="#">Privacybeleid</a>
+          <a class="hover:text-white" href="#">Algemene Voorwaarden</a>
+          <a class="hover:text-white" href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = menuButton.querySelector('.material-symbols-outlined');
+
+      menuButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        menuIcon.textContent = isHidden ? 'menu' : 'close';
+        document.body.style.overflow = isHidden ? '' : 'hidden';
+      });
+    </script>
+  </body>
+</html>
