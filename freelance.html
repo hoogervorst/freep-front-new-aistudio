@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Freelance | Freep.nl - Jouw carrière in de publieke sector</title>
+    <title>Freelance | Over Freep | Freep.nl - Transparant detacheren en freelancen</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
@@ -29,9 +29,22 @@
         font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         vertical-align: middle;
       }
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out, padding 0.3s ease;
+      }
+      .faq-item.active .faq-answer {
+        max-height: 200px;
+        padding-top: 1rem;
+      }
+      .faq-item.active .faq-icon {
+        transform: rotate(180deg);
+      }
     </style>
   </head>
-  <body class="bg-background-light font-sans">
+  <body class="bg-background-light font-sans text-primary">
+    <!-- Header -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <a href="/" class="flex items-center gap-3">
@@ -54,7 +67,7 @@
           </div>
           <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/organisaties.html">Voor Organisaties</a>
           <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachtgevers.html">Opdrachtgevers</a>
-          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="#">Kennisbank</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/kennisbank.html">Kennisbank</a>
         </nav>
         <div class="flex items-center gap-4">
           <button class="hidden sm:block text-sm font-bold text-primary px-4">Contact</button>
@@ -83,7 +96,7 @@
         </div>
         <a class="text-lg font-bold py-2 border-b border-primary/5" href="/organisaties.html">Voor Organisaties</a>
         <a class="text-lg font-bold py-2 border-b border-primary/5" href="/opdrachtgevers.html">Opdrachtgevers</a>
-        <a class="text-lg font-bold py-2 border-b border-primary/5" href="#">Kennisbank</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/kennisbank.html">Kennisbank</a>
         <div class="pt-4 flex flex-col gap-4">
           <button class="text-left text-lg font-bold text-primary py-2">Contact</button>
           <a href="/login.html" class="bg-primary text-white px-6 py-4 rounded-xl text-center font-bold shadow-lg shadow-primary/20">
@@ -95,73 +108,340 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="relative w-full min-h-[70vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+      <section class="relative w-full min-h-[60vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden">
         <div class="absolute inset-0 z-0">
-          <div class="absolute inset-0 bg-primary/60 z-10"></div>
-          <img alt="Freelance professional" class="w-full h-full object-cover" src="https://picsum.photos/seed/freelance/1920/1080" referrerPolicy="no-referrer"/>
+          <div class="absolute inset-0 bg-primary/80 z-10"></div>
+          <img alt="Freelance professional" class="w-full h-full object-cover" src="https://picsum.photos/seed/freelance-over/1920/1080" referrerPolicy="no-referrer"/>
         </div>
-        <div class="relative z-20 max-w-4xl mx-auto space-y-8 py-20">
-          <h1 class="text-white text-5xl md:text-7xl font-black leading-[1.1] tracking-tight">
-            <span class="text-accent-gold">Freelance</span> opdrachten bij de overheid.
+        <div class="relative z-20 max-w-4xl mx-auto space-y-8 py-24">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-accent-gold/20 rounded-full text-accent-gold font-black text-xs uppercase tracking-widest mx-auto">
+            <span class="material-symbols-outlined text-sm">handshake</span>
+            Eerlijk &amp; Transparant sinds 2013
+          </div>
+          <h1 class="text-white text-4xl md:text-6xl font-black leading-[1.1] tracking-tight">
+            <span class="text-accent-gold">Transparant</span> freelancen bij de overheid.
           </h1>
-          <p class="text-white/90 text-lg md:text-xl font-medium max-w-3xl mx-auto leading-relaxed">
-            Maximale vrijheid en de beste tarieven voor interim-experts in de publieke sector.
+          <p class="text-white/90 text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
+            Geen vage contracten of verborgen marges. Al meer dan 10 jaar brengen wij interim-experts rechtstreeks in contact met publieke organisaties.
           </p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <button class="w-full sm:w-auto bg-accent-gold hover:bg-accent-gold/90 text-primary px-8 py-4 rounded-xl font-bold text-lg transition-transform hover:scale-105">
+            <a href="/login.html" class="w-full sm:w-auto bg-accent-gold hover:bg-accent-gold/90 text-primary px-8 py-4 rounded-xl font-black text-base transition-transform hover:scale-105 text-center shadow-lg shadow-accent-gold/20">
               Schrijf je in als freelancer
-            </button>
-            <a href="/opdrachten.html" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition-transform hover:scale-105 text-center">
+            </a>
+            <a href="/opdrachten.html" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl font-black text-base transition-transform hover:scale-105 text-center">
               Bekijk actuele opdrachten
             </a>
           </div>
         </div>
       </section>
 
-      <!-- Freelance Content -->
-      <section class="py-24 px-6 lg:px-20 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <!-- Ons Verhaal / Over Freep Section -->
+      <section class="py-24 px-6 lg:px-20 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div class="space-y-8">
-            <h2 class="text-4xl font-black text-primary">Succesvol freelancen via Freep</h2>
-            <p class="text-slate-custom text-lg leading-relaxed">
-              Als freelancer wil je doen waar je goed in bent: impact maken bij je opdrachtgever. Wij regelen de rest. Van het vinden van de juiste match tot de administratieve afhandeling en snelle betaling.
-            </p>
-            <ul class="space-y-4">
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-accent-gold">check_circle</span>
-                <div>
-                  <p class="font-bold text-primary">Beste Tarieven</p>
-                  <p class="text-slate-custom">Door onze transparante marges en directe lijnen met opdrachtgevers garanderen we jou het beste uurtarief.</p>
-                </div>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-accent-gold">check_circle</span>
-                <div>
-                  <p class="font-bold text-primary">Administratief Gemak</p>
-                  <p class="text-slate-custom">Eenvoudige urenregistratie en facturatie via ons portal. Wij zorgen voor de compliance checks.</p>
-                </div>
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-accent-gold">check_circle</span>
-                <div>
-                  <p class="font-bold text-primary">Snelle Betaling</p>
-                  <p class="text-slate-custom">Facturen worden binnen 14 dagen voldaan. Je hoeft nooit te wachten op de betaling van de opdrachtgever.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="relative">
-            <img alt="Freelancer at work" class="rounded-3xl shadow-2xl" src="https://picsum.photos/seed/freelancer-laptop/800/600" referrerPolicy="no-referrer"/>
-            <div class="absolute -bottom-10 -right-10 bg-white p-8 rounded-2xl shadow-xl border border-primary/5 hidden md:block">
-              <p class="text-4xl font-black text-primary">500+</p>
-              <p class="text-slate-custom font-bold">Actieve freelancers</p>
+            <div class="space-y-2">
+              <span class="text-accent-gold font-black uppercase tracking-widest text-xs">Ons Verhaal</span>
+              <h2 class="text-4xl font-black text-primary">Over Freep</h2>
             </div>
+            <p class="text-slate-custom text-lg leading-relaxed">
+              Sinds de oprichting van ons platform in <strong>2013</strong> is de missie van Freep onveranderd gebleven: de inhuurmarkt binnen de publieke sector eerlijk, efficiënt en volledig transparant maken. Wij geloven dat de overheid gebaat is bij de beste expertise en dat interim-professionals daarvoor een eerlijke beloning moeten ontvangen.
+            </p>
+            <p class="text-slate-custom text-lg leading-relaxed">
+              Waar traditionele bureaus vaak hoge, verborgen marges inhouden, werken wij met een vast, laag tarief of 100% transparante marges die vooraf bekend zijn. Zo weet jij als freelancer exact wat de opdrachtgever betaalt en wat jouw marge is. Wij zijn geen anoniem matchingsplatform, maar een betrokken partner die je persoonlijk ondersteunt bij elke aanbesteding, offerte en contractering.
+            </p>
+            <div class="flex items-center gap-4 pt-4">
+              <div class="w-16 h-16 rounded-full bg-accent-gold/10 flex items-center justify-center text-accent-gold">
+                <span class="material-symbols-outlined text-3xl">verified</span>
+              </div>
+              <div>
+                <p class="font-black text-primary">100% Compliance</p>
+                <p class="text-slate-custom text-sm">Gegarandeerd Wet DBA-proof met goedgekeurde modelovereenkomsten.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="relative">
+            <div class="absolute -inset-4 bg-accent-gold/10 rounded-[3rem] blur-3xl"></div>
+            <div class="relative bg-background-light p-10 rounded-[3rem] border border-primary/5 space-y-10">
+              <h3 class="text-2xl font-black text-primary">Onze impact in cijfers</h3>
+              <div class="grid grid-cols-2 gap-8">
+                <div class="space-y-1">
+                  <p class="text-accent-gold text-5xl font-black">10+</p>
+                  <p class="text-primary font-bold text-sm">Jaar ervaring</p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-accent-gold text-5xl font-black">1.500+</p>
+                  <p class="text-primary font-bold text-sm">Succesvolle matches</p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-accent-gold text-5xl font-black">9.4</p>
+                  <p class="text-primary font-bold text-sm">Freelancer rating</p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-accent-gold text-5xl font-black">14</p>
+                  <p class="text-primary font-bold text-sm">Dagen betaaltermijn</p>
+                </div>
+              </div>
+              <div class="p-6 bg-white rounded-2xl border border-primary/5 text-sm italic text-slate-custom leading-relaxed">
+                "We zijn er trots op dat we de publieke sector helpen digitaliseren en transformeren door de beste freelance specialisten rechtstreeks te koppelen aan vitale opdrachten."
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- De 4 Beloften van Freep (Bento Grid) -->
+      <section class="py-24 px-6 lg:px-20 bg-background-light">
+        <div class="max-w-7xl mx-auto space-y-16">
+          <div class="text-center space-y-4 max-w-2xl mx-auto">
+            <span class="text-accent-gold font-black uppercase tracking-widest text-xs">Onze Meerwaarde</span>
+            <h2 class="text-3xl md:text-5xl font-black text-primary">Waarom freelancen via Freep?</h2>
+            <p class="text-slate-custom text-lg">Wij geloven in een duurzame relatie met onze interim-professionals. Dit zijn onze vier harde beloftes aan jou.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Promise 1 -->
+            <div class="bg-white p-10 rounded-[2.5rem] border border-primary/5 hover:border-accent-gold/20 shadow-sm hover:shadow-xl transition-all space-y-6">
+              <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-3xl">visibility</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-2xl font-black text-primary">100% Transparante Marge</h3>
+                <p class="text-slate-custom leading-relaxed">
+                  Wij hanteren altijd een vaste, lage marge of transparante servicefee. Geen verborgen percentages of schimmige constructies. Je weet vooraf exact wat de overheid betaalt en wat er naar jou gaat.
+                </p>
+              </div>
+            </div>
+
+            <!-- Promise 2 -->
+            <div class="bg-white p-10 rounded-[2.5rem] border border-primary/5 hover:border-accent-gold/20 shadow-sm hover:shadow-xl transition-all space-y-6">
+              <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-3xl">payments</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-2xl font-black text-primary">Betaling binnen 14 dagen</h3>
+                <p class="text-slate-custom leading-relaxed">
+                  Geen zorgen over trage facturatieprocessen van de overheid. Wij betalen jouw goedgekeurde uren gegarandeerd binnen 14 dagen uit. Desgewenst is nog snellere bevoorschotting mogelijk.
+                </p>
+              </div>
+            </div>
+
+            <!-- Promise 3 -->
+            <div class="bg-white p-10 rounded-[2.5rem] border border-primary/5 hover:border-accent-gold/20 shadow-sm hover:shadow-xl transition-all space-y-6">
+              <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-3xl">support_agent</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-2xl font-black text-primary">Persoonlijke Begeleiding</h3>
+                <p class="text-slate-custom leading-relaxed">
+                  Wij schrijven samen met jou een winnende offerte voor de aanbesteding, optimaliseren je cv volgens de overheidsstandaarden en bereiden je persoonlijk voor op het kennismakingsgesprek.
+                </p>
+              </div>
+            </div>
+
+            <!-- Promise 4 -->
+            <div class="bg-white p-10 rounded-[2.5rem] border border-primary/5 hover:border-accent-gold/20 shadow-sm hover:shadow-xl transition-all space-y-6">
+              <div class="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-3xl">gavel</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-2xl font-black text-primary">Wet DBA &amp; Compliance Proof</h3>
+                <p class="text-slate-custom leading-relaxed">
+                  Onze modelovereenkomsten zijn volledig goedgekeurd door de Belastingdienst. Wij screenen alle inhuurvoorwaarden zorgvuldig zodat jij en de opdrachtgever 100% risicovrij zaken doen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hoe werkt het? Timeline Section -->
+      <section class="py-24 px-6 lg:px-20 bg-white">
+        <div class="max-w-5xl mx-auto space-y-16">
+          <div class="text-center space-y-4">
+            <span class="text-accent-gold font-black uppercase tracking-widest text-xs">Stappenplan</span>
+            <h2 class="text-3xl md:text-4xl font-black text-primary">Hoe werkt onze dienstverlening?</h2>
+            <p class="text-slate-custom text-lg max-w-2xl mx-auto">Van gratis inschrijving tot de perfecte interim-opdracht in de publieke sector. Snel en professioneel geregeld.</p>
+          </div>
+
+          <div class="space-y-12 relative before:absolute before:top-4 before:bottom-4 before:left-[15px] md:before:left-1/2 md:before:-ml-[1px] before:w-0.5 before:bg-primary/10">
+            <!-- Step 1 -->
+            <div class="flex flex-col md:flex-row gap-8 relative">
+              <div class="flex md:w-1/2 md:justify-end md:pr-12">
+                <div class="md:text-right space-y-2 pl-12 md:pl-0">
+                  <span class="text-accent-gold font-black text-sm uppercase tracking-widest">Stap 1</span>
+                  <h4 class="font-black text-xl text-primary">Maak je profiel aan</h4>
+                  <p class="text-slate-custom text-sm leading-relaxed">
+                    Registreer je gratis in 2 minuten. Upload je actuele CV, geef je expertisegebieden door en bepaal je gewenste uurtarief en beschikbaarheid.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-0 md:left-1/2 top-1 w-8 h-8 rounded-full bg-primary text-white font-black text-sm flex items-center justify-center md:-ml-4 z-10 shadow-lg shadow-primary/20">1</div>
+              <div class="hidden md:block w-1/2"></div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col md:flex-row gap-8 relative">
+              <div class="hidden md:block w-1/2"></div>
+              <div class="absolute left-0 md:left-1/2 top-1 w-8 h-8 rounded-full bg-accent-gold text-white font-black text-sm flex items-center justify-center md:-ml-4 z-10 shadow-lg shadow-accent-gold/20">2</div>
+              <div class="flex md:w-1/2 md:pl-12">
+                <div class="space-y-2 pl-12 md:pl-0">
+                  <span class="text-accent-gold font-black text-sm uppercase tracking-widest">Stap 2</span>
+                  <h4 class="font-black text-xl text-primary">Direct reageren of gematcht worden</h4>
+                  <p class="text-slate-custom text-sm leading-relaxed">
+                    Bekijk actuele opdrachten bij ministeries, gemeenten en uitvoeringsorganisaties. Reageer direct of laat onze recruiters de beste opties voor jou selecteren.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col md:flex-row gap-8 relative">
+              <div class="flex md:w-1/2 md:justify-end md:pr-12">
+                <div class="md:text-right space-y-2 pl-12 md:pl-0">
+                  <span class="text-accent-gold font-black text-sm uppercase tracking-widest">Stap 3</span>
+                  <h4 class="font-black text-xl text-primary">Inschrijving op de aanbesteding</h4>
+                  <p class="text-slate-custom text-sm leading-relaxed">
+                    Wij optimaliseren jouw aanbieding voor de aanbesteding. We verzamelen de nodige referenties en diploma's en stellen je krachtig voor op papier.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-0 md:left-1/2 top-1 w-8 h-8 rounded-full bg-primary text-white font-black text-sm flex items-center justify-center md:-ml-4 z-10 shadow-lg shadow-primary/20">3</div>
+              <div class="hidden md:block w-1/2"></div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex flex-col md:flex-row gap-8 relative">
+              <div class="hidden md:block w-1/2"></div>
+              <div class="absolute left-0 md:left-1/2 top-1 w-8 h-8 rounded-full bg-accent-gold text-white font-black text-sm flex items-center justify-center md:-ml-4 z-10 shadow-lg shadow-accent-gold/20">4</div>
+              <div class="flex md:w-1/2 md:pl-12">
+                <div class="space-y-2 pl-12 md:pl-0">
+                  <span class="text-accent-gold font-black text-sm uppercase tracking-widest">Stap 4</span>
+                  <h4 class="font-black text-xl text-primary">Zorgeloos starten &amp; snelle uitbetaling</h4>
+                  <p class="text-slate-custom text-sm leading-relaxed">
+                    Bij een positieve match regelen we alle digitale contracten Wet DBA-proof. Registreer je uren via ons platform en ontvang je geld altijd binnen 14 dagen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials / Ervaringen -->
+      <section class="py-24 px-6 lg:px-20 bg-background-light">
+        <div class="max-w-7xl mx-auto space-y-16">
+          <div class="text-center space-y-4 max-w-2xl mx-auto">
+            <span class="text-accent-gold font-black uppercase tracking-widest text-xs">Ervaringen</span>
+            <h2 class="text-3xl md:text-4xl font-black text-primary">Freelancers aan het woord</h2>
+            <p class="text-slate-custom text-lg">Lees hoe andere zelfstandig professionals het freelancen via ons ervaren.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Quote 1 -->
+            <div class="bg-white p-10 rounded-3xl border border-primary/5 space-y-6 relative">
+              <span class="material-symbols-outlined text-6xl text-accent-gold/10 absolute top-6 right-6 font-black select-none pointer-events-none">format_quote</span>
+              <p class="text-slate-custom text-base leading-relaxed relative z-10">
+                "Dankzij Freep kon ik direct aan de slag als Senior Cloud Architect bij Rijkswaterstaat. Het offertetraject verliep soepel en de marge is volledig transparant. Wat ik vooral fijn vind is dat de betaling altijd stipt binnen 14 dagen op mijn rekening staat."
+              </p>
+              <div class="flex items-center gap-4 pt-4 border-t border-primary/5">
+                <div class="w-12 h-12 rounded-full bg-accent-gold/20 flex items-center justify-center text-accent-gold font-black">MV</div>
+                <div>
+                  <p class="font-black text-primary">Mark V.</p>
+                  <p class="text-slate-custom text-xs">Freelance Cloud Architect</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quote 2 -->
+            <div class="bg-white p-10 rounded-3xl border border-primary/5 space-y-6 relative">
+              <span class="material-symbols-outlined text-6xl text-accent-gold/10 absolute top-6 right-6 font-black select-none pointer-events-none">format_quote</span>
+              <p class="text-slate-custom text-base leading-relaxed relative z-10">
+                "Het schrijven van offertes voor overheidsaanbestedingen is een vak apart met strikte vormvereisten. De consultants van Freep hebben mij fantastisch begeleid bij het opstellen van de motivatie en het cv. Zonder hun hulp had ik deze prachtige opdracht bij de Belastingdienst waarschijnlijk niet gewonnen."
+              </p>
+              <div class="flex items-center gap-4 pt-4 border-t border-primary/5">
+                <div class="w-12 h-12 rounded-full bg-accent-gold/20 flex items-center justify-center text-accent-gold font-black">SJ</div>
+                <div>
+                  <p class="font-black text-primary">Sarah de J.</p>
+                  <p class="text-slate-custom text-xs">Interim Communicatieadviseur</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="py-24 px-6 lg:px-20 bg-white">
+        <div class="max-w-4xl mx-auto space-y-12">
+          <div class="text-center space-y-4">
+            <span class="text-accent-gold font-black uppercase tracking-widest text-xs">Veelgestelde Vragen</span>
+            <h2 class="text-3xl md:text-4xl font-black text-primary">Lage bemiddelingsfee en eerlijke voorwaarden</h2>
+            <p class="text-slate-custom max-w-2xl mx-auto">Wij houden van eerlijk en transparant zaken doen. Hieronder tref je de antwoorden op de meest gestelde vragen. Heb je aanvullende vragen? Neem gerust contact op!</p>
+          </div>
+
+          <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="faq-item bg-background-light rounded-2xl p-6 cursor-pointer group transition-all border border-transparent hover:border-accent-gold/20" onclick="this.classList.toggle('active')">
+              <div class="flex items-center justify-between">
+                <h4 class="font-black text-primary pr-8 flex items-center gap-3">
+                  <span class="text-accent-gold font-black">01</span>
+                  <span>Wat kost freep?</span>
+                </h4>
+                <span class="material-symbols-outlined text-accent-gold faq-icon transition-transform">expand_more</span>
+              </div>
+              <div class="faq-answer">
+                <p class="text-slate-custom text-sm leading-relaxed">Als wij je succesvol bemiddelen vragen we het eerste jaar 10% marge over het uurtarief. Na 1 jaar verlagen we deze marge naar 8%, het jaar daarop en alle volgende jaren hanteren we 6%.</p>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item bg-background-light rounded-2xl p-6 cursor-pointer group transition-all border border-transparent hover:border-accent-gold/20" onclick="this.classList.toggle('active')">
+              <div class="flex items-center justify-between">
+                <h4 class="font-black text-primary pr-8 flex items-center gap-3">
+                  <span class="text-accent-gold font-black">02</span>
+                  <span>Welke betaalvoorwaarden hanteert Freep?</span>
+                </h4>
+                <span class="material-symbols-outlined text-accent-gold faq-icon transition-transform">expand_more</span>
+              </div>
+              <div class="faq-answer">
+                <p class="text-slate-custom text-sm leading-relaxed">We betalen je factuur binnen 16 dagen, je hoeft dus niet op je geld te wachten!</p>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item bg-background-light rounded-2xl p-6 cursor-pointer group transition-all border border-transparent hover:border-accent-gold/20" onclick="this.classList.toggle('active')">
+              <div class="flex items-center justify-between">
+                <h4 class="font-black text-primary pr-8 flex items-center gap-3">
+                  <span class="text-accent-gold font-black">03</span>
+                  <span>Ben ik gebonden aan een concurrentie-/ relatiebeding?</span>
+                </h4>
+                <span class="material-symbols-outlined text-accent-gold faq-icon transition-transform">expand_more</span>
+              </div>
+              <div class="faq-answer">
+                <p class="text-slate-custom text-sm leading-relaxed">Wij geloven niet in wurgcontracten. Als jij je opdracht, inclusief eventuele verlengingen, goed hebt afgerond staat het je vrij om bij dezelfde opdrachtgever een nieuwe samenwerking aan te gaan, in welke vorm dan ook! Als we een samenwerking aangaan gebruiken wij onze standaard overeenkomst.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="bg-primary py-24 px-6 lg:px-20 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-accent-gold/10 rounded-full -mr-48 -mt-48 blur-3xl"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-8 relative z-10">
+          <h2 class="text-3xl md:text-5xl font-black leading-tight">Start jouw volgende interim succesverhaal</h2>
+          <p class="text-white/70 text-lg">Registreer je gratis op ons platform en reageer direct op de meest uitdagende opdrachten binnen de overheid.</p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="/login.html" class="w-full sm:w-auto bg-accent-gold text-primary px-10 py-4 rounded-xl font-black hover:bg-white transition-all text-center">Direct Inschrijven</a>
+            <button class="w-full sm:w-auto bg-white/10 border border-white/20 text-white px-10 py-4 rounded-xl font-black hover:bg-white/20 transition-all">Stel een vraag</button>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-20">
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-20 border-t border-white/5">
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
         <div class="space-y-6">
           <div class="flex items-center gap-3">
