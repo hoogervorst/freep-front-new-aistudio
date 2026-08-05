@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uurtarieven voor Experts in de Publieke Sector | Freep.nl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1e1b4b',
+              'accent-gold': '#c5a059',
+              'background-light': '#f6f7f8',
+              'slate-custom': '#4a5568',
+              'border-subtle': 'rgba(30, 27, 75, 0.08)',
+            },
+            fontFamily: {
+              sans: ['Public Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light font-sans min-h-screen flex flex-col antialiased">
+    <!-- TopNavBar Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-12 w-auto text-primary"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z"></path></g></g></svg>
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachten.html">Opdrachten</a>
+          <div class="relative group">
+            <button class="flex items-center gap-1 text-sm font-semibold hover:text-accent-gold transition-colors py-4">
+              Voor Professionals
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </button>
+            <div class="absolute left-0 top-full hidden group-hover:block w-52 z-50">
+              <div class="bg-white border border-primary/10 rounded-xl shadow-xl py-2 mt-0">
+                <a href="/professionals.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Waarom Freep</a>
+                <a href="/detachering.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Detachering</a>
+                <a href="/delance.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Delance Model</a>
+                <a href="/freelance.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Freelance</a>
+                <a href="/tarieven.html" class="block px-4 py-2 text-sm font-black text-accent-gold hover:bg-primary/5 transition-colors">Tarief Benchmark</a>
+              </div>
+            </div>
+          </div>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/organisaties.html">Voor Organisaties</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachtgevers.html">Opdrachtgevers</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/kennisbank.html">Kennisbank</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="hidden sm:block text-sm font-bold text-primary px-4">Contact</button>
+          <a href="/login.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+          <button id="mobile-menu-button" class="md:hidden flex items-center justify-center p-2 text-primary">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-[73px] left-0 right-0 bg-white border-b border-primary/10 z-40 shadow-xl overflow-y-auto max-h-[calc(100vh-73px)]">
+      <nav class="flex flex-col p-6 gap-4">
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/opdrachten.html">Opdrachten</a>
+        <div class="flex flex-col border-b border-primary/5">
+          <span class="text-lg font-bold py-2">Voor Professionals</span>
+          <div class="flex flex-col gap-2 pl-4 pb-4">
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/professionals.html">Waarom Freep</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/detachering.html">Detachering</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/freelance.html">Freelance</a>
+            <a class="text-base font-bold py-1 text-accent-gold" href="/tarieven.html">Tarief Benchmark</a>
+          </div>
+        </div>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/organisaties.html">Voor Organisaties</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/opdrachtgevers.html">Opdrachtgevers</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/kennisbank.html">Kennisbank</a>
+        <div class="pt-4 flex flex-col gap-4">
+          <button class="text-left text-lg font-bold text-primary py-2">Contact</button>
+          <a href="/login.html" class="bg-primary text-white px-6 py-4 rounded-xl text-center font-bold shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      
+      <!-- Hero Section -->
+      <section class="bg-primary text-white pt-16 pb-24 px-6 lg:px-20 relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-accent-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+          
+          <div class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-accent-gold bg-accent-gold/10 px-4 py-1.5 rounded-full border border-accent-gold/20 mb-6">
+            <span class="material-symbols-outlined text-sm">analytics</span>
+            Markt-Analyse & Benchmark 2023 - 2026
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+              <h1 class="text-3xl md:text-5xl font-black leading-tight tracking-tight">
+                Uurtarieven voor Experts in de <span class="text-accent-gold">Publieke Sector</span>
+              </h1>
+              <p class="text-white/80 text-base md:text-lg leading-relaxed max-w-2xl">
+                Inzicht in de actuele en historische uurtarieven van duizenden opdrachten bij Rijksoverheid, Gemeenten en Waterschappen. Vergelijk tarieven over meerdere jaren per vakgebied en ervaringsniveau.
+              </p>
+
+              <!-- Quick Highlights Badges -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
+                <div class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                  <div class="text-2xl font-black text-accent-gold">€98,50</div>
+                  <div class="text-xs font-bold text-white/70 mt-1">Gem. Uurtarief 2026</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                  <div class="text-2xl font-black text-white">+4,1%</div>
+                  <div class="text-xs font-bold text-white/70 mt-1">Tariefgroei t.o.v. 2025</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm col-span-2 sm:col-span-1">
+                  <div class="text-2xl font-black text-accent-gold">14.200+</div>
+                  <div class="text-xs font-bold text-white/70 mt-1">Geanalyseerde Opdrachten</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Benchmark Card Widget -->
+            <div class="lg:col-span-5 bg-white text-primary p-8 rounded-3xl shadow-2xl space-y-6 relative border border-white/20">
+              <div class="flex items-center justify-between border-b border-primary/10 pb-4">
+                <div>
+                  <span class="text-[10px] font-black uppercase tracking-wider text-accent-gold block">Snelle Check</span>
+                  <h3 class="text-xl font-black">Bereken jouw Tarief-Indicatie</h3>
+                </div>
+                <span class="p-2.5 rounded-xl bg-accent-gold/15 text-accent-gold">
+                  <span class="material-symbols-outlined text-2xl">calculate</span>
+                </span>
+              </div>
+
+              <div class="space-y-4">
+                <div>
+                  <label class="block text-xs font-bold text-primary mb-1.5">Vakgebied</label>
+                  <select id="quick-role-select" class="w-full p-3.5 rounded-xl border border-primary/15 bg-background-light font-bold text-sm text-primary focus:outline-none focus:ring-2 focus:ring-accent-gold">
+                    <option value="it">IT & Digitalisering</option>
+                    <option value="beleid">Beleid & Advies</option>
+                    <option value="pm">Project management</option>
+                    <option value="juridisch" selected>Juridisch & Zuidasdok</option>
+                    <option value="hr">HR & Organisatie</option>
+                    <option value="financien">Financiën & Control</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-bold text-primary mb-1.5">Ervaringsniveau</label>
+                  <select id="quick-exp-select" class="w-full p-3.5 rounded-xl border border-primary/15 bg-background-light font-bold text-sm text-primary focus:outline-none focus:ring-2 focus:ring-accent-gold">
+                    <option value="medior">Medior (3 - 5 jaar)</option>
+                    <option value="senior" selected>Senior (5 - 10 jaar)</option>
+                    <option value="expert">Principal / Expert (10+ jaar)</option>
+                  </select>
+                </div>
+
+                <div class="p-4 bg-primary/5 rounded-2xl border border-primary/10 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] font-bold text-slate-custom uppercase tracking-wider block">Indicatief Uurtarief (2026)</span>
+                    <span id="quick-rate-range" class="text-2xl font-black text-primary">€105 - €135</span>
+                  </div>
+                  <span class="text-xs font-bold text-emerald-600 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">+3,8% p.j.</span>
+                </div>
+              </div>
+
+              <a href="#interactive-matrix" class="w-full bg-primary hover:bg-primary/90 text-white p-3.5 rounded-xl font-black text-sm text-center block transition-all shadow-md">
+                Bekijk Volledige Historie & Trend
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Multi-Year Benchmark Interactive Matrix Section -->
+      <section id="interactive-matrix" class="py-16 px-6 lg:px-20 max-w-7xl mx-auto w-full space-y-10">
+        
+        <!-- Section Header & Filter Toolbar -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 border-b border-primary/10 pb-8">
+          <div>
+            <span class="text-xs font-black uppercase tracking-wider text-accent-gold block mb-1">Historische Tariefdata</span>
+            <h2 class="text-2xl md:text-4xl font-black text-primary">Tariefontwikkeling per Beroepsgroep (2023 - 2026)</h2>
+            <p class="text-slate-custom text-sm md:text-base mt-2 max-w-2xl">
+              Filter op vakgebied, ervaringsniveau of zoek direct naar jouw specifieke functie om de exacte tariefontwikkeling per jaar in te zien.
+            </p>
+          </div>
+
+          <!-- Controls / Search -->
+          <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+            <div class="relative flex-1 sm:w-64">
+              <span class="material-symbols-outlined absolute left-3.5 top-3.5 text-slate-custom text-xl">search</span>
+              <input type="text" id="role-search" placeholder="Zoek functie (bijv. Jurist, Architect)..." class="w-full pl-11 pr-4 py-3 bg-white border border-primary/15 rounded-xl text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-accent-gold" />
+            </div>
+            
+            <select id="sector-filter" class="px-4 py-3 bg-white border border-primary/15 rounded-xl text-sm font-bold text-primary focus:outline-none focus:ring-2 focus:ring-accent-gold">
+              <option value="all">Alle Sectoren</option>
+              <option value="rijk">Rijksoverheid</option>
+              <option value="gemeenten">Gemeenten (G4 & overig)</option>
+              <option value="waterschappen">Waterschappen & Provincies</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Vakgebied Category Tabs -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="category-tabs">
+          <button data-cat="all" class="cat-tab active px-5 py-2.5 rounded-xl text-xs font-black transition-all bg-primary text-white shadow-md shrink-0">
+            Alle Vakgebieden
+          </button>
+          <button data-cat="it" class="cat-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-custom hover:bg-primary/5 border border-primary/10 shrink-0">
+            IT & Digitalisering
+          </button>
+          <button data-cat="beleid" class="cat-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-custom hover:bg-primary/5 border border-primary/10 shrink-0">
+            Beleid & Advies
+          </button>
+          <button data-cat="juridisch" class="cat-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-custom hover:bg-primary/5 border border-primary/10 shrink-0">
+            Juridisch & Bestuur
+          </button>
+          <button data-cat="pm" class="cat-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-custom hover:bg-primary/5 border border-primary/10 shrink-0">
+            Project & Programmamanagement
+          </button>
+          <button data-cat="financien" class="cat-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-custom hover:bg-primary/5 border border-primary/10 shrink-0">
+            Financiën & Control
+          </button>
+          <button data-cat="hr" class="cat-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-custom hover:bg-primary/5 border border-primary/10 shrink-0">
+            HR & Organisatie
+          </button>
+        </div>
+
+        <!-- Rate Benchmark Table & Visualizer -->
+        <div class="bg-white rounded-3xl border border-primary/10 shadow-sm overflow-hidden">
+          
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse min-w-[700px]">
+              <thead>
+                <tr class="bg-background-light border-b border-primary/10 text-xs font-black text-primary uppercase tracking-wider">
+                  <th class="p-5 pl-8">Beroep / Functietitel</th>
+                  <th class="p-5">Niveau</th>
+                  <th class="p-5 text-center">2023 Gem.</th>
+                  <th class="p-5 text-center">2024 Gem.</th>
+                  <th class="p-5 text-center">2025 Gem.</th>
+                  <th class="p-5 text-center bg-accent-gold/10 text-primary">2026 Huidig</th>
+                  <th class="p-5 text-center">Trend (3-jr)</th>
+                  <th class="p-5 pr-8 text-right">Actie</th>
+                </tr>
+              </thead>
+              <tbody id="rate-table-body" class="divide-y divide-primary/5 text-sm font-semibold">
+                <!-- Rows dynamically injected via JS -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="p-4 bg-background-light border-t border-primary/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-custom font-bold">
+            <span id="results-count-text">Toont 8 beroepen</span>
+            <div class="flex items-center gap-2">
+              <span class="inline-block w-3 h-3 bg-accent-gold rounded-full"></span>
+              <span>Alle tarieven betreffen exclusief BTW, op basis van marktuitvragen Rijksoverheid & Decentralen</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Yearly Trend Visual Comparison Cards Section -->
+      <section class="py-16 bg-white border-y border-primary/10 px-6 lg:px-20">
+        <div class="max-w-7xl mx-auto space-y-12">
+          
+          <div class="text-center max-w-3xl mx-auto space-y-3">
+            <span class="text-xs font-black uppercase tracking-widest text-accent-gold">Macro Ontwikkeling</span>
+            <h2 class="text-2xl md:text-4xl font-black text-primary">Gemiddeld Uurtarief per Vakgebied over de Jaren</h2>
+            <p class="text-slate-custom text-sm md:text-base">
+              Vergelijk de gemiddelde indexering en tariefgroei in de publieke sector over de afgelopen 4 jaar.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Trend Card 1: IT & Digitalisering -->
+            <div class="p-8 rounded-3xl bg-background-light border border-primary/10 space-y-6 flex flex-col justify-between hover:shadow-xl transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="p-3 bg-primary/10 text-primary rounded-2xl">
+                    <span class="material-symbols-outlined text-2xl">terminal</span>
+                  </span>
+                  <span class="text-xs font-black text-emerald-600 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">+14.2% sinds 2023</span>
+                </div>
+                <h3 class="text-xl font-black text-primary mb-2">IT & Digitalisering</h3>
+                <p class="text-xs text-slate-custom leading-relaxed mb-6">
+                  Sterke vraag naar Cloud Architects, Cybersecurity & Data Engineers door landelijke digitaliseringsopgaven.
+                </p>
+
+                <!-- Yearly Bar Comparison -->
+                <div class="space-y-3 pt-2">
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-custom">2023</span>
+                      <span class="text-primary">€98 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2 rounded-full overflow-hidden">
+                      <div class="bg-primary/40 h-full rounded-full" style="width: 72%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-custom">2024</span>
+                      <span class="text-primary">€104 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2 rounded-full overflow-hidden">
+                      <div class="bg-primary/60 h-full rounded-full" style="width: 80%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-custom">2025</span>
+                      <span class="text-primary">€109 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2 rounded-full overflow-hidden">
+                      <div class="bg-primary/80 h-full rounded-full" style="width: 88%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-primary font-black">2026</span>
+                      <span class="text-accent-gold font-black">€112 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2.5 rounded-full overflow-hidden">
+                      <div class="bg-accent-gold h-full rounded-full" style="width: 95%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-primary/10 flex items-center justify-between text-xs font-bold">
+                <span class="text-slate-custom">Spreiding: €90 - €155</span>
+                <a href="/opdrachten.html" class="text-primary hover:text-accent-gold transition-colors flex items-center gap-1">
+                  Bekijk IT opdrachten <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Trend Card 2: Juridisch & Bestuur -->
+            <div class="p-8 rounded-3xl bg-background-light border border-primary/10 space-y-6 flex flex-col justify-between hover:shadow-xl transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="p-3 bg-primary/10 text-primary rounded-2xl">
+                    <span class="material-symbols-outlined text-2xl">gavel</span>
+                  </span>
+                  <span class="text-xs font-black text-emerald-600 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">+11.8% sinds 2023</span>
+                </div>
+                <h3 class="text-xl font-black text-primary mb-2">Juridisch & Bestuur</h3>
+                <p class="text-xs text-slate-custom leading-relaxed mb-6">
+                  Aanhoudende vraag naar Senior Juristen Omgevingswet, Aanbestedingsrecht en Vergunningverlening.
+                </p>
+
+                <!-- Yearly Bar Comparison -->
+                <div class="space-y-3 pt-2">
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-custom">2023</span>
+                      <span class="text-primary">€92 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2 rounded-full overflow-hidden">
+                      <div class="bg-primary/40 h-full rounded-full" style="width: 68%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-custom">2024</span>
+                      <span class="text-primary">€97 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2 rounded-full overflow-hidden">
+                      <div class="bg-primary/60 h-full rounded-full" style="width: 75%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-custom">2025</span>
+                      <span class="text-primary">€101 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2 rounded-full overflow-hidden">
+                      <div class="bg-primary/80 h-full rounded-full" style="width: 82%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-primary font-black">2026</span>
+                      <span class="text-accent-gold font-black">€105 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2.5 rounded-full overflow-hidden">
+                      <div class="bg-accent-gold h-full rounded-full" style="width: 88%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-primary/10 flex items-center justify-between text-xs font-bold">
+                <span class="text-slate-custom">Spreiding: €85 - €157</span>
+                <a href="/opdrachten.html" class="text-primary hover:text-accent-gold transition-colors flex items-center gap-1">
+                  Bekijk Juridische opdrachten <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Trend Card 3: Project & Programma Management -->
+            <div class="p-8 rounded-3xl bg-background-light border border-primary/10 space-y-6 flex flex-col justify-between hover:shadow-xl transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="p-3 bg-primary/10 text-primary rounded-2xl">
+                    <span class="material-symbols-outlined text-2xl">account_tree</span>
+                  </span>
+                  <span class="text-xs font-black text-emerald-600 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">+12.5% sinds 2023</span>
+                </div>
+                <h3 class="text-xl font-black text-primary mb-2">Project management</h3>
+                <p class="text-xs text-slate-custom leading-relaxed mb-6">
+                  Hoge waardering voor Transitieleiders en Programmamanagers met ervaring in maatschappelijke infra.
+                </p>
+
+                <!-- Yearly Bar Comparison -->
+                <div class="space-y-3 pt-2">
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-custom">2023</span>
+                      <span class="text-primary">€96 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2 rounded-full overflow-hidden">
+                      <div class="bg-primary/40 h-full rounded-full" style="width: 70%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-custom">2024</span>
+                      <span class="text-primary">€101 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2 rounded-full overflow-hidden">
+                      <div class="bg-primary/60 h-full rounded-full" style="width: 77%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-slate-custom">2025</span>
+                      <span class="text-primary">€105 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2 rounded-full overflow-hidden">
+                      <div class="bg-primary/80 h-full rounded-full" style="width: 84%;"></div>
+                    </div>
+                  </div>
+
+                  <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold">
+                      <span class="text-primary font-black">2026</span>
+                      <span class="text-accent-gold font-black">€108 / uur</span>
+                    </div>
+                    <div class="w-full bg-primary/10 h-2.5 rounded-full overflow-hidden">
+                      <div class="bg-accent-gold h-full rounded-full" style="width: 90%;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-primary/10 flex items-center justify-between text-xs font-bold">
+                <span class="text-slate-custom">Spreiding: €85 - €145</span>
+                <a href="/opdrachten.html" class="text-primary hover:text-accent-gold transition-colors flex items-center gap-1">
+                  Bekijk PM opdrachten <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Personal Advice & CTA Section -->
+      <section class="py-20 px-6 lg:px-20 max-w-7xl mx-auto w-full">
+        <div class="bg-gradient-to-r from-primary via-primary/95 to-primary rounded-3xl p-10 md:p-16 text-white relative overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-10">
+          <div class="space-y-4 max-w-2xl relative z-10">
+            <span class="text-xs font-black uppercase tracking-widest text-accent-gold bg-accent-gold/20 px-3.5 py-1 rounded-full border border-accent-gold/30">
+              Persoonlijk Tariefadvies
+            </span>
+            <h2 class="text-3xl md:text-4xl font-black">
+              Benieuwd naar jouw specifieke marktwaarde?
+            </h2>
+            <p class="text-white/80 text-base leading-relaxed">
+              Elke opdracht en specifieke achtergrond is uniek. Onze adviseurs analyseren graag jouw CV en geven je een eerlijk, onderbouwd advies over jouw ideale uurtarief of Delance-salaris.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto shrink-0 relative z-10">
+            <a href="/match-step1.html" class="w-full sm:w-auto bg-accent-gold hover:bg-white hover:text-primary text-primary font-black px-8 py-4 rounded-xl shadow-xl transition-all text-center flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined">psychology</span>
+              Doe de AI CV Match Check
+            </a>
+            <a href="/detachering.html" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 font-bold px-8 py-4 rounded-xl transition-all text-center">
+              Bereken Delance Salaris
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-10 px-6 lg:px-20 mt-auto">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-400">
+        <p>© 2024 freep.nl. Alle rechten voorbehouden.</p>
+        <div class="flex gap-8">
+          <a class="hover:text-white" href="#">Privacybeleid</a>
+          <a class="hover:text-white" href="#">Algemene Voorwaarden</a>
+          <a class="hover:text-white" href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Script for Filtering & Quick Rate Calculator -->
+    <script>
+      // Mobile Menu Toggle
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = menuButton.querySelector('.material-symbols-outlined');
+
+      menuButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        menuIcon.textContent = isHidden ? 'menu' : 'close';
+      });
+
+      // Rates Dataset (Multi-year historical data)
+      const rolesData = [
+        {
+          id: 1,
+          title: 'Senior Jurist Tunnel- & Infraprojecten',
+          cat: 'juridisch',
+          level: 'Senior',
+          y2023: '€95',
+          y2024: '€102',
+          y2025: '€106',
+          y2026: '€110',
+          range2026: '€95 - €157',
+          trend: '+15.8%',
+          sector: 'gemeenten'
+        },
+        {
+          id: 2,
+          title: 'Lead Digitale Transitie / Cloud Architect',
+          cat: 'it',
+          level: 'Expert',
+          y2023: '€105',
+          y2024: '€112',
+          y2025: '€118',
+          y2026: '€122',
+          range2026: '€105 - €145',
+          trend: '+16.2%',
+          sector: 'rijk'
+        },
+        {
+          id: 3,
+          title: 'Senior Projectleider Omgevingswet',
+          cat: 'pm',
+          level: 'Senior',
+          y2023: '€92',
+          y2024: '€98',
+          y2025: '€102',
+          y2026: '€105',
+          range2026: '€90 - €130',
+          trend: '+14.1%',
+          sector: 'gemeenten'
+        },
+        {
+          id: 4,
+          title: 'UX / Service Designer Publieke Sector',
+          cat: 'it',
+          level: 'Medior/Senior',
+          y2023: '€82',
+          y2024: '€86',
+          y2025: '€90',
+          y2026: '€94',
+          range2026: '€80 - €115',
+          trend: '+14.6%',
+          sector: 'rijk'
+        },
+        {
+          id: 5,
+          title: 'Senior Adviseur Financiën & Control',
+          cat: 'financien',
+          level: 'Senior',
+          y2023: '€88',
+          y2024: '€94',
+          y2025: '€98',
+          y2026: '€102',
+          range2026: '€85 - €135',
+          trend: '+15.9%',
+          sector: 'waterschappen'
+        },
+        {
+          id: 6,
+          title: 'Senior Beleidsadviseur Sociaal Domein',
+          cat: 'beleid',
+          level: 'Senior',
+          y2023: '€80',
+          y2024: '€85',
+          y2025: '€89',
+          y2026: '€92',
+          range2026: '€78 - €110',
+          trend: '+15.0%',
+          sector: 'gemeenten'
+        },
+        {
+          id: 7,
+          title: 'Data Privacy Officer (DPO) / FG',
+          cat: 'it',
+          level: 'Senior',
+          y2023: '€90',
+          y2024: '€96',
+          y2025: '€100',
+          y2026: '€105',
+          range2026: '€90 - €130',
+          trend: '+16.7%',
+          sector: 'rijk'
+        },
+        {
+          id: 8,
+          title: 'Interim HR Business Partner / Transitie',
+          cat: 'hr',
+          level: 'Senior',
+          y2023: '€82',
+          y2024: '€87',
+          y2025: '€90',
+          y2026: '€93',
+          range2026: '€80 - €115',
+          trend: '+13.4%',
+          sector: 'waterschappen'
+        }
+      ];
+
+      const tableBody = document.getElementById('rate-table-body');
+      const searchInput = document.getElementById('role-search');
+      const sectorFilter = document.getElementById('sector-filter');
+      const categoryTabs = document.querySelectorAll('.cat-tab');
+      const resultsCountText = document.getElementById('results-count-text');
+
+      let activeCategory = 'all';
+
+      function renderTable() {
+        const query = searchInput.value.toLowerCase().trim();
+        const selectedSector = sectorFilter.value;
+
+        const filtered = rolesData.filter(item => {
+          const matchesCat = activeCategory === 'all' || item.cat === activeCategory;
+          const matchesQuery = item.title.toLowerCase().includes(query);
+          const matchesSector = selectedSector === 'all' || item.sector === selectedSector;
+          return matchesCat && matchesQuery && matchesSector;
+        });
+
+        tableBody.innerHTML = '';
+
+        if (filtered.length === 0) {
+          tableBody.innerHTML = `
+            <tr>
+              <td colspan="8" class="p-8 text-center text-slate-custom font-medium">
+                Geen beroepen gevonden die voldoen aan je zoekcriteria.
+              </td>
+            </tr>
+          `;
+          resultsCountText.textContent = '0 beroepen gevonden';
+          return;
+        }
+
+        filtered.forEach(item => {
+          const tr = document.createElement('tr');
+          tr.className = 'hover:bg-primary/5 transition-colors';
+          tr.innerHTML = `
+            <td class="p-5 pl-8 font-bold text-primary">
+              ${item.title}
+            </td>
+            <td class="p-5">
+              <span class="text-xs font-bold bg-primary/10 text-primary px-2.5 py-1 rounded-md">
+                ${item.level}
+              </span>
+            </td>
+            <td class="p-5 text-center text-slate-custom font-medium">${item.y2023}</td>
+            <td class="p-5 text-center text-slate-custom font-medium">${item.y2024}</td>
+            <td class="p-5 text-center text-slate-custom font-medium">${item.y2025}</td>
+            <td class="p-5 text-center bg-accent-gold/10 font-black text-primary text-base">${item.y2026}</td>
+            <td class="p-5 text-center">
+              <span class="text-xs font-black text-emerald-600 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                ${item.trend}
+              </span>
+            </td>
+            <td class="p-5 pr-8 text-right">
+              <a href="/opdrachten.html" class="inline-flex items-center gap-1 text-xs font-bold text-primary hover:text-accent-gold transition-colors">
+                <span>Opdrachten</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </td>
+          `;
+          tableBody.appendChild(tr);
+        });
+
+        resultsCountText.textContent = `Toont ${filtered.length} van ${rolesData.length} geanalyseerde beroepen`;
+      }
+
+      // Tab handlers
+      categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          categoryTabs.forEach(t => {
+            t.classList.remove('active', 'bg-primary', 'text-white', 'shadow-md');
+            t.classList.add('bg-white', 'text-slate-custom', 'hover:bg-primary/5', 'border', 'border-primary/10');
+          });
+          tab.classList.remove('bg-white', 'text-slate-custom', 'hover:bg-primary/5', 'border', 'border-primary/10');
+          tab.classList.add('active', 'bg-primary', 'text-white', 'shadow-md');
+          activeCategory = tab.getAttribute('data-cat');
+          renderTable();
+        });
+      });
+
+      searchInput.addEventListener('input', renderTable);
+      sectorFilter.addEventListener('change', renderTable);
+
+      // Initial render
+      renderTable();
+
+      // Quick Rate Calculator Widget Logic
+      const quickRoleSelect = document.getElementById('quick-role-select');
+      const quickExpSelect = document.getElementById('quick-exp-select');
+      const quickRateRange = document.getElementById('quick-rate-range');
+
+      const quickMatrix = {
+        'it-medior': '€85 - €105',
+        'it-senior': '€105 - €135',
+        'it-expert': '€125 - €155',
+        'beleid-medior': '€75 - €90',
+        'beleid-senior': '€90 - €115',
+        'beleid-expert': '€110 - €135',
+        'pm-medior': '€80 - €100',
+        'pm-senior': '€100 - €125',
+        'pm-expert': '€120 - €145',
+        'juridisch-medior': '€85 - €105',
+        'juridisch-senior': '€105 - €135',
+        'juridisch-expert': '€130 - €157',
+        'hr-medior': '€75 - €90',
+        'hr-senior': '€90 - €110',
+        'hr-expert': '€110 - €130',
+        'financien-medior': '€80 - €95',
+        'financien-senior': '€95 - €120',
+        'financien-expert': '€115 - €140',
+      };
+
+      function updateQuickRate() {
+        const key = `${quickRoleSelect.value}-${quickExpSelect.value}`;
+        quickRateRange.textContent = quickMatrix[key] || '€95 - €125';
+      }
+
+      quickRoleSelect.addEventListener('change', updateQuickRate);
+      quickExpSelect.addEventListener('change', updateQuickRate);
+    </script>
+  </body>
+</html>

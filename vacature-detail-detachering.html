@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Senior Jurist Project Tunnel (Detachering) | Freep.nl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1e1b4b',
+              'accent-gold': '#c5a059',
+              'background-light': '#f6f7f8',
+              'slate-custom': '#4a5568',
+            },
+            fontFamily: {
+              sans: ['Public Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light font-sans">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-12 w-auto text-primary"><g fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z"></path></g></svg>
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachten.html">Opdrachten</a>
+          <div class="relative group">
+            <button class="flex items-center gap-1 text-sm font-semibold hover:text-accent-gold transition-colors py-4">
+              Voor Professionals
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </button>
+            <div class="absolute left-0 top-full hidden group-hover:block w-52 z-50">
+              <div class="bg-white border border-primary/10 rounded-xl shadow-xl py-2 mt-0">
+                <a href="/professionals.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Waarom Freep</a>
+                <a href="/detachering.html" class="block px-4 py-2 text-sm font-semibold text-accent-gold bg-primary/5">Detachering</a>
+                <a href="/delance.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Delance Model</a>
+                <a href="/freelance.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Freelance</a>
+                <a href="/tarieven.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Tarief Benchmark</a>
+              </div>
+            </div>
+          </div>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/organisaties.html">Voor Organisaties</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachtgevers.html">Opdrachtgevers</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/kennisbank.html">Kennisbank</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button class="hidden sm:block text-sm font-bold text-primary px-4">Contact</button>
+          <a href="/login.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden flex items-center justify-center p-2 text-primary">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-[73px] left-0 right-0 bg-white border-b border-primary/10 z-40 shadow-xl overflow-y-auto max-h-[calc(100vh-73px)]">
+      <nav class="flex flex-col p-6 gap-4">
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/opdrachten.html">Opdrachten</a>
+        <div class="flex flex-col border-b border-primary/5">
+          <span class="text-lg font-bold py-2">Voor Professionals</span>
+          <div class="flex flex-col gap-2 pl-4 pb-4">
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/professionals.html">Waarom Freep</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold text-accent-gold" href="/detachering.html">Detachering</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/delance.html">Delance Model</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/freelance.html">Freelance</a>
+          </div>
+        </div>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/organisaties.html">Voor Organisaties</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/opdrachtgevers.html">Opdrachtgevers</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/kennisbank.html">Kennisbank</a>
+        <div class="pt-4 flex flex-col gap-4">
+          <button class="text-left text-lg font-bold text-primary py-2">Contact</button>
+          <a href="/login.html" class="bg-primary text-white px-6 py-4 rounded-xl text-center font-bold shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Variant Switcher Banner -->
+    <div class="bg-amber-500/10 border-b border-amber-500/20 py-3 px-6 lg:px-20 text-xs font-bold text-primary">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-amber-700 text-base">verified</span>
+          <span>Opdracht Type: <strong class="text-amber-800 uppercase tracking-wider bg-amber-200/60 px-2 py-0.5 rounded">Detachering (Delance Model)</strong></span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-slate-custom hidden md:inline">Vergelijk met de freelance variant:</span>
+          <a href="/vacature-detail-freelance.html" class="bg-white border border-primary/20 hover:border-accent-gold text-primary px-3 py-1.5 rounded-lg hover:text-accent-gold transition-all shadow-sm flex items-center gap-1.5 font-bold">
+            <span>Bekijk als Freelance / ZZP</span>
+            <span class="material-symbols-outlined text-sm">swap_horiz</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="relative w-full min-h-[420px] flex flex-col items-center justify-center text-left px-6 lg:px-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <div class="absolute inset-0 bg-primary/85 z-10"></div>
+          <img alt="Kantoor Zuidas" class="w-full h-full object-cover blur-sm" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920" referrerPolicy="no-referrer"/>
+        </div>
+        <div class="relative z-20 max-w-7xl mx-auto w-full py-16">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <div class="space-y-6">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="text-[10px] font-black uppercase tracking-[0.2em] text-accent-gold bg-accent-gold/20 px-3.5 py-1.5 rounded-full border border-accent-gold/30 flex items-center gap-1">
+                  <span class="material-symbols-outlined text-xs">shield</span> Detachering (Delance)
+                </span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-300 bg-emerald-500/20 px-3 py-1 rounded-full border border-emerald-500/30">
+                  100% Wet DBA Compliant
+                </span>
+                <span class="text-white/60 text-xs font-bold">Ref: 160088</span>
+              </div>
+              <h1 class="text-white text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight">Senior Jurist Project Tunnel</h1>
+              <p class="text-white/80 font-semibold text-lg">Programma Zuidasdok — Gemeente Amsterdam</p>
+              <div class="flex flex-wrap items-center gap-6 text-white/80 text-sm font-bold">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-accent-gold">location_on</span> Amsterdam
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-accent-gold">schedule</span> 36 uur per week
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-accent-gold">payments</span> Vergoeding t.o.v. €157 p.u. budget
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="#delance-calc-section" class="bg-accent-gold hover:bg-amber-400 text-primary px-8 py-4 rounded-xl font-black text-base shadow-xl shadow-accent-gold/20 transition-all hover:scale-105 inline-flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-primary">calculate</span>
+                Bereken Delance Salaris
+              </a>
+              <a href="/solliciteren.html" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-base shadow-xl transition-all hover:scale-105 inline-block text-center">
+                Solliciteer via Detachering
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Content & Sidebar -->
+      <section class="max-w-7xl mx-auto px-6 lg:px-20 py-16">
+        <div class="flex flex-col lg:flex-row gap-12">
+          <!-- Sidebar -->
+          <aside class="w-full lg:w-1/3 space-y-10">
+            
+            <!-- COMPACT DELANCE VERGOEDING CALCULATOR -->
+            <div id="delance-calc-section" class="bg-gradient-to-br from-white to-amber-50/30 p-6 sm:p-8 rounded-3xl border-2 border-accent-gold/40 shadow-xl space-y-6 relative overflow-hidden">
+              <div class="absolute -right-10 -top-10 w-28 h-28 bg-accent-gold/15 rounded-full blur-xl pointer-events-none"></div>
+              
+              <div class="flex items-center justify-between border-b border-primary/10 pb-4">
+                <div class="flex items-center gap-3">
+                  <div class="p-3 bg-accent-gold/20 text-accent-gold rounded-2xl border border-accent-gold/30 shrink-0">
+                    <span class="material-symbols-outlined text-2xl">calculate</span>
+                  </div>
+                  <div>
+                    <span class="text-[10px] font-black text-accent-gold uppercase tracking-wider block">Delance Model</span>
+                    <h3 class="text-lg font-black text-primary">Vergoeding Calculator</h3>
+                  </div>
+                </div>
+                <span class="text-[10px] font-black bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full border border-emerald-200">Detachering</span>
+              </div>
+
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Vul het gefactureerde uurtarief en het aantal uren in om je verwachte maandelijks netto uitbetaling te berekenen.
+              </p>
+
+              <!-- Interactive Controls -->
+              <div class="space-y-4 bg-white p-4 rounded-2xl border border-primary/10 shadow-sm">
+                <div>
+                  <div class="flex justify-between items-center mb-1.5">
+                    <label for="detail-rate-input" class="text-xs font-bold text-primary">Uurtarief opdrachtgever (€)</label>
+                    <span id="detail-rate-badge" class="text-xs font-black text-accent-gold bg-accent-gold/10 px-2.5 py-0.5 rounded-md">€125 / uur</span>
+                  </div>
+                  <input type="number" id="detail-rate-input" value="125" min="40" max="250" class="w-full p-3 rounded-xl border border-slate-300 bg-slate-50 font-bold text-primary text-base focus:outline-none focus:ring-2 focus:ring-accent-gold focus:bg-white transition-all">
+                </div>
+
+                <div>
+                  <div class="flex justify-between items-center mb-1.5">
+                    <label for="detail-hours-input" class="text-xs font-bold text-primary">Uren per week</label>
+                    <span id="detail-hours-badge" class="text-xs font-black text-primary bg-primary/10 px-2.5 py-0.5 rounded-md">36 uur</span>
+                  </div>
+                  <input type="number" id="detail-hours-input" value="36" min="8" max="40" class="w-full p-3 rounded-xl border border-slate-300 bg-slate-50 font-bold text-primary text-base focus:outline-none focus:ring-2 focus:ring-accent-gold focus:bg-white transition-all">
+                </div>
+              </div>
+
+              <!-- Calculation Output Cards -->
+              <div class="bg-primary/5 rounded-2xl p-4 border border-primary/10 space-y-2.5">
+                <div class="flex justify-between items-center text-xs text-slate-600">
+                  <span>Beschikbaar budget (gem. 156 u/mnd):</span>
+                  <span id="detail-calc-budget" class="font-bold text-primary">€ 19.500,00</span>
+                </div>
+                <div class="flex justify-between items-center text-xs text-slate-600">
+                  <span>Totale kosten (~16.9%):</span>
+                  <span id="detail-calc-costs" class="font-bold text-rose-600">- € 3.296,48</span>
+                </div>
+                <div class="flex justify-between items-center text-xs text-slate-600">
+                  <span>Te verlonen bruto:</span>
+                  <span id="detail-calc-gross" class="font-bold text-primary">€ 16.203,52</span>
+                </div>
+                <div class="pt-3 border-t border-primary/15 flex justify-between items-center">
+                  <div>
+                    <span class="block text-[10px] font-black uppercase tracking-wider text-accent-gold">Nettoloon Indicatie</span>
+                    <span id="detail-calc-net" class="text-2xl font-black text-primary">€ 9.994,33</span>
+                  </div>
+                  <span class="text-[10px] font-black bg-accent-gold text-primary px-3 py-1 rounded-lg shadow-sm">per maand</span>
+                </div>
+              </div>
+
+              <div class="space-y-3 pt-1">
+                <a href="/solliciteren.html" class="w-full bg-accent-gold hover:bg-amber-400 text-primary py-3.5 rounded-xl font-black text-xs transition-all flex items-center justify-center gap-2 shadow-lg shadow-accent-gold/20">
+                  <span>Solliciteer via Delance</span>
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+                <a href="/delance.html#calc" class="block text-center text-xs text-slate-custom hover:text-accent-gold font-bold underline transition-colors">
+                  Lees meer in de uitgebreide Delance toelichting
+                </a>
+              </div>
+            </div>
+
+            <!-- AI CV Match Callout Widget -->
+            <div class="bg-gradient-to-br from-primary via-primary/95 to-primary p-8 rounded-3xl text-white space-y-6 relative overflow-hidden shadow-xl border border-accent-gold/30">
+              <div class="absolute -right-8 -top-8 w-32 h-32 bg-accent-gold/20 rounded-full blur-2xl pointer-events-none"></div>
+              <div class="flex items-center gap-3">
+                <span class="p-3 bg-accent-gold/20 rounded-2xl border border-accent-gold/40 text-accent-gold shrink-0">
+                  <span class="material-symbols-outlined text-2xl">psychology</span>
+                </span>
+                <div>
+                  <span class="text-[10px] font-black text-accent-gold uppercase tracking-wider block">AI Skill Matcher</span>
+                  <h3 class="text-lg font-black text-white">Pas jij op deze vacature?</h3>
+                </div>
+              </div>
+              <p class="text-white/80 text-sm leading-relaxed">
+                Upload je CV en zie binnen 10 seconden hoe goed je ervaring aansluit op deze detacheringsrol.
+              </p>
+              <a href="/match-step1.html" class="w-full bg-accent-gold hover:bg-white hover:text-primary text-primary px-6 py-3.5 rounded-xl font-black text-sm transition-all flex items-center justify-center gap-2 shadow-lg group">
+                <span>Start CV Match-check</span>
+                <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+              </a>
+            </div>
+
+            <!-- Over de Organisatie -->
+            <div class="bg-white p-8 rounded-3xl border border-primary/5 shadow-sm space-y-6">
+              <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-1 bg-accent-gold rounded-full"></span>
+                  <h3 class="text-xl font-black text-primary">Gemeente Amsterdam</h3>
+                </div>
+                <p class="text-slate-custom text-sm leading-relaxed">
+                  Programma Zuidasdok is één van de grootste en meest complexe infrastructuurprojecten van Nederland.
+                </p>
+              </div>
+
+              <div class="space-y-3 pt-3 border-t border-primary/5">
+                <h4 class="text-xs font-black uppercase tracking-widest text-accent-gold">Zekerheden via Delance</h4>
+                <ul class="space-y-2.5 text-xs font-bold text-primary">
+                  <li class="flex items-center gap-2.5">
+                    <span class="material-symbols-outlined text-emerald-600 text-lg">check_circle</span> 100% Wet DBA Compliant
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <span class="material-symbols-outlined text-emerald-600 text-lg">check_circle</span> Tot 85% van het uurtarief vergoeding
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <span class="material-symbols-outlined text-emerald-600 text-lg">check_circle</span> Inclusief ziekte- & pensioendekking
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Main Content -->
+          <div class="flex-1 space-y-12">
+            <!-- De Uitdaging -->
+            <div class="space-y-6">
+              <div class="flex items-center justify-between border-b border-primary/10 pb-4">
+                <h2 class="text-3xl font-black text-primary">De Uitdaging</h2>
+                <span class="text-xs font-black text-accent-gold uppercase tracking-wider bg-accent-gold/10 px-3 py-1.5 rounded-full">
+                  Programma Zuidasdok
+                </span>
+              </div>
+              <div class="space-y-4 text-slate-custom leading-relaxed">
+                <p>
+                  Werk aan één van de meest complexe en uitdagende infraprojecten van Nederland, waar jouw juridische expertise direct impact heeft op cruciale besluitvorming en contractvorming.
+                </p>
+                <p>
+                  Als Senior Jurist Project Tunnel adviseer je over contracten, risico's en de overgang van bouwteamfase naar realisatie. Je zorgt voor een consistente juridische lijn en legt de verbinding tussen aanbestedingsrecht en de uitvoeringspraktijk.
+                </p>
+              </div>
+            </div>
+
+            <!-- Wat ga je doen? -->
+            <div class="space-y-6">
+              <h2 class="text-3xl font-black text-primary">Werkzaamheden</h2>
+              <div class="grid grid-cols-1 gap-4">
+                <div class="flex items-start gap-4 bg-white p-5 rounded-2xl border border-primary/5 shadow-sm">
+                  <div class="w-8 h-8 rounded-full bg-accent-gold/20 text-accent-gold font-black text-sm flex items-center justify-center shrink-0 mt-0.5">1</div>
+                  <p class="text-slate-custom text-sm leading-relaxed">Fungeren als juridisch aanspreekpunt voor het tunnelproject en adviseren over contracten, risico's en uitvoering.</p>
+                </div>
+                <div class="flex items-start gap-4 bg-white p-5 rounded-2xl border border-primary/5 shadow-sm">
+                  <div class="w-8 h-8 rounded-full bg-accent-gold/20 text-accent-gold font-black text-sm flex items-center justify-center shrink-0 mt-0.5">2</div>
+                  <p class="text-slate-custom text-sm leading-relaxed">Opstellen en doorontwikkelen van de realisatieovereenkomst bij de overgang van bouwteam naar realisatie.</p>
+                </div>
+                <div class="flex items-start gap-4 bg-white p-5 rounded-2xl border border-primary/5 shadow-sm">
+                  <div class="w-8 h-8 rounded-full bg-accent-gold/20 text-accent-gold font-black text-sm flex items-center justify-center shrink-0 mt-0.5">3</div>
+                  <p class="text-slate-custom text-sm leading-relaxed">Bewaken van een consistente juridische lijn in contractdocumenten, rapportages en correspondentie.</p>
+                </div>
+                <div class="flex items-start gap-4 bg-white p-5 rounded-2xl border border-primary/5 shadow-sm">
+                  <div class="w-8 h-8 rounded-full bg-accent-gold/20 text-accent-gold font-black text-sm flex items-center justify-center shrink-0 mt-0.5">4</div>
+                  <p class="text-slate-custom text-sm leading-relaxed">Samenwerken met het contractteam en externe partijen (zoals de Landsadvocaat) bij complexe dossiers.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wat breng je mee? -->
+            <div class="space-y-6">
+              <h2 class="text-3xl font-black text-primary">Functie-eisen</h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-primary/5 shadow-sm flex gap-4">
+                  <span class="material-symbols-outlined text-accent-gold text-3xl">gavel</span>
+                  <div>
+                    <h4 class="font-black text-primary mb-1">Opleiding</h4>
+                    <p class="text-slate-custom text-sm">WO Nederlands Recht / Aanbestedingsrecht</p>
+                  </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-primary/5 shadow-sm flex gap-4">
+                  <span class="material-symbols-outlined text-accent-gold text-3xl">history_edu</span>
+                  <div>
+                    <h4 class="font-black text-primary mb-1">Ervaring</h4>
+                    <p class="text-slate-custom text-sm">Minimaal 7 jaar ervaring met grote infra- & tunnelprojecten</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Waarom Delance bij deze Opdracht? -->
+            <div class="bg-primary text-white p-8 md:p-10 rounded-3xl space-y-6 relative overflow-hidden shadow-xl border border-accent-gold/30">
+              <div class="flex items-center gap-3">
+                <span class="p-3 bg-accent-gold/20 rounded-2xl text-accent-gold border border-accent-gold/30">
+                  <span class="material-symbols-outlined text-3xl">verified_user</span>
+                </span>
+                <div>
+                  <span class="text-xs font-black uppercase text-accent-gold tracking-widest">Delance Constructie</span>
+                  <h3 class="text-2xl font-black">Waarom solliciteren via Freep Detachering?</h3>
+                </div>
+              </div>
+              <p class="text-white/85 text-sm leading-relaxed">
+                Veel gemeenten eisen loondienstverband vanwege de strakke handhaving van de Wet DBA. Met het Delance-model hoef je geen concessies te doen aan je inkomsten:
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 text-xs">
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-2xl border border-white/10 space-y-1">
+                  <span class="font-black text-accent-gold text-sm block">Tot 85% Vergoeding</span>
+                  <span class="text-white/80">Je vergoeding groeit direct mee met het gefactureerde uurtarief.</span>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm p-4 rounded-2xl border border-white/10 space-y-1">
+                  <span class="font-black text-accent-gold text-sm block">Loondienst Zekerheid</span>
+                  <span class="text-white/80">Pensioenopbouw bij ASR, dekking bij ziekte en administratieve rust.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Zo werkt onze dienstverlening voor Detachering -->
+            <div id="dienstverlening-box" class="bg-white p-8 md:p-12 rounded-[2.5rem] border border-primary/5 shadow-sm space-y-10">
+              <div class="space-y-2">
+                <span class="text-accent-gold font-black uppercase tracking-widest text-xs">Transparante stappen</span>
+                <h3 class="text-3xl font-black text-primary">Zo werkt Detachering via Freep</h3>
+              </div>
+              
+              <div class="space-y-10 relative before:absolute before:top-4 before:bottom-4 before:left-[15px] before:w-0.5 before:bg-primary/10">
+                <!-- Step 1 -->
+                <div class="flex gap-6 relative">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white font-black text-sm flex items-center justify-center relative z-10">1</div>
+                  <div class="space-y-2">
+                    <h4 class="font-black text-lg text-primary tracking-wide uppercase">Inschrijving & CV Match</h4>
+                    <p class="text-slate-custom text-sm leading-relaxed">
+                      We beoordelen je CV en voeren een transparante salaris- & tariefberekening uit via onze Delance tool.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex gap-6 relative">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white font-black text-sm flex items-center justify-center relative z-10">2</div>
+                  <div class="space-y-2">
+                    <h4 class="font-black text-lg text-primary tracking-wide uppercase">Aanbieding bij Opdrachtgever</h4>
+                    <p class="text-slate-custom text-sm leading-relaxed">
+                      Wij stellen een sterk aanbiedingsdossier op en verzorgen de offertes voor de gemeente Amsterdam.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex gap-6 relative">
+                  <div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white font-black text-sm flex items-center justify-center relative z-10">3</div>
+                  <div class="space-y-2">
+                    <h4 class="font-black text-lg text-primary tracking-wide uppercase">Starten via Delance Overeenkomst</h4>
+                    <p class="text-slate-custom text-sm leading-relaxed">
+                      Je start zorgeloos. Freep regelt je verloning, pensioen en sociale premies terwijl jij tot 85% van je gegenereerde omzet overhoudt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-background-light border-2 border-dashed border-primary/10 rounded-3xl p-10 text-center space-y-6">
+              <div class="space-y-2">
+                <h3 class="text-2xl font-black text-primary">Interesse in deze detacheringsopdracht?</h3>
+                <p class="text-slate-custom text-sm max-w-md mx-auto">Reageer direct of neem contact met ons op als je vragen hebt over de Delance vergoeding.</p>
+              </div>
+              <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="/solliciteren.html" class="w-full sm:w-auto bg-accent-gold text-primary font-black px-10 py-4 rounded-xl hover:bg-amber-400 transition-all">Solliciteer Nu</a>
+                <a href="/delance.html" class="w-full sm:w-auto bg-white border border-primary/20 text-primary font-bold px-8 py-4 rounded-xl hover:bg-primary/5 transition-all">Bekijk Delance Model</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-20 border-t border-white/10">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+        <div class="space-y-6">
+          <p class="text-slate-300 leading-relaxed text-sm">
+            De publieke sector naar een hoger niveau tillen door middel van deskundig advies en innovatieve digitale oplossingen.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Professionals</h4>
+          <ul class="space-y-4 text-slate-300 text-sm">
+            <li><a class="hover:text-white" href="/opdrachten.html">Opdrachten Zoeken</a></li>
+            <li><a class="hover:text-white" href="/detachering.html">Detachering Overzicht</a></li>
+            <li><a class="text-accent-gold font-bold hover:text-white" href="/delance.html">Delance Model</a></li>
+            <li><a class="hover:text-white" href="/freelance.html">Freelance (ZZP)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Organisaties</h4>
+          <ul class="space-y-4 text-slate-300 text-sm">
+            <li><a class="hover:text-white" href="/organisaties.html">Plaats een Opdracht</a></li>
+            <li><a class="hover:text-white" href="/opdrachtgevers.html">Opdrachtgevers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Contact</h4>
+          <p class="text-sm text-slate-300">Amsterdam, Nederland<br>info@freep.nl<br>+31 (0) 20 123 4567</p>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto pt-10 border-t border-white/10 text-center text-sm text-slate-400">
+        <p>© 2026 Freep.nl. Alle rechten voorbehouden.</p>
+      </div>
+    </footer>
+
+    <!-- Interactive Delance Compact Calculator JS -->
+    <script>
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      const rateInput = document.getElementById('detail-rate-input');
+      const hoursInput = document.getElementById('detail-hours-input');
+      const rateBadge = document.getElementById('detail-rate-badge');
+      const hoursBadge = document.getElementById('detail-hours-badge');
+      const budgetDisplay = document.getElementById('detail-calc-budget');
+      const costsDisplay = document.getElementById('detail-calc-costs');
+      const grossDisplay = document.getElementById('detail-calc-gross');
+      const netDisplay = document.getElementById('detail-calc-net');
+
+      function formatEur(amount) {
+        return '€ ' + amount.toLocaleString('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+
+      function updateCalculator() {
+        const rate = parseFloat(rateInput.value) || 0;
+        const hours = parseFloat(hoursInput.value) || 0;
+
+        if (rateBadge) rateBadge.textContent = '€' + rate + ' / uur';
+        if (hoursBadge) hoursBadge.textContent = hours + ' uur';
+
+        const monthlyHours = hours * 4.3333;
+        const budget = monthlyHours * rate;
+        const costs = budget * 0.16905;
+        const gross = budget - costs;
+        const net = gross * 0.6168;
+
+        if (budgetDisplay) budgetDisplay.textContent = formatEur(budget);
+        if (costsDisplay) costsDisplay.textContent = '- ' + formatEur(costs);
+        if (grossDisplay) grossDisplay.textContent = formatEur(gross);
+        if (netDisplay) netDisplay.textContent = formatEur(net);
+      }
+
+      if (rateInput && hoursInput) {
+        rateInput.addEventListener('input', updateCalculator);
+        hoursInput.addEventListener('input', updateCalculator);
+        updateCalculator();
+      }
+    </script>
+  </body>
+</html>

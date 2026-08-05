@@ -1,0 +1,1166 @@
+<!doctype html>
+<html lang="nl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delance Model | Freep.nl - Ondernemen met de zekerheid van loondienst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1e1b4b',
+              'accent-gold': '#c5a059',
+              'background-light': '#f8fafc',
+              'slate-custom': '#475569',
+            },
+            fontFamily: {
+              sans: ['Public Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light text-slate-800 font-sans antialiased selection:bg-accent-gold/30 selection:text-primary">
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 px-6 lg:px-20 py-4 shadow-sm">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 group">
+          <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-12 w-auto text-primary group-hover:text-accent-gold transition-colors"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z"></path></g></g></svg>
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a class="text-sm font-semibold text-slate-700 hover:text-accent-gold transition-colors" href="/opdrachten.html">Opdrachten</a>
+          <div class="relative group">
+            <button class="flex items-center gap-1 text-sm font-semibold text-accent-gold py-2">
+              Voor Professionals
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </button>
+            <div class="absolute left-0 top-full hidden group-hover:block w-56 z-50 pt-2">
+              <div class="bg-white border border-slate-200 rounded-2xl shadow-xl py-2">
+                <a href="/professionals.html" class="block px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-accent-gold transition-colors">Waarom Freep</a>
+                <a href="/detachering.html" class="block px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-accent-gold transition-colors">Detachering</a>
+                <a href="/delance.html" class="block px-4 py-2.5 text-sm font-bold text-accent-gold bg-accent-gold/10">Delance Model</a>
+                <a href="/freelance.html" class="block px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-accent-gold transition-colors">Freelance</a>
+                <a href="/tarieven.html" class="block px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:text-accent-gold transition-colors">Tarief Benchmark</a>
+              </div>
+            </div>
+          </div>
+          <a class="text-sm font-semibold text-slate-700 hover:text-accent-gold transition-colors" href="/organisaties.html">Voor Organisaties</a>
+          <a class="text-sm font-semibold text-slate-700 hover:text-accent-gold transition-colors" href="/opdrachtgevers.html">Opdrachtgevers</a>
+          <a class="text-sm font-semibold text-slate-700 hover:text-accent-gold transition-colors" href="#">Kennisbank</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="tel:0851304283" class="hidden sm:flex items-center gap-1.5 text-sm font-bold text-primary hover:text-accent-gold transition-colors">
+            <span class="material-symbols-outlined text-accent-gold text-lg">call</span>
+            085 130 4283
+          </a>
+          <a href="/login.html" class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-xl text-sm font-bold transition-all shadow-md shadow-primary/10">
+            Inloggen
+          </a>
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden flex items-center justify-center p-2 text-primary">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-[73px] left-0 right-0 bg-white border-b border-slate-200 z-40 shadow-2xl overflow-y-auto max-h-[calc(100vh-73px)]">
+      <nav class="flex flex-col p-6 gap-4">
+        <a class="text-lg font-bold py-2 border-b border-slate-100" href="/opdrachten.html">Opdrachten</a>
+        <div class="flex flex-col border-b border-slate-100">
+          <span class="text-lg font-bold py-2 text-accent-gold">Voor Professionals</span>
+          <div class="flex flex-col gap-2 pl-4 pb-4">
+            <a class="text-base font-semibold py-1 text-slate-700" href="/professionals.html">Waarom Freep</a>
+            <a class="text-base font-semibold py-1 text-slate-700" href="/detachering.html">Detachering</a>
+            <a class="text-base font-bold py-1 text-accent-gold" href="/delance.html">Delance Model</a>
+            <a class="text-base font-semibold py-1 text-slate-700" href="/freelance.html">Freelance</a>
+            <a class="text-base font-semibold py-1 text-slate-700" href="/tarieven.html">Tarief Benchmark</a>
+          </div>
+        </div>
+        <a class="text-lg font-bold py-2 border-b border-slate-100" href="/organisaties.html">Voor Organisaties</a>
+        <a class="text-lg font-bold py-2 border-b border-slate-100" href="/opdrachtgevers.html">Opdrachtgevers</a>
+        <a class="text-lg font-bold py-2 border-b border-slate-100" href="#">Kennisbank</a>
+        <div class="pt-4 flex flex-col gap-3">
+          <a href="tel:0851304283" class="text-left text-base font-bold text-primary flex items-center gap-2 py-2">
+            <span class="material-symbols-outlined text-accent-gold">call</span> 085 130 4283
+          </a>
+          <a href="/login.html" class="bg-primary text-white px-6 py-3.5 rounded-xl text-center font-bold shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="relative w-full bg-primary overflow-hidden min-h-[85vh] flex items-center px-6 lg:px-20 py-16 lg:py-24">
+        <div class="absolute inset-0 z-0">
+          <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/40 z-10"></div>
+          <img alt="Martine de Vries - Interim Strategisch Adviseur" class="w-full h-full object-cover object-[center_top] opacity-40 mix-blend-luminosity" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1920" referrerPolicy="no-referrer"/>
+        </div>
+        
+        <div class="relative z-20 max-w-7xl mx-auto w-full">
+          <div class="max-w-3xl space-y-8">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 bg-accent-gold/20 backdrop-blur-md border border-accent-gold/40 px-4 py-2 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-accent-gold animate-pulse"></span>
+              <span class="text-accent-gold text-xs font-black uppercase tracking-widest">Delance Detachering</span>
+            </div>
+            
+            <!-- Headline -->
+            <h1 class="text-white text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.08] tracking-tight">
+              Ondernemen met de <br/>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-gold via-amber-200 to-accent-gold">zekerheid van</span> <br/>
+              loondienst
+            </h1>
+            
+            <!-- Quote Section -->
+            <div class="bg-white/10 backdrop-blur-md border-l-4 border-accent-gold p-6 rounded-r-2xl space-y-3 max-w-2xl">
+              <p class="text-white/95 text-base sm:text-lg font-medium italic leading-relaxed">
+                "Dankzij de Delance-overeenkomst van Freep verdien ik tot 85% van mijn uurtarief als bruto salaris, met alle sociale zekerheid die ik als zzp'er miste. Geen administratie meer, wel de vrijheid."
+              </p>
+              <div>
+                <p class="text-white font-bold text-base">Martine de Vries</p>
+                <p class="text-accent-gold font-semibold text-xs uppercase tracking-wider">Interim Strategisch Adviseur (via Delance)</p>
+              </div>
+            </div>
+            
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row items-center gap-4 pt-4">
+              <a href="/opdrachten.html" class="w-full sm:w-auto bg-accent-gold hover:bg-amber-400 text-primary px-8 py-4 rounded-xl font-extrabold text-base transition-all shadow-xl shadow-accent-gold/20 text-center flex items-center justify-center gap-2">
+                <span>Bekijk opdrachten</span>
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </a>
+              <a href="#calc" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 text-white px-8 py-4 rounded-xl font-bold text-base transition-all text-center flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-accent-gold text-lg">calculate</span>
+                <span>Bereken je salaris</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 1: DETACHERING & DBA COMPLIANCE INTRO -->
+      <section class="py-20 px-6 lg:px-20 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <span class="text-accent-gold font-extrabold uppercase tracking-widest text-xs">Ondernemen & Zekerheid</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-primary leading-tight">
+              De voordelen van het Delance-model bij Freep
+            </h2>
+            <p class="text-slate-custom text-base sm:text-lg leading-relaxed">
+              Het Delance Model van Freep.nl is dé slimme oplossing voor ervaren interim professionals die graag als zelfstandige werken, maar binnen de wet- en regelgeving willen blijven.
+            </p>
+            <div class="pt-2 flex flex-wrap gap-4 text-sm font-semibold text-primary">
+              <div class="flex items-center gap-2 bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200">
+                <span class="material-symbols-outlined text-emerald-600">check_circle</span>
+                <span>Tot 85% vergoeding</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200">
+                <span class="material-symbols-outlined text-emerald-600">check_circle</span>
+                <span>Pensioen & Ziektegedekt</span>
+              </div>
+              <div class="flex items-center gap-2 bg-slate-100 px-4 py-2.5 rounded-xl border border-slate-200">
+                <span class="material-symbols-outlined text-emerald-600">check_circle</span>
+                <span>Geen administratiezorgen</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight DBA Card -->
+          <div class="lg:col-span-5">
+            <div class="bg-primary text-white rounded-3xl p-8 sm:p-10 shadow-2xl relative overflow-hidden space-y-6 border border-primary/20">
+              <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-accent-gold/10 rounded-full blur-2xl"></div>
+              <div class="flex items-center gap-4">
+                <div class="w-14 h-14 bg-accent-gold/20 rounded-2xl flex items-center justify-center text-accent-gold border border-accent-gold/30">
+                  <span class="material-symbols-outlined text-3xl">verified_user</span>
+                </div>
+                <div>
+                  <h3 class="font-extrabold text-white text-xl">100% DBA Compliant</h3>
+                  <p class="text-accent-gold text-xs font-bold uppercase tracking-wider">Zorgeloos werken bij de overheid</p>
+                </div>
+              </div>
+              <p class="text-white/90 text-sm sm:text-base leading-relaxed">
+                Met Freep Delance behoud je je ondernemende vrijheid en hoge verdiensten, terwijl je volledig gedekt bent op het gebied van sociale zekerheid, ziekte en pensioen.
+              </p>
+              <div class="pt-2 border-t border-white/10 flex items-center justify-between text-xs text-white/70">
+                <span>Direct inzetbaar bij overheidsorganisaties</span>
+                <span class="font-bold text-accent-gold">Wet DBA proof</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: USP / ONTDEK DE VOORDELEN -->
+      <section class="py-20 px-6 lg:px-20 bg-slate-50 border-y border-slate-200/80" id="usp">
+        <div class="max-w-7xl mx-auto space-y-16">
+          <div class="text-center max-w-3xl mx-auto space-y-3">
+            <span class="text-accent-gold font-bold uppercase tracking-widest text-xs">Freep Detachering</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-primary">Ontdek de voordelen van Delance</h2>
+            <p class="text-slate-custom text-base sm:text-lg">
+              Met Freep Delance kies jij de opdrachtgever en het tarief waarvoor je wilt werken.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- USP 1 -->
+            <div class="group bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-accent-gold/40 transition-all duration-300 space-y-4">
+              <div class="w-14 h-14 bg-primary/5 group-hover:bg-accent-gold/15 text-accent-gold rounded-2xl flex items-center justify-center transition-colors">
+                <span class="material-symbols-outlined text-3xl">gavel</span>
+              </div>
+              <h3 class="text-xl font-bold text-primary group-hover:text-accent-gold transition-colors">Altijd compliant met de Wet DBA</h3>
+              <p class="text-slate-custom text-sm leading-relaxed">
+                Steeds meer opdrachtgevers vragen om opdrachten in loondienst. Met Delance Detachering ben jij volledig compliant, zonder dat je vrijheid als ondernemer verliest.
+              </p>
+            </div>
+
+            <!-- USP 2 -->
+            <div class="group bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-accent-gold/40 transition-all duration-300 space-y-4">
+              <div class="w-14 h-14 bg-primary/5 group-hover:bg-accent-gold/15 text-accent-gold rounded-2xl flex items-center justify-center transition-colors">
+                <span class="material-symbols-outlined text-3xl">payments</span>
+              </div>
+              <h3 class="text-xl font-bold text-primary group-hover:text-accent-gold transition-colors">Hoog netto inkomen door maandelijkse bonus</h3>
+              <p class="text-slate-custom text-sm leading-relaxed">
+                Naast je basissalaris ontvang je maandelijks een hoge bonus op basis van je omzet. Zo verdien je als ondernemende professional een hoog netto inkomen.
+              </p>
+            </div>
+
+            <!-- USP 3 -->
+            <div class="group bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-accent-gold/40 transition-all duration-300 space-y-4">
+              <div class="w-14 h-14 bg-primary/5 group-hover:bg-accent-gold/15 text-accent-gold rounded-2xl flex items-center justify-center transition-colors">
+                <span class="material-symbols-outlined text-3xl">health_and_safety</span>
+              </div>
+              <h3 class="text-xl font-bold text-primary group-hover:text-accent-gold transition-colors">Dekking voor risico’s van ziekte en arbeidsongeschiktheid</h3>
+              <p class="text-slate-custom text-sm leading-relaxed">
+                Met onze Delance-overeenkomst ben je zeker dat je bij langdurige ziekte of arbeidsongeschiktheid gewoon krijgt doorbetaald.
+              </p>
+            </div>
+
+            <!-- USP 4 -->
+            <div class="group bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-accent-gold/40 transition-all duration-300 space-y-4">
+              <div class="w-14 h-14 bg-primary/5 group-hover:bg-accent-gold/15 text-accent-gold rounded-2xl flex items-center justify-center transition-colors">
+                <span class="material-symbols-outlined text-3xl">account_balance</span>
+              </div>
+              <h3 class="text-xl font-bold text-primary group-hover:text-accent-gold transition-colors">Opbouw pensioen</h3>
+              <p class="text-slate-custom text-sm leading-relaxed">
+                Via onze Delance-overeenkomst bouw je pensioenrechten op bij het het DoenPensioenfonds van ASR.
+              </p>
+            </div>
+
+            <!-- USP 5 -->
+            <div class="group bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-accent-gold/40 transition-all duration-300 space-y-4">
+              <div class="w-14 h-14 bg-primary/5 group-hover:bg-accent-gold/15 text-accent-gold rounded-2xl flex items-center justify-center transition-colors">
+                <span class="material-symbols-outlined text-3xl">work_history</span>
+              </div>
+              <h3 class="text-xl font-bold text-primary group-hover:text-accent-gold transition-colors">Opdrachtbemiddeling</h3>
+              <p class="text-slate-custom text-sm leading-relaxed">
+                Dankzij onze jarenlange ervaring en uitgebreide data-analyse helpen we jou de juiste opdrachten binnen de overheid te winnen – sneller en met meer zekerheid.
+              </p>
+            </div>
+
+            <!-- USP 6 -->
+            <div class="group bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-accent-gold/40 transition-all duration-300 space-y-4">
+              <div class="w-14 h-14 bg-primary/5 group-hover:bg-accent-gold/15 text-accent-gold rounded-2xl flex items-center justify-center transition-colors">
+                <span class="material-symbols-outlined text-3xl">verified</span>
+              </div>
+              <h3 class="text-xl font-bold text-primary group-hover:text-accent-gold transition-colors">Geen concurrentiebeding</h3>
+              <p class="text-slate-custom text-sm leading-relaxed">
+                Als jij je opdracht goed doet en daardoor bij de dezelfde opdrachtgever een nieuwe opdracht mag doen dan ben je daar volledig vrij in! We hanteren geen concurrentie-/ relatiebeding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: CALCULATOR SECTION -->
+      <section class="py-20 px-6 lg:px-20 bg-white" id="calc">
+        <div class="max-w-7xl mx-auto space-y-8">
+          <div class="bg-gradient-to-br from-slate-50 to-amber-50/20 rounded-[2.5rem] p-8 md:p-14 border border-slate-200 shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <!-- Left Controls -->
+            <div class="lg:col-span-5 space-y-6">
+              <div>
+                <span class="text-accent-gold font-bold uppercase tracking-widest text-xs">Interactieve Tool</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-primary mt-1">Bereken je inkomsten</h2>
+                <p class="text-slate-custom text-sm sm:text-base mt-3 leading-relaxed">
+                  De netto uitbetaling is het brutoloon plus de Delance bonus minus de kosten. Het berekenen van je nettobedrag kun je hier direct doen.
+                </p>
+              </div>
+
+              <!-- Input Controls -->
+              <div class="space-y-6 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm">
+                <div>
+                  <div class="flex justify-between items-center mb-2">
+                    <label for="rate-input" class="block text-sm font-bold text-primary">Uurtarief (€)</label>
+                    <span class="text-xs font-bold text-accent-gold bg-accent-gold/10 px-2.5 py-1 rounded-full" id="rate-badge">€78 / uur</span>
+                  </div>
+                  <input type="number" id="rate-input" value="78" min="40" max="200" class="w-full p-4 rounded-xl border border-slate-300 bg-slate-50 font-bold text-primary text-xl focus:outline-none focus:ring-2 focus:ring-accent-gold focus:bg-white transition-all">
+                </div>
+
+                <div>
+                  <div class="flex justify-between items-center mb-2">
+                    <label for="hours-input" class="block text-sm font-bold text-primary">Uur per week</label>
+                    <span class="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full" id="hours-badge">36 uur</span>
+                  </div>
+                  <input type="number" id="hours-input" value="36" min="8" max="40" class="w-full p-4 rounded-xl border border-slate-300 bg-slate-50 font-bold text-primary text-xl focus:outline-none focus:ring-2 focus:ring-accent-gold focus:bg-white transition-all">
+                </div>
+              </div>
+
+              <!-- Question Box -->
+              <div class="bg-primary/5 border border-primary/10 p-6 rounded-3xl space-y-3">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-accent-gold">support_agent</span>
+                  <h3 class="font-bold text-primary text-base">Heb je vragen?</h3>
+                </div>
+                <p class="text-slate-custom text-sm">Neem contact op met Freep of lees de veelgestelde vragen:</p>
+                <div class="flex flex-wrap items-center gap-3 pt-2">
+                  <a href="#faq" class="bg-white border border-slate-300 text-primary px-4 py-2.5 rounded-xl text-xs font-bold hover:bg-accent-gold hover:text-primary hover:border-accent-gold transition-all shadow-sm">
+                    Veelgestelde vragen
+                  </a>
+                  <a href="tel:0851304283" class="text-sm font-bold text-primary flex items-center gap-1.5 hover:text-accent-gold transition-colors">
+                    <span class="material-symbols-outlined text-accent-gold text-base">call</span>
+                    bel: 085 130 4283
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Calculation Display -->
+            <div class="lg:col-span-7 space-y-6">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-primary">Voorbeeld Berekening</h3>
+                <span class="text-xs text-slate-500 font-medium">Per maand (gem. 156 uur)</span>
+              </div>
+
+              <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg">
+                <table class="w-full text-left text-sm">
+                  <tbody class="divide-y divide-slate-100">
+                    <tr class="bg-slate-50/80">
+                      <td class="p-4 sm:p-5 font-bold text-primary">Beschikbaar Budget</td>
+                      <td class="p-4 sm:p-5 text-right font-black text-primary text-base sm:text-lg" id="calc-budget">€10.608,00</td>
+                      <td class="p-4 sm:p-5 text-right w-20">
+                        <span class="bg-primary/10 text-primary text-[11px] font-bold px-2.5 py-1 rounded-md border border-primary/20">uitleg</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-4 sm:p-5 font-bold text-primary">Totaal kosten</td>
+                      <td class="p-4 sm:p-5 text-right font-black text-rose-600 text-base sm:text-lg" id="calc-costs">- €1.793,36</td>
+                      <td class="p-4 sm:p-5 text-right w-20">
+                        <span class="bg-primary/10 text-primary text-[11px] font-bold px-2.5 py-1 rounded-md border border-primary/20">uitleg</span>
+                      </td>
+                    </tr>
+                    <tr class="bg-slate-50/80">
+                      <td class="p-4 sm:p-5 font-bold text-primary">Te verlonen</td>
+                      <td class="p-4 sm:p-5 text-right font-black text-primary text-base sm:text-lg" id="calc-gross">€8.814,64</td>
+                      <td class="p-4 sm:p-5 text-right w-20">
+                        <span class="bg-primary/10 text-primary text-[11px] font-bold px-2.5 py-1 rounded-md border border-primary/20">uitleg</span>
+                      </td>
+                    </tr>
+                    <tr class="bg-emerald-500 text-white">
+                      <td class="p-4 sm:p-6 font-black text-base sm:text-lg">Uit te betalen nettoloon</td>
+                      <td class="p-4 sm:p-6 text-right font-black text-2xl sm:text-3xl" id="calc-net">€5.437,79</td>
+                      <td class="p-4 sm:p-6 text-right w-20">
+                        <span class="bg-white/20 text-white text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">netto</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Calculation Footnotes -->
+              <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-2 text-xs text-slate-500 leading-relaxed shadow-sm">
+                <p>* In onze calculator gaan we automatisch uit van deze maximale afdracht. Indien je onder het Max SV-loon zit zal de afdracht minder zijn en dus je nettoloon hoger dan de calculator aangeeft.</p>
+                <p>** Vakantiegeld en vakantiedagen recht keren we maandelijks uit</p>
+                <p>*** Delance uitkering = beschikbaar budget - totale kosten - uitkering vakantiegeld - uitkering vakantiedagen - periodesalaris</p>
+                <p>**** Uitgegaan van loonheffingskorting</p>
+                <p class="font-bold text-primary pt-1">De calculator is met grote zorgvuldigheid samengesteld, maar er kunnen geen rechten aan de berekening worden ontleend.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: WAAROM FREEP DELANCE? -->
+      <section class="py-20 px-6 lg:px-20 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="w-full bg-gradient-to-br from-primary to-slate-900 text-white p-8 sm:p-12 rounded-3xl shadow-2xl relative overflow-hidden space-y-6">
+              <div class="w-16 h-16 bg-accent-gold text-primary rounded-2xl flex items-center justify-center font-black text-3xl shadow-lg">
+                <span class="material-symbols-outlined text-3xl">handshake</span>
+              </div>
+              <h3 class="text-2xl font-black text-accent-gold">Het Beste van Twee Werelden</h3>
+              <p class="text-white/85 text-sm leading-relaxed">
+                Behoud je vrijheid als zelfstandige, gecombineerd met de financiële rust en zekerheden van een vast dienstverband.
+              </p>
+              <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-white/60">
+                <span>Vrijheid + Zekerheid</span>
+                <span class="font-bold text-accent-gold">Delance Model</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7 space-y-6">
+            <span class="text-accent-gold font-bold uppercase tracking-widest text-xs">Achtergrond & Visie</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-primary">Waarom Freep Delance?</h2>
+            <div class="space-y-4 text-slate-custom text-base leading-relaxed">
+              <p>Bij Freep maken we opdrachten vinden simpel én slim voor ondernemende professionals.</p>
+              <p>Veel overheidsorganisaties kiezen door de Wet DBA voor kandidaten in loondienst. Dat kan je vrijheid beperken… tenzij je met Freep werkt.</p>
+              <p class="font-bold text-primary text-lg">Met <strong>Freep Delance</strong> combineer je het beste van twee werelden:</p>
+              <ul class="space-y-3 pt-2">
+                <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                  <span class="material-symbols-outlined text-accent-gold text-xl flex-shrink-0 mt-0.5">check_circle</span>
+                  <span class="text-sm"><strong>De vrijheid en omzet van een ondernemer</strong> – bepaal zelf je opdrachten en tarief, ontwikkel je carrière zoals jij wilt.</span>
+                </li>
+                <li class="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                  <span class="material-symbols-outlined text-accent-gold text-xl flex-shrink-0 mt-0.5">check_circle</span>
+                  <span class="text-sm"><strong>De zekerheid van een werknemer</strong> – vaste uitbetaling, duidelijkheid over fiscale zaken en een veilige werkconstructie.</span>
+                </li>
+              </ul>
+              <p class="pt-2">Wil je weten hoe het werkt? Ontdek de Delance-constructie en bekijk onze antwoorden op de meestgestelde vragen.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: HOE WERKT FREEP DELANCE? -->
+      <section class="py-20 px-6 lg:px-20 bg-slate-50 border-y border-slate-200/80">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <span class="text-accent-gold font-bold uppercase tracking-widest text-xs">Werkwijze & Afspraken</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-primary">Hoe werkt Freep Delance?</h2>
+            <div class="space-y-4 text-slate-custom text-base leading-relaxed">
+              <p>Bij Freep kom je voor de duur van je opdracht in dienst, via een eenvoudige Delance-overeenkomst. Zo profiteer je van de voordelen van ondernemerschap én de zekerheid van een werknemer.</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+                  <div class="flex items-center gap-2 font-bold text-primary">
+                    <span class="material-symbols-outlined text-accent-gold text-lg">payments</span>
+                    <span>Vast basissalaris</span>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">€3.000,- per maand bij een fulltime dienstverband van 36 uur.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+                  <div class="flex items-center gap-2 font-bold text-primary">
+                    <span class="material-symbols-outlined text-accent-gold text-lg">trending_up</span>
+                    <span>Delance-vergoeding</span>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">Tot 85% van het uurtarief dat wij bij de opdrachtgever factureren – jouw inzet telt direct mee.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+                  <div class="flex items-center gap-2 font-bold text-primary">
+                    <span class="material-symbols-outlined text-accent-gold text-lg">receipt_long</span>
+                    <span>Heldere administratie</span>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">Wij zorgen voor loonstrook, nettobetaling, sociale lasten en pensioenopbouw.</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+                  <div class="flex items-center gap-2 font-bold text-primary">
+                    <span class="material-symbols-outlined text-accent-gold text-lg">shield</span>
+                    <span>Volledige dekking</span>
+                  </div>
+                  <p class="text-xs text-slate-600 leading-relaxed">Bescherming tegen ziekte en arbeidsongeschiktheid zonder dat jij er omkijken naar hebt.</p>
+                </div>
+              </div>
+              <p class="pt-2">Kortom, je kunt je volledig richten op mooie opdrachten bij toonaangevende overheidsorganisaties, terwijl wij de rest regelen.</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="w-full bg-primary p-8 sm:p-10 rounded-3xl text-white space-y-6 shadow-xl border border-primary/20">
+              <div class="w-14 h-14 bg-accent-gold text-primary rounded-2xl flex items-center justify-center">
+                <span class="material-symbols-outlined text-3xl">description</span>
+              </div>
+              <h3 class="text-2xl font-black text-accent-gold">Transparant Delance Contract</h3>
+              <p class="text-white/85 text-sm sm:text-base leading-relaxed">
+                Geen verborgen marges of ingewikkelde kleine lettertjes. Alles staat vooraf exact vast op papier.
+              </p>
+              <div class="pt-4 border-t border-white/10 flex items-center gap-3">
+                <span class="material-symbols-outlined text-accent-gold">verified</span>
+                <span class="text-xs text-white/80 font-semibold">100% Eerlijk en inzichtelijk tariefmodel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: HOE WERKT DE BONUS BIJ HET DELANCE MODEL? -->
+      <section class="py-20 px-6 lg:px-20 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="w-full bg-gradient-to-br from-amber-500/10 to-accent-gold/20 border border-accent-gold/30 p-8 sm:p-10 rounded-3xl text-primary space-y-6 shadow-sm">
+              <div class="w-14 h-14 bg-accent-gold text-primary rounded-2xl flex items-center justify-center shadow-md">
+                <span class="material-symbols-outlined text-3xl">query_stats</span>
+              </div>
+              <h3 class="text-2xl font-black text-primary">Maandelijkse Bonus Voorschot</h3>
+              <p class="text-slate-custom text-sm sm:text-base leading-relaxed">
+                Je ontvangt een omzetgerelateerde bonus tot 85% van je gerealiseerde uurtarief omzet. Zo profiteer je direct van jouw inzet en gemaakte uren!
+              </p>
+              <div class="pt-4 border-t border-accent-gold/30 flex items-center gap-2 text-xs font-bold text-primary">
+                <span class="material-symbols-outlined text-accent-gold">schedule</span>
+                <span>Maandelijks als voorschot uitgekeerd</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6">
+            <span class="text-accent-gold font-bold uppercase tracking-widest text-xs">Beloning & Nacalculatie</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-primary">Hoe werkt de bonus bij het Delance Model?</h2>
+            <div class="space-y-4 text-slate-custom text-base leading-relaxed">
+              <p>Bij Freep.nl verdien je via het Delance Model een combinatie van vast salaris en omzetgerelateerde bonus. Je ontvangt een basissalaris van €3.000,- bij een fulltime dienstverband van 36 uur, plus een bonus van 85% van je gerealiseerde omzet, minus de wettelijke werkgeverskosten.</p>
+              <p>De bonus wordt <strong>maandelijks (of per 4 weken) als voorschot</strong> uitgekeerd op basis van je gewerkte uren. <strong>Let op:</strong> bij je eerste verloning wordt alleen het basissalaris uitbetaald — de bonus wordt vanaf de eerstvolgende periode meegenomen.</p>
+              <p>Aan het eind van de opdracht en/of aan het eind van het jaar wordt de <strong>bonus definitief vastgesteld op basis van nacalculatie</strong>, waarbij eventueel te veel of te weinig betaalde bedragen worden verrekend.</p>
+              <p>Zo profiteer je van de zekerheid van loon én de beloning van zelfstandig ondernemerschap, allemaal binnen de regels.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: VEELGESTELDE VRAGEN (FAQ) - ALL 25 QUESTIONS -->
+      <section class="py-24 px-6 lg:px-20 max-w-5xl mx-auto space-y-12" id="faq">
+        <div class="text-center space-y-4">
+          <span class="text-accent-gold font-extrabold uppercase tracking-widest text-xs">Vragen & Antwoorden</span>
+          <h2 class="text-3xl sm:text-5xl font-black text-primary">Veelgestelde vragen</h2>
+          <p class="text-slate-custom text-base sm:text-lg max-w-2xl mx-auto">
+            Hieronder tref je de antwoorden op de meest gestelde vragen. Heb je aanvullende vragen? Neem gerust contact op!
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Waarom eist de opdrachtgever dat opdracht in loondienstverband wordt uitgevoerd?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Op de wet DBA waarin de beoordeling van de arbeidsrelatie is vastgelegd, wordt vanaf januari 2025 gehandhaafd door de Belastingdienst. De opdrachtgever heeft beoordeeld dat de opdracht in principle een functie is die in een loondienstverband dient te worden uitgevoerd. De opdrachtgever vraagt aan de markt om deze capaciteit te leveren maar houdt vast dat de werkzaamheden in loondienstverband moet worden uitgevoerd. Als de opdrachtgever een zzp’er inhuurt loopt deze de kans door de Belastingdienst alsnog aangeslagen te worden voor loonheffing en premie volksverzekeringen. Dit risico wil de organisatie niet lopen en kiest dus voor een uitvraag waarbij loondienstverband vereist is.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Wat houdt het Delance model in?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Het Delance Model van Freep.nl is dé slimme oplossing voor ervaren interim professionals die graag als zelfstandige werken, maar binnen de wet- en regelgeving willen blijven. Soms dwingt een opdracht of opdrachtgever je om in loondienstverband te werken, ook al wil je liever zelfstandig blijven. Met het Delance Model combineer je het beste van beide werelden: de vrijheid van een zzp’er én de zekerheid van een dienstverband. Tijdens de opdracht kom je in loondienst bij Freep.nl. Wij nemen alle personeels- en loonadministratie uit handen, tegen minimale kosten, zodat jij je volledig kunt richten op je opdracht. Je behoudt de flexibiliteit en het ondernemerschap van een zelfstandige, met een variabel inkomen op basis van je gewerkte uren per periode. Kortom: het Delance Model maakt zelfstandig werken binnen de regels mogelijk — praktisch, transparant en voordelig.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Wie komt in aanmerking voor een Delance constructie bij Freep?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Freep is er voor de zzp’er die al jaren bewust zelfstandig is, minimaal 5 jaar als zzp’er werkt bij verschillende opdrachtgevers en een bewezen track-record heeft als interim professional.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Hoe bereken ik mijn netto uitbetaling?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Zie hierboven de calculator, waarbij de input van de kandidaat het gunningsstarief is en het gemiddeld aantal gewerkte uren per maand.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">De fee voor Delance is 15%, hoe kan dit zo laag zijn?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Freep doet er alles aan om het percentage voor de Delancer zo laag mogelijk te houden. We zorgen dat onze processen efficiënt zijn en onze overhead beperkt blijft. Daarnaast selecteren we zorgvuldig kandidaten die voor Delance in aanmerking komen. Zo garanderen we het laagste tarief in de markt.
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Wanneer ontvang ik mijn salaris?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Je basisloon ontvang je aan het einde van de maand. Daarnaast ontvang je een omzetgerelateerde bonus op basis van gerealiseerde omzet in de vorige periode.
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Heeft Delance consequenties voor de zelfstandige aftrek voor mij als zzp’er?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Je komt in aanmerking voor een zelfstandige aftrek indien je meer dan 1225 uur per jaar als zelfstandige werkt. Voor een Delance opdracht werk je echter niet als zelfstandige.
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Hoe werkt de bonus bij het Delance Model?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Bij Freep.nl verdien je via het Delance Model een combinatie van vast salaris en omzetgerelateerde bonus. Je ontvangt een basissalaris van €3.000,- (fulltime) plus een bonus van 85% van je gerealiseerde omzet, minus de wettelijke werkgeverskosten. De bonus wordt maandelijks (of per 4 weken) als voorschot uitgekeerd op basis van je gewerkte uren. Bij je eerste verloning wordt alleen het basissalaris uitbetaald; de bonus wordt vanaf de volgende periode meegenomen. Aan het eind van de opdracht en/of aan het eind van het jaar wordt de bonus definitief vastgesteld op basis van nacalculatie, waarbij eventueel te veel of te weinig betaalde bedragen worden verrekend.
+            </div>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Heeft Delance consequenties voor de MKB-winstvrijstelling voor mij als zzp’er?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Voor jouw zelfstandige werkzaamheden behoud je recht op MKB-winstvrijstelling.
+            </div>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Ben ik gebonden aan een concurrentiebeding na de duur van de opdracht?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              We hanteren op geen enkele manier een concurrentie- of relatiebeding.
+            </div>
+          </div>
+
+          <!-- FAQ 11 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Welke belasting en premies ga ik betalen als ik de opdracht middels Delance uitvoer?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Omdat je in loondienstverband werkt, draag je loonheffing af. Hiermee worden loonbelasting en premies volksverzekeringen geheven, inclusief premies voor AOW, Anw en Wlz. Daarnaast draag je een bijdrage Zorgverzekeringswet (Zvw) af.
+            </div>
+          </div>
+
+          <!-- FAQ 12 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Als ik in dienst ben krijg ik ook wettelijke vakantiedagen. Hoe werkt dat?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Een fulltime dienstverband geeft recht op 144 wettelijke vakantie-uren per jaar, wat neerkomt op 20 vakantiedagen van 7,2 uur (36-urige werkweek). Daarnaast heb je recht op bovenwettelijke uren op basis van de geldende CAO.
+            </div>
+          </div>
+
+          <!-- FAQ 13 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Bouw ik als Delancer ook pensioen op?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Ja, we zijn aangesloten bij Doenpensioen van ASR. Wij verzorgen de premieberekening en afdracht. Je krijgt een eigen account bij Doenpensioen om je pensioenrechten te beheren.
+            </div>
+          </div>
+
+          <!-- FAQ 14 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Krijg ik door jullie een opleiding aangeboden?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Nee, we bieden geen opleiding aan tijdens de opdrachtperiode.
+            </div>
+          </div>
+
+          <!-- FAQ 15 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Wat wordt bedoeld met verplichte premies? En waarom zijn die altijd hetzelfde bedrag?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              De premies zijn gemaximeerd. Boven het Max SV-loon van €6.322 betaal je de maximale afdracht van €1.393,36, inclusief: Opslag wet Kinderopvang (€31,61), Premie AWF (€489,32), Premie AOF (€397,02), Premie WHK (€63,85) en Heffing ZVW (€411,56). Onder het max SV-loon wordt minder afgedragen en is het nettoloon hoger.
+            </div>
+          </div>
+
+          <!-- FAQ 16 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Hebben jullie een modelovereenkomst die ik kan inzien?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Ja zie <a href="https://www.freep.nl/Template_DELANCE_overeenkomst_2026.pdf" target="_blank" class="text-accent-gold font-bold underline hover:text-primary transition-colors">model overeenkomst Delance</a>.
+            </div>
+          </div>
+
+          <!-- FAQ 17 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Waarom kiezen jullie voor een basisloon van €3.000,-?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Het basisloon van €3.000,- bij een fulltime dienstverband van 36 uur, is bewust gekozen. Hiermee heeft de medewerker een solide basis, kunnen sociale premies worden afgedragen en worden risico's van ziekte en arbeidsongeschiktheid beperkt.
+            </div>
+          </div>
+
+          <!-- FAQ 18 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Voor welke risico's ben ik in deze constructie gedekt?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Bij ziekte of arbeidsongeschiktheid betalen we je salaris door tot het einde van het contract volgens de CAO van de opdrachtgever. Daarna ontvang je een ziektewetuitkering van het UWV (tot max SV-loon) en vervolgens recht op een WW-uitkering.
+            </div>
+          </div>
+
+          <!-- FAQ 19 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Is dit ook van toepassing als ik in dienst ben van mijn eigen BV?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Je kunt voor de duur van de opdracht een Delance-overeenkomst aangaan en bij Freep in dienst komen. Overige activiteiten kun je uitvoeren in je BV. Raadpleeg je accountant voor mogelijke consequenties.
+            </div>
+          </div>
+
+          <!-- FAQ 20 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Krijg ik een laptop of andere materialen van Freep.nl?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Je gebruikt je eigen laptop en benodigdheden om de opdracht bij de opdrachtgever uit te voeren.
+            </div>
+          </div>
+
+          <!-- FAQ 21 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Hoe ga ik om met reis- en onkostenvergoeding?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Indien reis- en onkosten gedeclareerd kunnen worden bij de klant, is dit een netto onkostenvergoeding. Anders worden deze kosten niet vergoed.
+            </div>
+          </div>
+
+          <!-- FAQ 22 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Kan ik reis- en onkostenvergoeding netto uit laten keren?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Omdat je als ondernemende professional zelf de kosten draagt, vergoeden wij geen onkosten netto. Er zijn geen uitruilregelingen voor Delance professionals.
+            </div>
+          </div>
+
+          <!-- FAQ 23 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Kan ik gebruik maken van de WKR?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Er kan geen gebruik worden gemaakt van de vrije ruimte Werkkostenregeling; deze is jaarlijks reeds benut.
+            </div>
+          </div>
+
+          <!-- FAQ 24 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Hoe lang kan ik in deze constructie werken voor Freep?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Er kan maximaal 3 keer een Delance-overeenkomst gesloten worden over een aaneensluitende periode van 3 jaar.
+            </div>
+          </div>
+
+          <!-- FAQ 25 -->
+          <div class="border border-slate-200/90 rounded-2xl overflow-hidden bg-white shadow-sm hover:border-accent-gold/40 transition-all">
+            <button class="faq-toggle w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors gap-4">
+              <span class="font-bold text-primary text-base sm:text-lg">Waar komt de naam DELANCE vandaan?</span>
+              <span class="material-symbols-outlined transition-transform duration-300 text-accent-gold flex-shrink-0">expand_more</span>
+            </button>
+            <div class="faq-content hidden p-6 pt-0 text-slate-custom leading-relaxed text-sm border-t border-slate-100 mt-2">
+              Delance is een combinatie van Detachering en Freelance. Je gaat voor de duur van de opdracht een arbeidsovereenkomst met Freep aan, ontvangt een vast basissalaris en een variabele beloning op basis van daadwerkelijk gemaakte uren. Sociale lasten worden afgedragen en je bouwt pensioen op.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8: TESTIMONIAL (VERA MAILLIE) -->
+      <section class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#c5a059_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto px-6 lg:px-20 text-center space-y-8 relative z-10">
+          <div class="w-16 h-16 bg-accent-gold/20 text-accent-gold rounded-full flex items-center justify-center mx-auto border border-accent-gold/30">
+            <span class="material-symbols-outlined text-3xl">format_quote</span>
+          </div>
+          <blockquote class="text-xl sm:text-2xl font-medium leading-relaxed max-w-3xl mx-auto italic text-slate-100">
+            "De fijne samenwerking met Freep heeft mij zeer goed geholpen bij het verkrijgen van mijn eerste opdracht als zelfstandig professional. Op basis van mijn ervaringen hebben ze de juiste match gemaakt met de selectiecriteria van de Omgevingsdienst. Daarbij was de kennis van de markt en de tarieven essentieel. Dank Freep!"
+          </blockquote>
+          <div>
+            <h4 class="text-lg font-bold text-white">Vera Maillie</h4>
+            <p class="text-accent-gold font-semibold text-xs sm:text-sm uppercase tracking-wider">Senior Projectleider / Interim-Manager</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 9: ZO WERKT ONZE DIENSTVERLENING -->
+      <section class="py-24 px-6 lg:px-20 max-w-7xl mx-auto space-y-12">
+        <div class="text-center space-y-3 max-w-3xl mx-auto">
+          <span class="text-accent-gold font-bold uppercase tracking-widest text-xs">Zo werkt onze dienstverlening</span>
+          <h2 class="text-3xl sm:text-5xl font-black text-primary">In 3 stappen naar je opdracht</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-4 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-primary text-accent-gold rounded-2xl flex items-center justify-center font-black text-2xl shadow-md">01</div>
+            <h3 class="text-xl font-bold text-primary">Reageer op een opdracht</h3>
+            <p class="text-slate-custom text-sm leading-relaxed">Kies uit ons actuele aanbod overheidsopdrachten en meld je met één klik aan.</p>
+          </div>
+          <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-4 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-primary text-accent-gold rounded-2xl flex items-center justify-center font-black text-2xl shadow-md">02</div>
+            <h3 class="text-xl font-bold text-primary">Introductie opdrachtgever</h3>
+            <p class="text-slate-custom text-sm leading-relaxed">Wij stellen je voor bij de opdrachtgever met een sterk kandidatendossier.</p>
+          </div>
+          <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-4 hover:shadow-md transition-shadow">
+            <div class="w-14 h-14 bg-primary text-accent-gold rounded-2xl flex items-center justify-center font-black text-2xl shadow-md">03</div>
+            <h3 class="text-xl font-bold text-primary">Aan de slag</h3>
+            <p class="text-slate-custom text-sm leading-relaxed">Bij gunning starten we jouw Delance overeenkomst en kun je direct beginnen.</p>
+          </div>
+        </div>
+
+        <!-- Detail Box: Binnen 1 werkdag reactie -->
+        <div class="bg-gradient-to-r from-primary to-slate-900 text-white p-8 sm:p-12 rounded-3xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-2xl border border-primary/20">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 bg-accent-gold/20 px-3.5 py-1.5 rounded-full text-accent-gold text-xs font-bold uppercase tracking-wider">
+              <span class="material-symbols-outlined text-sm">bolt</span> Snelheid & Transparantie
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-black text-white">Binnen 1 werkdag reactie</h3>
+            <ul class="space-y-2 text-white/90 text-sm sm:text-base">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-accent-gold text-base">check_circle</span>
+                <span>We beoordelen je CV om te zien of er een match is.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-accent-gold text-base">check_circle</span>
+                <span>We controleren of je voldoet aan de eisen en wensen.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-accent-gold text-base">check_circle</span>
+                <span>We onderzoeken op basis van data of je gewenste tarief concurrerend is.</span>
+              </li>
+            </ul>
+            <p class="text-white/80 text-sm leading-relaxed pt-2 border-t border-white/10">
+              Omdat het proces verloopt via een aanbesteding is het belangrijk dat je een goede kans maakt om de opdracht te winnen. Bij een match starten we het offertetraject, bij twijfel laten we dit binnen 1 werkdag weten.
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex justify-center">
+            <div class="bg-white/10 border border-white/20 backdrop-blur-md p-8 rounded-3xl text-center space-y-3 w-full max-w-xs shadow-xl">
+              <div class="w-16 h-16 bg-accent-gold text-primary rounded-full flex items-center justify-center mx-auto shadow-lg">
+                <span class="material-symbols-outlined text-3xl">bolt</span>
+              </div>
+              <p class="font-extrabold text-lg text-white">Snel & Transparant Traject</p>
+              <p class="text-xs text-white/70">Geen onnodige wachttijden</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 10: SNA-KEURMERK -->
+      <section class="py-20 px-6 lg:px-20 bg-slate-50 border-y border-slate-200/80">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-8 space-y-5">
+            <span class="text-accent-gold font-bold uppercase tracking-widest text-xs">Kwaliteit & Zekerheid</span>
+            <h2 class="text-3xl sm:text-4xl font-black text-primary">Freep heeft het SNA-keurmerk</h2>
+            <p class="text-slate-custom text-base sm:text-lg leading-relaxed">
+              Het SNA-keurmerk is het keurmerk voor de uitzendsector en aannemers van werk en is ontwikkeld om de risico’s van inleners van arbeid en opdrachtgevers van werk te beperken. Detacheerders en payrollondernemingen vallen ook onder het keurmerk omdat ook zij arbeid ter beschikking stellen. De dienstverlening en de processen van Freep worden twee keer per jaar gecontroleerd (audit). Onze actuele certificering kun je hieronder downloaden.
+            </p>
+            <div class="pt-2">
+              <a href="https://www.normeringarbeid.nl/snakeurmerk/gecertificeerde-ondernemingen/cec155e1-209a-4165-2369-20029de1e1a1/verklaring/nl" target="_blank" class="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-primary/20">
+                <span class="material-symbols-outlined text-lg">download</span>
+                <span>Download SNA Certificaat</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-4 flex justify-center">
+            <div class="w-48 h-48 rounded-3xl bg-white border-2 border-slate-200 shadow-xl flex flex-col items-center justify-center p-6 text-center space-y-2">
+              <div class="w-16 h-16 bg-accent-gold/15 text-accent-gold rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined text-3xl">verified</span>
+              </div>
+              <span class="font-black text-sm text-primary uppercase tracking-wider">SNA Gecertificeerd</span>
+              <span class="text-[11px] text-slate-500">Stichting Normering Arbeid</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 11: FREEPERS WERKEN O.A. VOOR ... -->
+      <section class="py-16 px-6 lg:px-20 bg-white">
+        <div class="max-w-7xl mx-auto space-y-8">
+          <div class="text-center sm:text-left space-y-1">
+            <span class="text-accent-gold font-bold uppercase tracking-widest text-xs">Onze Netwerkpartners</span>
+            <h2 class="text-2xl font-bold text-primary">Freepers werken o.a. voor ...</h2>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6 items-center">
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center font-bold text-slate-700 hover:text-primary hover:border-accent-gold/50 transition-all shadow-sm">
+              Gemeente Amsterdam
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center font-bold text-slate-700 hover:text-primary hover:border-accent-gold/50 transition-all shadow-sm">
+              Rijkswaterstaat
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center font-bold text-slate-700 hover:text-primary hover:border-accent-gold/50 transition-all shadow-sm">
+              Nederlandse Spoorwegen
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center font-bold text-slate-700 hover:text-primary hover:border-accent-gold/50 transition-all shadow-sm">
+              Provincie Noord-Brabant
+            </div>
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center font-bold text-slate-700 hover:text-primary hover:border-accent-gold/50 transition-all shadow-sm">
+              Gemeente Zoetermeer
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 12: MISSIE & KERNWAARDEN -->
+      <section class="py-24 px-6 lg:px-20 bg-slate-50 border-t border-slate-200/80">
+        <div class="max-w-7xl mx-auto space-y-16">
+          <div class="text-center max-w-4xl mx-auto space-y-4">
+            <span class="text-accent-gold font-extrabold uppercase tracking-widest text-xs">Onze Missie</span>
+            <p class="text-2xl sm:text-4xl font-extrabold text-primary leading-tight">
+              We helpen interim professionals binnen het publieke domein succesvol te unternemen
+            </p>
+            <p class="text-lg font-bold text-slate-500 pt-4 uppercase tracking-wider">Dit zijn onze kernwaarden</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Value 1 -->
+            <div class="flex items-start gap-5 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-14 h-14 bg-primary text-accent-gold rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                <span class="material-symbols-outlined text-2xl">favorite</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-xl font-bold text-primary">Eerlijk</h3>
+                <p class="text-slate-custom text-sm leading-relaxed">
+                  Wij zijn eerlijk naar zzp'ers over de kansen op het succesvol krijgen van een opdracht en de tarieven die daarbij horen.
+                </p>
+              </div>
+            </div>
+
+            <!-- Value 2 -->
+            <div class="flex items-start gap-5 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-14 h-14 bg-primary text-accent-gold rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                <span class="material-symbols-outlined text-2xl">visibility</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-xl font-bold text-primary">Transparant</h3>
+                <p class="text-slate-custom text-sm leading-relaxed">
+                  We zijn open over onze opdrachtgevers, bronnen en vergoedingen. We delen alle data die we beschikbaar hebben.
+                </p>
+              </div>
+            </div>
+
+            <!-- Value 3 -->
+            <div class="flex items-start gap-5 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-14 h-14 bg-primary text-accent-gold rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                <span class="material-symbols-outlined text-2xl">rocket_launch</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-xl font-bold text-primary">Ambitieus</h3>
+                <p class="text-slate-custom text-sm leading-relaxed">
+                  We willen zoveel mogelijk zzp'ers helpen. We zijn ondernemend en willen onszelf en daarmee onze dienstverlening elke dag verbeteren.
+                </p>
+              </div>
+            </div>
+
+            <!-- Value 4 -->
+            <div class="flex items-start gap-5 bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-14 h-14 bg-primary text-accent-gold rounded-2xl flex items-center justify-center flex-shrink-0 shadow-sm">
+                <span class="material-symbols-outlined text-2xl">lightbulb</span>
+              </div>
+              <div class="space-y-2">
+                <h3 class="text-xl font-bold text-primary">Innovatief</h3>
+                <p class="text-slate-custom text-sm leading-relaxed">
+                  IT en Data zijn ons startpunt om te innoveren en te optimaliseren.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 13: CTA WORD LID -->
+      <section class="py-20 px-6 lg:px-20 bg-primary text-white text-center space-y-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#c5a059_1px,transparent_1px)] [background-size:20px_20px]"></div>
+        <div class="max-w-3xl mx-auto space-y-6 relative z-10">
+          <h2 class="text-3xl sm:text-5xl font-black">Mis geen kans, word gratis lid</h2>
+          <p class="text-white/85 text-base sm:text-xl leading-relaxed">
+            Ontvang direct alle opdrachten en marktontwikkelingen in je mailbox
+          </p>
+          <div class="pt-4">
+            <a href="/login.html" class="inline-flex items-center gap-2 bg-accent-gold hover:bg-amber-400 text-primary px-10 py-4.5 rounded-full font-extrabold text-lg transition-all shadow-xl shadow-accent-gold/20">
+              <span>Word lid</span>
+              <span class="material-symbols-outlined text-xl">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-20 pb-10 px-6 lg:px-20 border-t border-white/10">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+        <div class="space-y-6">
+          <div class="flex items-center gap-3">
+            <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-12 w-auto text-accent-gold"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z"></path></g></g></svg>
+          </div>
+          <p class="text-slate-300 leading-relaxed text-sm">
+            Al meer dan 10 jaar is Freep actief voor zelfstandige professionals. Professionals die het verschil maken binnen de overheid. We helpen ze bij het vinden van een geschikte opdracht.
+          </p>
+          <div class="text-xs text-slate-400 space-y-1">
+            <p class="font-bold text-white">Freep.nl B.V.</p>
+            <p>Prof. J.H. Bavincklaan 2, 1183 AT Amstelveen</p>
+            <p>KVK: 72133082</p>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Professionals</h4>
+          <ul class="space-y-3.5 text-slate-300 text-sm">
+            <li><a class="hover:text-white transition-colors" href="/opdrachten.html">Opdrachten Zoeken</a></li>
+            <li><a class="hover:text-white transition-colors" href="/detachering.html">Detachering Overzicht</a></li>
+            <li><a class="text-accent-gold font-bold hover:text-white transition-colors" href="/delance.html">Delance Model</a></li>
+            <li><a class="hover:text-white transition-colors" href="/freelance.html">Freelance (ZZP)</a></li>
+            <li><a class="hover:text-white transition-colors" href="/tarieven.html">Tarieven voor Experts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Organisaties</h4>
+          <ul class="space-y-3.5 text-slate-300 text-sm">
+            <li><a class="hover:text-white transition-colors" href="/organisaties.html">Plaats een Opdracht</a></li>
+            <li><a class="hover:text-white transition-colors" href="/opdrachtgevers.html">Onze Opdrachtgevers</a></li>
+            <li><a class="hover:text-white transition-colors" href="#">Kennisbank Publieke Sector</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Contact</h4>
+          <ul class="space-y-3.5 text-slate-300 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-accent-gold">location_on</span>
+              <span>Amstelveen, Nederland</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent-gold">mail</span>
+              <span>info@freep.nl</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-accent-gold">call</span>
+              <a href="tel:0851304283" class="hover:text-white transition-colors">085 130 4283</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+        <p>© Freep.nl v2.2 : 2026 copyright all rights reserved</p>
+        <div class="flex gap-6">
+          <a class="hover:text-white transition-colors" href="#">Privacy verklaring</a>
+          <a class="hover:text-white transition-colors" href="#">Algemene voorwaarden</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+      // Mobile Menu Toggle
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = menuButton.querySelector('.material-symbols-outlined');
+
+      menuButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        menuIcon.textContent = isHidden ? 'menu' : 'close';
+      });
+
+      // Accordion FAQ Toggle
+      document.querySelectorAll('.faq-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const content = btn.nextElementSibling;
+          const icon = btn.querySelector('.material-symbols-outlined');
+          const isHidden = content.classList.toggle('hidden');
+          icon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+        });
+      });
+
+      // Calculator logic
+      const rateInput = document.getElementById('rate-input');
+      const hoursInput = document.getElementById('hours-input');
+      const rateBadge = document.getElementById('rate-badge');
+      const hoursBadge = document.getElementById('hours-badge');
+      const budgetDisplay = document.getElementById('calc-budget');
+      const costsDisplay = document.getElementById('calc-costs');
+      const grossDisplay = document.getElementById('calc-gross');
+      const netDisplay = document.getElementById('calc-net');
+
+      function formatEur(amount) {
+        return '€' + amount.toLocaleString('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+
+      function updateCalculator() {
+        const rate = parseFloat(rateInput.value) || 0;
+        const hours = parseFloat(hoursInput.value) || 0;
+
+        if (rateBadge) rateBadge.textContent = '€' + rate + ' / uur';
+        if (hoursBadge) hoursBadge.textContent = hours + ' uur';
+
+        // Approx monthly hours = hours * 4.3333
+        const monthlyHours = hours * 4.3333;
+        const budget = monthlyHours * rate;
+        
+        // Costs (~ 16.905% of budget)
+        const costs = budget * 0.16905;
+        const gross = budget - costs;
+        
+        // Estimated Net payout (~ 61.68% of gross)
+        const net = gross * 0.6168;
+
+        if (budgetDisplay) budgetDisplay.textContent = formatEur(budget);
+        if (costsDisplay) costsDisplay.textContent = '- ' + formatEur(costs);
+        if (grossDisplay) grossDisplay.textContent = formatEur(gross);
+        if (netDisplay) netDisplay.textContent = formatEur(net);
+      }
+
+      if (rateInput && hoursInput) {
+        rateInput.addEventListener('input', updateCalculator);
+        hoursInput.addEventListener('input', updateCalculator);
+        updateCalculator();
+      }
+    </script>
+  </body>
+</html>
