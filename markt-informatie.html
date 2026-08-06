@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marktinformatie & Tenders Publieke Sector | Freep.nl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1e1b4b',
+              'accent-gold': '#c5a059',
+              'background-light': '#f6f7f8',
+              'slate-custom': '#4a5568',
+              'border-subtle': 'rgba(30, 27, 75, 0.08)',
+            },
+            fontFamily: {
+              sans: ['Public Sans', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .scrollbar-none::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-none {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light font-sans min-h-screen flex flex-col antialiased">
+    <!-- Header Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-primary/10 px-6 lg:px-20 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <svg viewBox="0 0 193 79" version="1.1" xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-12 w-auto text-primary"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="currentColor"><path d="M7.78795812,31.929984 L0,31.929984 L1.32716696,22.3984219 L9.11413613,22.3984219 L10.0655032,15.5680516 C11.2374055,7.14892119 14.3555556,0 27.1772542,0 C29.5368819,0 31.8747528,0.158776152 34,0.714991979 L32.0458406,10.8027699 C30.7740547,10.3254428 29.7178592,10.0078905 28.301687,10.0078905 C24.5258871,10.0078905 22.472833,11.1992109 21.7647469,16.2830436 L20.9132635,22.3984219 L29.6446771,22.3984219 L28.3184991,31.929984 L19.5870855,31.929984 L15.5413031,61 L3.74217568,61 L7.78795812,31.929984 Z"></path><path d="M36.314422,22.9393083 L47.9850217,22.9393083 L47.1320536,29.0477657 L47.2885615,29.0477657 C50.4226325,24.4270386 54.0291618,22 59.1645779,22 C60.4870698,22 61.9543315,22.0777834 63,22.3908861 L61.5024149,33.1200707 C59.933423,32.6504166 58.3438895,32.3373138 56.6320841,32.3373138 C47.7619979,32.3373138 45.951397,37.5054784 44.8910558,45.1026508 L42.6705997,61 L31,61 L36.314422,22.9393083 Z"></path><path d="M90.423817,37.6864292 C91.0596646,33.7648219 88.436544,30.4703562 84.1560337,30.4703562 C78.9237453,30.4703562 75.5691009,33.999507 74.7279482,37.6864292 L90.423817,37.6864292 Z M98.1068097,54.4703562 C93.621991,59.2557624 86.9705066,62 80.7874366,62 C68.8956907,62 60.4981168,54.1567854 62.2252703,42.000493 C63.9514272,29.8432146 74.5784543,22 86.4692035,22 C97.5666382,22 103.428795,29.8432146 101.701641,42.000493 L101.178412,45.6864292 L73.5917941,45.6864292 C73.9077247,50.1572784 76.9045802,53.0583015 81.5020177,53.0583015 C85.3858707,53.0583015 88.2810703,51.0979909 90.6410816,48.4316529 L98.1068097,54.4703562 Z"></path><path d="M134.423811,37.6864292 C135.060656,33.7648219 132.436537,30.4703562 128.156024,30.4703562 C122.923733,30.4703562 119.569087,33.999507 118.727934,37.6864292 L134.423811,37.6864292 Z M142.106808,54.4703562 C137.622983,59.2557624 130.970499,62 124.787425,62 C112.89667,62 104.498095,54.1567854 106.225249,42.000493 C107.951407,29.8432146 118.57844,22 130.469195,22 C141.566636,22 147.428795,29.8432146 145.701641,42.000493 L145.178412,45.6864292 L117.591779,45.6864292 C117.908707,50.1572784 120.904567,53.0583015 125.502007,53.0583015 C129.386859,53.0583015 132.281063,51.0979909 134.641076,48.4316529 L142.106808,54.4703562 Z"></path><path d="M170.122464,51.6771149 C176.017946,51.6771149 180.107035,47.7514244 180.91339,42.0203308 C181.719745,36.2882501 178.735441,32.3635466 172.839959,32.3635466 C166.945465,32.3635466 162.855388,36.2882501 162.050021,42.0203308 C161.242678,47.7514244 164.22797,51.6771149 170.122464,51.6771149 L170.122464,51.6771149 Z M153.887653,22.9416919 L164.733918,22.9416919 L164.027369,27.966023 L164.18449,27.966023 C166.37825,25.218928 171.390299,22 176.734377,22 C188.052991,22 194.371415,30.1652784 192.747835,41.7054464 C191.255683,52.3058966 183.284034,62.0416486 172.436782,62.0416486 C167.564066,62.0416486 163.193345,60.7061044 161.040101,57.0163304 L160.88298,57.0163304 L157.789976,79 L146,79 L153.887653,22.9416919 Z"></path></g></g></svg>
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachten.html">Opdrachten</a>
+          <div class="relative group">
+            <button class="flex items-center gap-1 text-sm font-semibold hover:text-accent-gold transition-colors py-4">
+              Voor Professionals
+              <span class="material-symbols-outlined text-sm">expand_more</span>
+            </button>
+            <div class="absolute left-0 top-full hidden group-hover:block w-56 z-50">
+              <div class="bg-white border border-primary/10 rounded-xl shadow-xl py-2 mt-0">
+                <a href="/professionals.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Waarom Freep</a>
+                <a href="/detachering.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Detachering</a>
+                <a href="/delance.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Delance Model</a>
+                <a href="/freelance.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Freelance</a>
+                <a href="/tarieven.html" class="block px-4 py-2 text-sm font-semibold hover:bg-primary/5 hover:text-accent-gold transition-colors">Tarief Benchmark</a>
+                <a href="/markt-informatie.html" class="block px-4 py-2 text-sm font-black text-accent-gold hover:bg-primary/5 transition-colors">Marktinformatie</a>
+              </div>
+            </div>
+          </div>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/organisaties.html">Voor Organisaties</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/opdrachtgevers.html">Opdrachtgevers</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/kennisbank.html">Kennisbank</a>
+          <a class="text-sm font-semibold hover:text-accent-gold transition-colors" href="/team.html">Ons Team</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="tel:+31201234567" class="hidden sm:flex items-center gap-1.5 text-sm font-bold text-primary hover:text-accent-gold transition-colors">
+            <span class="material-symbols-outlined text-base text-accent-gold">call</span>
+            <span>Contact</span>
+          </a>
+          <a href="/login.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+          <button id="mobile-menu-button" class="md:hidden flex items-center justify-center p-2 text-primary">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden fixed top-[73px] left-0 right-0 bg-white border-b border-primary/10 z-40 shadow-xl overflow-y-auto max-h-[calc(100vh-73px)]">
+      <nav class="flex flex-col p-6 gap-4">
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/opdrachten.html">Opdrachten</a>
+        <div class="flex flex-col border-b border-primary/5">
+          <span class="text-lg font-bold py-2">Voor Professionals</span>
+          <div class="flex flex-col gap-2 pl-4 pb-4">
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/professionals.html">Waarom Freep</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/detachering.html">Detachering</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/freelance.html">Freelance</a>
+            <a class="text-base font-semibold py-1 hover:text-accent-gold" href="/tarieven.html">Tarief Benchmark</a>
+            <a class="text-base font-bold py-1 text-accent-gold" href="/markt-informatie.html">Marktinformatie</a>
+          </div>
+        </div>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/organisaties.html">Voor Organisaties</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/opdrachtgevers.html">Opdrachtgevers</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/kennisbank.html">Kennisbank</a>
+        <a class="text-lg font-bold py-2 border-b border-primary/5" href="/team.html">Ons Team</a>
+        <div class="pt-4 flex flex-col gap-4">
+          <a href="/login.html" class="bg-primary text-white px-6 py-4 rounded-xl text-center font-bold shadow-lg shadow-primary/20">
+            Inloggen
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+
+      <!-- Hero Section -->
+      <section class="bg-primary text-white pt-16 pb-20 px-6 lg:px-20 relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-accent-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+          
+          <div class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-accent-gold bg-accent-gold/10 px-4 py-1.5 rounded-full border border-accent-gold/20 mb-6">
+            <span class="material-symbols-outlined text-sm">monitoring</span>
+            Markt Intelligence & Tender Data Q1 2026
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="lg:col-span-7 space-y-6">
+              <h1 class="text-3xl md:text-5xl font-black leading-tight tracking-tight">
+                Marktinformatie & Insights in de <span class="text-accent-gold">Publieke Sector</span>
+              </h1>
+              <p class="text-white/80 text-base md:text-lg leading-relaxed max-w-2xl">
+                Real-time en historische marktdata van uitvragen bij Rijksoverheid, Municipaliteiten, Waterschappen en ZBO's. Ontdek ontwikkelingen in uitvraagvolumes, contractvormen (ZZP vs. Detachering), gevraagde vaardigheden en regionale spreiding.
+              </p>
+
+              <!-- Hero Stat Badges -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                  <div class="text-2xl font-black text-accent-gold">18.450+</div>
+                  <div class="text-[11px] font-bold text-white/70 mt-0.5">Uitvragen Q1 2026</div>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                  <div class="text-2xl font-black text-white">58% / 42%</div>
+                  <div class="text-[11px] font-bold text-white/70 mt-0.5">ZZP vs Detachering</div>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                  <div class="text-2xl font-black text-accent-gold">+14%</div>
+                  <div class="text-[11px] font-bold text-white/70 mt-0.5">IT & Cyber Groei</div>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                  <div class="text-2xl font-black text-white">48%</div>
+                  <div class="text-[11px] font-bold text-white/70 mt-0.5">Volume Randstad</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Quick Filter Card Widget -->
+            <div class="lg:col-span-5 bg-white text-primary p-7 rounded-3xl shadow-2xl space-y-5 relative border border-white/20">
+              <div class="flex items-center justify-between border-b border-primary/10 pb-3">
+                <div>
+                  <span class="text-[10px] font-black uppercase tracking-wider text-accent-gold block">Interactief Dashboard</span>
+                  <h3 class="text-lg font-black">Filter Marktrapportage</h3>
+                </div>
+                <span class="p-2 rounded-xl bg-accent-gold/15 text-accent-gold">
+                  <span class="material-symbols-outlined text-xl">tune</span>
+                </span>
+              </div>
+
+              <div class="space-y-3.5 text-xs">
+                <div>
+                  <label class="block font-bold text-primary mb-1">Overheidslaag / Sector</label>
+                  <select id="hero-sector-select" class="w-full p-3 rounded-xl border border-primary/15 bg-background-light font-bold text-xs text-primary focus:outline-none focus:ring-2 focus:ring-accent-gold">
+                    <option value="all">Alle Sectoren (Totaal Overheid)</option>
+                    <option value="rijk">Rijksoverheid & Ministeries (42%)</option>
+                    <option value="gemeenten">Gemeenten & G4 (34%)</option>
+                    <option value="waterschappen">Waterschappen & Provincies (15%)</option>
+                    <option value="zbo">ZBO's, Onderwijs & Zorg (9%)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block font-bold text-primary mb-1">Periode Vergelijking</label>
+                  <select id="hero-period-select" class="w-full p-3 rounded-xl border border-primary/15 bg-background-light font-bold text-xs text-primary focus:outline-none focus:ring-2 focus:ring-accent-gold">
+                    <option value="2026-q1">Q1 2026 (Actueel)</option>
+                    <option value="2025-full">2025 Volledig Jaar</option>
+                    <option value="2024-full">2024 Volledig Jaar</option>
+                    <option value="2023-full">2023 Volledig Jaar</option>
+                  </select>
+                </div>
+
+                <div class="p-3.5 bg-primary/5 rounded-2xl border border-primary/10 flex items-center justify-between">
+                  <div>
+                    <span class="text-[10px] font-bold text-slate-custom uppercase tracking-wider block">Actieve Inhuur Tendens</span>
+                    <span id="hero-stat-trend" class="text-base font-black text-primary">Stijgende Vraag (High Demand)</span>
+                  </div>
+                  <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-full border border-emerald-200">+8,4% Y-o-Y</span>
+                </div>
+              </div>
+
+              <a href="#volume-chart-section" class="w-full bg-primary hover:bg-primary/90 text-white p-3 rounded-xl font-black text-xs text-center block transition-all shadow-md">
+                Bekijk Volledige Marktgrafieken &rarr;
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 1: Development of Amount of Assignments (Volume Trend) -->
+      <section id="volume-chart-section" class="py-16 px-6 lg:px-20 max-w-7xl mx-auto w-full space-y-10">
+        
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 border-b border-primary/10 pb-6">
+          <div>
+            <span class="text-xs font-black uppercase tracking-wider text-accent-gold block mb-1">Kwartaalontwikkeling</span>
+            <h2 class="text-2xl md:text-4xl font-black text-primary">Aantal Opdrachten / Uitvragen per Kwartaal (2023 - 2026)</h2>
+            <p class="text-slate-custom text-sm md:text-base mt-2 max-w-2xl">
+              Historisch overzicht van gepubliceerde interim tendanties en inhuurbehoeften bij de overheid.
+            </p>
+          </div>
+
+          <!-- Sector Segment Toggle Buttons -->
+          <div class="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none bg-white p-1.5 rounded-2xl border border-primary/10 shadow-sm shrink-0" id="volume-segment-toggles">
+            <button data-seg="all" class="volume-seg-btn active px-4 py-2 rounded-xl text-xs font-black transition-all bg-primary text-white shadow-sm">
+              Totaal
+            </button>
+            <button data-seg="rijk" class="volume-seg-btn px-4 py-2 rounded-xl text-xs font-bold transition-all text-slate-custom hover:bg-primary/5">
+              Rijksoverheid
+            </button>
+            <button data-seg="gemeenten" class="volume-seg-btn px-4 py-2 rounded-xl text-xs font-bold transition-all text-slate-custom hover:bg-primary/5">
+              Gemeenten
+            </button>
+            <button data-seg="waterschappen" class="volume-seg-btn px-4 py-2 rounded-xl text-xs font-bold transition-all text-slate-custom hover:bg-primary/5">
+              Waterschappen
+            </button>
+          </div>
+        </div>
+
+        <!-- Volume Chart Visualizer Card -->
+        <div class="bg-white p-8 rounded-3xl border border-primary/10 shadow-sm space-y-8">
+          
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-primary/5 pb-4">
+            <div>
+              <span id="chart-segment-title" class="text-xs font-black uppercase text-accent-gold tracking-wider">Totaal Publieke Sector</span>
+              <h3 class="text-xl font-black text-primary">Volume Uitvragen per Kwartaal</h3>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-bold text-slate-custom">
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-primary rounded-sm"></span> Actueel Uitvraag Volume</span>
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-accent-gold rounded-sm"></span> Geprojecteerde Groei</span>
+            </div>
+          </div>
+
+          <!-- Interactive Bar Chart SVG Canvas Container -->
+          <div class="w-full overflow-x-auto pb-4">
+            <div class="min-w-[700px] h-64 flex items-end justify-between gap-3 pt-8 px-4 border-b border-slate-200 relative" id="chart-bars-container">
+              <!-- Dynamically populated via JavaScript -->
+            </div>
+          </div>
+
+          <!-- Key Drivers Highlights -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 space-y-2">
+              <div class="flex items-center gap-2 font-black text-primary text-sm">
+                <span class="material-symbols-outlined text-accent-gold">cloud_done</span>
+                Digitaliseringsgolf & Cloud
+              </div>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Rijksoverheid en G4 sturen sterk op modernisering van legacy systemen, soevereine cloud en datagovernance, wat leidt tot een aanhoudende piek in IT-uitvragen (+14%).
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 space-y-2">
+              <div class="flex items-center gap-2 font-black text-primary text-sm">
+                <span class="material-symbols-outlined text-accent-gold">policy</span>
+                Handhaving Wet DBA
+              </div>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Striktere controle op schijnzelfstandigheid dwingt overheidsorganisaties om opdrachten kritischer in te schalen en vaker via het Delance Detachering model aan te bieden.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 space-y-2">
+              <div class="flex items-center gap-2 font-black text-primary text-sm">
+                <span class="material-symbols-outlined text-accent-gold">account_balance</span>
+                Omgevingswet & Infra Piek
+              </div>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Gemeenten en Waterschappen kampen met hoge werkdruk rondom omgevingsplannen, vergunningen en grote infrastructurele vervangingsopgaven.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Section 2: Freelance (ZZP) vs Detachering (Delance Model) -->
+      <section class="py-16 bg-white border-y border-primary/10 px-6 lg:px-20">
+        <div class="max-w-7xl mx-auto space-y-12">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-6 space-y-6">
+              <span class="text-xs font-black uppercase tracking-widest text-accent-gold">Verschuiving Contractvormen</span>
+              <h2 class="text-2xl md:text-4xl font-black text-primary leading-tight">
+                Freelance (ZZP) vs. Detachering (Delance)
+              </h2>
+              <p class="text-slate-custom text-sm md:text-base leading-relaxed">
+                Door veranderende regelgeving en de striktere handhaving van de Wet DBA door de Belastingdienst verandert de verhouding tussen pure ZZP-contracten en detachering gestaag. 
+              </p>
+              <p class="text-slate-custom text-sm md:text-base leading-relaxed">
+                In 2023 werd nog 74% van alle opdrachten puur op ZZP-basis uitgezet. In 2026 is het aandeel <strong class="text-primary">Detachering & Delance</strong> gestegen naar <strong class="text-accent-gold">42%</strong>, omdat dit 100% DBA-veiligheid biedt met behoud van hoge netto-inkomsten.
+              </p>
+
+              <!-- Progress Comparison Bars by Domain -->
+              <div class="space-y-4 pt-2">
+                <h4 class="text-xs font-black uppercase tracking-wider text-primary">Verhouding per Vakgebied (2026)</h4>
+                
+                <!-- Domain 1: IT & Cloud -->
+                <div class="space-y-1.5">
+                  <div class="flex justify-between text-xs font-bold">
+                    <span class="text-primary">IT & Cybersecurity</span>
+                    <span class="text-slate-custom"><span class="text-primary">62% ZZP</span> / <span class="text-accent-gold">38% Detachering</span></span>
+                  </div>
+                  <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden flex">
+                    <div class="bg-primary h-full" style="width: 62%;"></div>
+                    <div class="bg-accent-gold h-full" style="width: 38%;"></div>
+                  </div>
+                </div>
+
+                <!-- Domain 2: Juridisch -->
+                <div class="space-y-1.5">
+                  <div class="flex justify-between text-xs font-bold">
+                    <span class="text-primary">Juridisch & Bestuur</span>
+                    <span class="text-slate-custom"><span class="text-primary">46% ZZP</span> / <span class="text-amber-600 font-bold">54% Detachering</span></span>
+                  </div>
+                  <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden flex">
+                    <div class="bg-primary h-full" style="width: 46%;"></div>
+                    <div class="bg-accent-gold h-full" style="width: 54%;"></div>
+                  </div>
+                </div>
+
+                <!-- Domain 3: Projectmanagement -->
+                <div class="space-y-1.5">
+                  <div class="flex justify-between text-xs font-bold">
+                    <span class="text-primary">Project & Programma Mgt</span>
+                    <span class="text-slate-custom"><span class="text-primary">68% ZZP</span> / <span class="text-accent-gold">32% Detachering</span></span>
+                  </div>
+                  <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden flex">
+                    <div class="bg-primary h-full" style="width: 68%;"></div>
+                    <div class="bg-accent-gold h-full" style="width: 32%;"></div>
+                  </div>
+                </div>
+
+                <!-- Domain 4: Financiën -->
+                <div class="space-y-1.5">
+                  <div class="flex justify-between text-xs font-bold">
+                    <span class="text-primary">Financiën & Control</span>
+                    <span class="text-slate-custom"><span class="text-primary">52% ZZP</span> / <span class="text-accent-gold">48% Detachering</span></span>
+                  </div>
+                  <div class="w-full bg-slate-200 h-3 rounded-full overflow-hidden flex">
+                    <div class="bg-primary h-full" style="width: 52%;"></div>
+                    <div class="bg-accent-gold h-full" style="width: 48%;"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Delance Assessment Card Widget -->
+            <div class="lg:col-span-6 bg-background-light p-8 rounded-3xl border border-primary/10 shadow-lg space-y-6">
+              <div class="flex items-center gap-3 border-b border-primary/10 pb-4">
+                <span class="p-3 bg-emerald-100 text-emerald-800 rounded-2xl border border-emerald-200">
+                  <span class="material-symbols-outlined text-2xl">shield_person</span>
+                </span>
+                <div>
+                  <span class="text-[10px] font-black uppercase text-emerald-800 tracking-wider block">Wet DBA Compliance Check</span>
+                  <h3 class="text-xl font-black text-primary">Wat betekent dit voor jouw Opdracht?</h3>
+                </div>
+              </div>
+
+              <div class="space-y-4 text-xs leading-relaxed text-slate-custom">
+                <div class="p-4 bg-white rounded-2xl border border-primary/5 space-y-2">
+                  <h4 class="font-black text-primary text-sm flex items-center justify-between">
+                    <span>1. Wanneer kies je voor Freelance (ZZP)?</span>
+                    <span class="text-[10px] bg-primary/10 text-primary px-2.5 py-0.5 rounded-full font-bold">58% Markt</span>
+                  </h4>
+                  <p>
+                    Geschikt als er sprake is van hoge zelfstandigheid, resultaatverplichting, geen inbedding in de organisatie en geen gezagsverhouding.
+                  </p>
+                </div>
+
+                <div class="p-4 bg-amber-50/70 rounded-2xl border border-accent-gold/30 space-y-2">
+                  <h4 class="font-black text-amber-900 text-sm flex items-center justify-between">
+                    <span>2. Waarom kiezen voor het Delance Detachering Model?</span>
+                    <span class="text-[10px] bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full font-bold">42% Markt</span>
+                  </h4>
+                  <p class="text-amber-950/80">
+                    Ideaal als de functie 'inbedding' vertoont (bijv. interim manager, vaste overlegstructuren). Met Delance ontvang je ~70% van de omzet als gegarandeerd netto salaris mét 100% Wet DBA vrijwaring.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                <a href="/delance.html" class="flex-1 bg-accent-gold hover:bg-amber-400 text-primary p-3.5 rounded-xl font-black text-xs text-center transition-all shadow-sm">
+                  Bereken Delance Vergoeding &rarr;
+                </a>
+                <a href="/vacature-detail-detachering.html" class="flex-1 bg-white hover:bg-primary/5 border border-primary/15 text-primary p-3.5 rounded-xl font-bold text-xs text-center transition-all">
+                  Bekijk Detachering Vacature
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 3: Assignments per Segment & Category -->
+      <section class="py-16 px-6 lg:px-20 max-w-7xl mx-auto w-full space-y-12">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <span class="text-xs font-black uppercase tracking-widest text-accent-gold">Marktaandeel & Doorlooptijden</span>
+          <h2 class="text-2xl md:text-4xl font-black text-primary">Opdrachten per Segment & Categorie</h2>
+          <p class="text-slate-custom text-sm md:text-base">
+            Spreiding van interim-opdrachten over vakgebieden, inclusief gemiddelde looptijd en vraagontwikkeling.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="category-cards-grid">
+          
+          <!-- Category 1: IT & Digitalisering -->
+          <div class="p-6 rounded-3xl bg-white border border-primary/10 shadow-sm hover:shadow-xl transition-all space-y-5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="p-3 bg-primary/10 text-primary rounded-2xl">
+                  <span class="material-symbols-outlined text-2xl">terminal</span>
+                </span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">+12% Groei Y-o-Y</span>
+              </div>
+              <div>
+                <span class="text-[10px] font-black text-accent-gold uppercase tracking-wider block">Marktaandeel: 36%</span>
+                <h3 class="text-xl font-black text-primary">IT & Digitalisering</h3>
+              </div>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Grootste categorie. Veel vraag naar Cloud Architects, DevOps Engineers, Enterprise Architects en Cybersecurity Specialisten.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-primary/10 space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Gemiddelde Looptijd:</span>
+                <span class="text-primary font-black">14 Maanden</span>
+              </div>
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Populairste Rol:</span>
+                <span class="text-primary font-black">Cloud Architect (€122/u)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Beleid, Advies & Transformatie -->
+          <div class="p-6 rounded-3xl bg-white border border-primary/10 shadow-sm hover:shadow-xl transition-all space-y-5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="p-3 bg-primary/10 text-primary rounded-2xl">
+                  <span class="material-symbols-outlined text-2xl">description</span>
+                </span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">+6% Groei Y-o-Y</span>
+              </div>
+              <div>
+                <span class="text-[10px] font-black text-accent-gold uppercase tracking-wider block">Marktaandeel: 22%</span>
+                <h3 class="text-xl font-black text-primary">Beleid, Advies & Sociaal</h3>
+              </div>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Stabiele vraag bij Gemeenten en Ministeries naar Senior Beleidsadviseurs Jeugd, Wmo, Duurzaamheid en Energietransitie.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-primary/10 space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Gemiddelde Looptijd:</span>
+                <span class="text-primary font-black">11 Maanden</span>
+              </div>
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Populairste Rol:</span>
+                <span class="text-primary font-black">Adviseur Wmo (€96/u)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Juridisch, Bestuur & Omgevingswet -->
+          <div class="p-6 rounded-3xl bg-white border border-primary/10 shadow-sm hover:shadow-xl transition-all space-y-5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="p-3 bg-primary/10 text-primary rounded-2xl">
+                  <span class="material-symbols-outlined text-2xl">gavel</span>
+                </span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">+14% Groei Y-o-Y</span>
+              </div>
+              <div>
+                <span class="text-[10px] font-black text-accent-gold uppercase tracking-wider block">Marktaandeel: 18%</span>
+                <h3 class="text-xl font-black text-primary">Juridisch & Bestuur</h3>
+              </div>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Aanhoudende krapte op de arbeidsmarkt voor Juristen Omgevingsrecht, Aanbestedingen en Vergunningsverleners.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-primary/10 space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Gemiddelde Looptijd:</span>
+                <span class="text-primary font-black">12 Maanden</span>
+              </div>
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Populairste Rol:</span>
+                <span class="text-primary font-black">Jurist Omgevingsrecht (€110/u)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Project & Programmamanagement -->
+          <div class="p-6 rounded-3xl bg-white border border-primary/10 shadow-sm hover:shadow-xl transition-all space-y-5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="p-3 bg-primary/10 text-primary rounded-2xl">
+                  <span class="material-symbols-outlined text-2xl">account_tree</span>
+                </span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">+9% Groei Y-o-Y</span>
+              </div>
+              <div>
+                <span class="text-[10px] font-black text-accent-gold uppercase tracking-wider block">Marktaandeel: 14%</span>
+                <h3 class="text-xl font-black text-primary">Project & Programmamanagement</h3>
+              </div>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Hoge eisen aan ervaren leiders voor complexe maatschappelijke transitietrajecten en infrastructurele megaprojecten.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-primary/10 space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Gemiddelde Looptijd:</span>
+                <span class="text-primary font-black">18 Maanden</span>
+              </div>
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Populairste Rol:</span>
+                <span class="text-primary font-black">Programmamanager (€108/u)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Financiën, Control & Auditing -->
+          <div class="p-6 rounded-3xl bg-white border border-primary/10 shadow-sm hover:shadow-xl transition-all space-y-5 flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="p-3 bg-primary/10 text-primary rounded-2xl">
+                  <span class="material-symbols-outlined text-2xl">payments</span>
+                </span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">+5% Groei Y-o-Y</span>
+              </div>
+              <div>
+                <span class="text-[10px] font-black text-accent-gold uppercase tracking-wider block">Marktaandeel: 10%</span>
+                <h3 class="text-xl font-black text-primary">Financiën & Control</h3>
+              </div>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Veel interim-vraag tijdens de P&C-cyclus, begrotingsrondes en accountantcontroles bij decentrale overheden.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-primary/10 space-y-2 text-xs">
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Gemiddelde Looptijd:</span>
+                <span class="text-primary font-black">9 Maanden</span>
+              </div>
+              <div class="flex justify-between font-bold text-slate-custom">
+                <span>Populairste Rol:</span>
+                <span class="text-primary font-black">Business Controller (€98/u)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Donut Breakdown Card: Government Body Share -->
+          <div class="p-6 rounded-3xl bg-primary text-white border border-primary/10 shadow-xl space-y-4 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-black text-accent-gold uppercase tracking-wider block">Verdeling Opdrachtgevers</span>
+              <h3 class="text-xl font-black text-white">Inhuur per Overheidslaag</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mt-2">
+                Waar worden de meeste interim opdrachten gepubliceerd?
+              </p>
+              
+              <div class="space-y-2.5 pt-4 text-xs font-bold">
+                <div class="flex items-center justify-between">
+                  <span class="flex items-center gap-2"><span class="w-3 h-3 bg-accent-gold rounded-full"></span> Rijksoverheid & Ministeries</span>
+                  <span class="text-accent-gold">42%</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="flex items-center gap-2"><span class="w-3 h-3 bg-indigo-400 rounded-full"></span> Gemeenten & G4</span>
+                  <span>34%</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="flex items-center gap-2"><span class="w-3 h-3 bg-emerald-400 rounded-full"></span> Waterschappen & Provincies</span>
+                  <span>15%</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="flex items-center gap-2"><span class="w-3 h-3 bg-slate-400 rounded-full"></span> ZBO's, Onderwijs & Zorg</span>
+                  <span>9%</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="/opdrachten.html" class="w-full bg-accent-gold hover:bg-amber-400 text-primary p-3 rounded-xl font-black text-xs text-center block transition-all">
+              Bekijk Alle Opdrachten per Sector &rarr;
+            </a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Section 4: Skill Request & In-Demand Expertise -->
+      <section class="py-16 bg-white border-y border-primary/10 px-6 lg:px-20">
+        <div class="max-w-7xl mx-auto space-y-10">
+          
+          <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+            <div>
+              <span class="text-xs font-black uppercase tracking-widest text-accent-gold">Analyse van 18.000+ Tenders</span>
+              <h2 class="text-2xl md:text-4xl font-black text-primary">Meest Gevraagde Vaardigheden & Competenties</h2>
+              <p class="text-slate-custom text-sm md:text-base mt-2 max-w-2xl">
+                Inzicht in de snelst stijgende eisen en certificeringen in overheidsuitvragen voor 2026.
+              </p>
+            </div>
+
+            <!-- Interactive Skill Category Filter -->
+            <div class="relative flex-1 max-w-md">
+              <span class="material-symbols-outlined absolute left-3.5 top-3.5 text-slate-custom text-xl">search</span>
+              <input type="text" id="skill-search-input" placeholder="Zoek vaardigheid (bijv. ISO27001, Omgevingsrecht, Azure)..." class="w-full pl-11 pr-4 py-3 bg-background-light border border-primary/15 rounded-xl text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-accent-gold" />
+            </div>
+          </div>
+
+          <!-- Fastest Growing Skills Radar Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="skills-grid-container">
+            
+            <!-- Skill 1 -->
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 hover:border-accent-gold transition-all space-y-3 skill-item" data-keywords="ai algoritme governance ethiek data">
+              <div class="flex justify-between items-start">
+                <span class="text-[10px] font-black uppercase tracking-wider bg-purple-100 text-purple-900 px-2.5 py-1 rounded-full border border-purple-200">IT & AI</span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">+42% Vraag</span>
+              </div>
+              <h4 class="font-black text-primary text-base">AI & Algoritme Governance</h4>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Controle op verantwoorde AI, algoritmetransparantie en AVG-compliance bij de overheid.
+              </p>
+              <div class="pt-2 border-t border-primary/5 flex justify-between text-[11px] font-bold text-slate-600">
+                <span>Gevraagd niveau: Senior</span>
+                <span class="text-accent-gold">€115 - €135/u</span>
+              </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 hover:border-accent-gold transition-all space-y-3 skill-item" data-keywords="nis2 cybersecurity iso27001 security bio">
+              <div class="flex justify-between items-start">
+                <span class="text-[10px] font-black uppercase tracking-wider bg-blue-100 text-blue-900 px-2.5 py-1 rounded-full border border-blue-200">Security</span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">+35% Vraag</span>
+              </div>
+              <h4 class="font-black text-primary text-base">NIS2 & BIO Security Compliance</h4>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Implementatie van Europese NIS2-richtlijnen en Baseline Informatiebeveiliging Overheid (BIO).
+              </p>
+              <div class="pt-2 border-t border-primary/5 flex justify-between text-[11px] font-bold text-slate-600">
+                <span>Gevraagd niveau: Expert</span>
+                <span class="text-accent-gold">€120 - €145/u</span>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 hover:border-accent-gold transition-all space-y-3 skill-item" data-keywords="omgevingswet dso ruimtelijk jurist vergunningen">
+              <div class="flex justify-between items-start">
+                <span class="text-[10px] font-black uppercase tracking-wider bg-emerald-100 text-emerald-900 px-2.5 py-1 rounded-full border border-emerald-200">Juridisch</span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">+24% Vraag</span>
+              </div>
+              <h4 class="font-black text-primary text-base">DSO & Omgevingsvisie</h4>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Koppeling van vergunningverlening aan het Digitaal Stelsel Omgevingswet bij Gemeenten.
+              </p>
+              <div class="pt-2 border-t border-primary/5 flex justify-between text-[11px] font-bold text-slate-600">
+                <span>Gevraagd niveau: Medior/Senior</span>
+                <span class="text-accent-gold">€95 - €125/u</span>
+              </div>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 hover:border-accent-gold transition-all space-y-3 skill-item" data-keywords="csrd duurzaamheid esg financien audit">
+              <div class="flex justify-between items-start">
+                <span class="text-[10px] font-black uppercase tracking-wider bg-amber-100 text-amber-900 px-2.5 py-1 rounded-full border border-amber-200">Duurzaamheid</span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">+28% Vraag</span>
+              </div>
+              <h4 class="font-black text-primary text-base">CSRD & ESG Reporting</h4>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Advies over duurzaamheidsverslaglegging en CO2-reductiedoelen binnen publieke entiteiten.
+              </p>
+              <div class="pt-2 border-t border-primary/5 flex justify-between text-[11px] font-bold text-slate-600">
+                <span>Gevraagd niveau: Senior</span>
+                <span class="text-accent-gold">€105 - €130/u</span>
+              </div>
+            </div>
+
+            <!-- Skill 5 -->
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 hover:border-accent-gold transition-all space-y-3 skill-item" data-keywords="aws azure cloud architect devops">
+              <div class="flex justify-between items-start">
+                <span class="text-[10px] font-black uppercase tracking-wider bg-purple-100 text-purple-900 px-2.5 py-1 rounded-full border border-purple-200">IT & Cloud</span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">+18% Vraag</span>
+              </div>
+              <h4 class="font-black text-primary text-base">Sovereign Cloud & Azure DevOps</h4>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Opzetten van veilige cloud-omgevingen met strikte data-residentie binnen de EU.
+              </p>
+              <div class="pt-2 border-t border-primary/5 flex justify-between text-[11px] font-bold text-slate-600">
+                <span>Gevraagd niveau: Lead / Expert</span>
+                <span class="text-accent-gold">€118 - €150/u</span>
+              </div>
+            </div>
+
+            <!-- Skill 6 -->
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 hover:border-accent-gold transition-all space-y-3 skill-item" data-keywords="safe agile scrum coach transitie">
+              <div class="flex justify-between items-start">
+                <span class="text-[10px] font-black uppercase tracking-wider bg-blue-100 text-blue-900 px-2.5 py-1 rounded-full border border-blue-200">Management</span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">+15% Vraag</span>
+              </div>
+              <h4 class="font-black text-primary text-base">Agile SAFe & Verandermanagement</h4>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Begeleiding van wendbare werkmethoden en cultuurveranderingen bij grote ministeries.
+              </p>
+              <div class="pt-2 border-t border-primary/5 flex justify-between text-[11px] font-bold text-slate-600">
+                <span>Gevraagd niveau: Senior</span>
+                <span class="text-accent-gold">€100 - €125/u</span>
+              </div>
+            </div>
+
+            <!-- Skill 7 -->
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 hover:border-accent-gold transition-all space-y-3 skill-item" data-keywords="aanbesteding europees jurist contracten">
+              <div class="flex justify-between items-start">
+                <span class="text-[10px] font-black uppercase tracking-wider bg-emerald-100 text-emerald-900 px-2.5 py-1 rounded-full border border-emerald-200">Juridisch</span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">+19% Vraag</span>
+              </div>
+              <h4 class="font-black text-primary text-base">Europees Aanbestedingsrecht</h4>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Begeleiding van grote meervoudig onderhandse en Europese tenderuitvragen.
+              </p>
+              <div class="pt-2 border-t border-primary/5 flex justify-between text-[11px] font-bold text-slate-600">
+                <span>Gevraagd niveau: Senior</span>
+                <span class="text-accent-gold">€105 - €140/u</span>
+              </div>
+            </div>
+
+            <!-- Skill 8 -->
+            <div class="p-5 rounded-2xl bg-background-light border border-primary/5 hover:border-accent-gold transition-all space-y-3 skill-item" data-keywords="controller p&c begroting financien">
+              <div class="flex justify-between items-start">
+                <span class="text-[10px] font-black uppercase tracking-wider bg-amber-100 text-amber-900 px-2.5 py-1 rounded-full border border-amber-200">Financiën</span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">+11% Vraag</span>
+              </div>
+              <h4 class="font-black text-primary text-base">Gemeentelijke P&C-Cyclus</h4>
+              <p class="text-xs text-slate-custom leading-relaxed">
+                Opstellen van de voorjaarsnota, programmabegroting en jaarrekening voor gemeenten.
+              </p>
+              <div class="pt-2 border-t border-primary/5 flex justify-between text-[11px] font-bold text-slate-600">
+                <span>Gevraagd niveau: Medior/Senior</span>
+                <span class="text-accent-gold">€90 - €115/u</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 5: Regional Development in the Netherlands -->
+      <section class="py-16 px-6 lg:px-20 max-w-7xl mx-auto w-full space-y-12">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <span class="text-xs font-black uppercase tracking-widest text-accent-gold">Geografische Analyse</span>
+          <h2 class="text-2xl md:text-4xl font-black text-primary">Regionale Spreiding in Nederland</h2>
+          <p class="text-slate-custom text-sm md:text-base">
+            Hoe verhouden de inhuurvolumes, gemiddelde uurtarieven en hybride werkvormen zich per regio?
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Netherlands Map Visualizer representation & Interactive selector -->
+          <div class="lg:col-span-7 bg-white p-8 rounded-3xl border border-primary/10 shadow-sm space-y-6 flex flex-col justify-between">
+            <div class="flex items-center justify-between border-b border-primary/5 pb-4">
+              <div>
+                <span class="text-[10px] font-black uppercase text-accent-gold tracking-wider block">Regionale Verdeling</span>
+                <h3 class="text-xl font-black text-primary">Regio Overzicht & Hybride Werk-Index</h3>
+              </div>
+              <span class="text-xs font-bold text-slate-custom flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm text-accent-gold">map</span> Nederland
+              </span>
+            </div>
+
+            <!-- Interactive Regional Map Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" id="regions-interactive-grid">
+              
+              <!-- Region 1: Den Haag & Metropoolregio -->
+              <div class="region-card p-4 rounded-2xl bg-primary/5 border-2 border-accent-gold transition-all cursor-pointer space-y-2 active" data-reg="randstad">
+                <div class="flex justify-between items-center">
+                  <h4 class="font-black text-primary text-sm">Den Haag / Metropool</h4>
+                  <span class="text-xs font-black text-accent-gold">48% Volume</span>
+                </div>
+                <div class="text-xs text-slate-custom space-y-1">
+                  <div class="flex justify-between"><span>Concentratie:</span><strong class="text-primary">Rijksoverheid / Ministeries</strong></div>
+                  <div class="flex justify-between"><span>Gem. Uurtarief:</span><strong class="text-primary">€102 / uur</strong></div>
+                  <div class="flex justify-between"><span>Hybride Werk:</span><strong class="text-emerald-700">1.5 dag kantoor / 3.5 remote</strong></div>
+                </div>
+              </div>
+
+              <!-- Region 2: Noord-Holland & Amsterdam -->
+              <div class="region-card p-4 rounded-2xl bg-background-light border border-primary/10 hover:border-accent-gold transition-all cursor-pointer space-y-2" data-reg="noordholland">
+                <div class="flex justify-between items-center">
+                  <h4 class="font-black text-primary text-sm">Amsterdam & N-Holland</h4>
+                  <span class="text-xs font-black text-primary">22% Volume</span>
+                </div>
+                <div class="text-xs text-slate-custom space-y-1">
+                  <div class="flex justify-between"><span>Concentratie:</span><strong class="text-primary">Gemeente & ZBO's</strong></div>
+                  <div class="flex justify-between"><span>Gem. Uurtarief:</span><strong class="text-primary">€106 / uur</strong></div>
+                  <div class="flex justify-between"><span>Hybride Werk:</span><strong class="text-emerald-700">2 dagen kantoor / 3 remote</strong></div>
+                </div>
+              </div>
+
+              <!-- Region 3: Utrecht & Midden-Nederland -->
+              <div class="region-card p-4 rounded-2xl bg-background-light border border-primary/10 hover:border-accent-gold transition-all cursor-pointer space-y-2" data-reg="utrecht">
+                <div class="flex justify-between items-center">
+                  <h4 class="font-black text-primary text-sm">Utrecht & Midden</h4>
+                  <span class="text-xs font-black text-primary">14% Volume</span>
+                </div>
+                <div class="text-xs text-slate-custom space-y-1">
+                  <div class="flex justify-between"><span>Concentratie:</span><strong class="text-primary">Waterschappen & Provincie</strong></div>
+                  <div class="flex justify-between"><span>Gem. Uurtarief:</span><strong class="text-primary">€98 / uur</strong></div>
+                  <div class="flex justify-between"><span>Hybride Werk:</span><strong class="text-emerald-700">2 dagen kantoor / 3 remote</strong></div>
+                </div>
+              </div>
+
+              <!-- Region 4: Oost & Noord Nederland -->
+              <div class="region-card p-4 rounded-2xl bg-background-light border border-primary/10 hover:border-accent-gold transition-all cursor-pointer space-y-2" data-reg="oostnoord">
+                <div class="flex justify-between items-center">
+                  <h4 class="font-black text-primary text-sm">Oost- & Noord-Nederland</h4>
+                  <span class="text-xs font-black text-primary">16% Volume</span>
+                </div>
+                <div class="text-xs text-slate-custom space-y-1">
+                  <div class="flex justify-between"><span>Concentratie:</span><strong class="text-primary">Gemeenten & Veiligheidsregio's</strong></div>
+                  <div class="flex justify-between"><span>Gem. Uurtarief:</span><strong class="text-primary">€93 / uur</strong></div>
+                  <div class="flex justify-between"><span>Hybride Werk:</span><strong class="text-emerald-700">2.5 dagen kantoor / 2.5 remote</strong></div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="p-4 bg-primary/5 rounded-2xl border border-primary/10 flex items-center justify-between text-xs font-bold text-slate-custom">
+              <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-accent-gold">info</span> Tip voor Professionals</span>
+              <span>Rijksoverheid opdrachten rond Den Haag bieden gemiddeld het hoogste thuiswerkpercentage.</span>
+            </div>
+          </div>
+
+          <!-- Regional Focus Detail Card -->
+          <div class="lg:col-span-5 bg-primary text-white p-8 rounded-3xl border border-primary/10 shadow-xl space-y-6 flex flex-col justify-between">
+            <div class="space-y-4">
+              <span class="text-[10px] font-black uppercase text-accent-gold tracking-widest block">Regie & Knooppunten</span>
+              <h3 class="text-2xl font-black text-white" id="region-detail-title">Metropoolregio Den Haag & Rijksoverheid</h3>
+              <p class="text-xs text-slate-300 leading-relaxed" id="region-detail-desc">
+                Met meer dan 48% van alle gepubliceerde opdrachten vormt de Haagse regio het onbetwiste hart van de interim inhuurmarkt binnen het Rijk. Vraag concentreert zich rond ministeries (BZK, VWS, J&V, I&W) en uitvoeringsorganisaties zoals Rijkswaterstaat.
+              </p>
+
+              <div class="space-y-3 pt-2 text-xs">
+                <div class="p-3.5 bg-white/5 rounded-xl border border-white/10 space-y-1">
+                  <span class="text-slate-400 font-bold block text-[10px] uppercase">Grootste Vraaggebieden</span>
+                  <p class="font-black text-accent-gold" id="region-detail-roles">Cloud Transformatie, Juridisch Bestuursrecht, Beleid & Tenders</p>
+                </div>
+
+                <div class="p-3.5 bg-white/5 rounded-xl border border-white/10 space-y-1">
+                  <span class="text-slate-400 font-bold block text-[10px] uppercase">Doorlooptijd tot Plaatsing</span>
+                  <p class="font-black text-white" id="region-detail-speed">Gemiddeld 18 dagen van uitvraag tot gunning</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="/opdrachten.html" class="w-full bg-accent-gold hover:bg-amber-400 text-primary p-3.5 rounded-xl font-black text-xs text-center block transition-all shadow-lg">
+              Zoek Opdrachten in deze Regio &rarr;
+            </a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Section 6: Report Download & Dual CTA -->
+      <section class="py-20 px-6 lg:px-20 max-w-7xl mx-auto w-full">
+        <div class="bg-gradient-to-r from-primary via-primary/95 to-primary rounded-3xl p-10 md:p-16 text-white relative overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-10 border border-accent-gold/20">
+          <div class="space-y-4 max-w-2xl relative z-10">
+            <span class="text-xs font-black uppercase tracking-widest text-accent-gold bg-accent-gold/20 px-3.5 py-1 rounded-full border border-accent-gold/30">
+              Download Marktrapport Q1 2026
+            </span>
+            <h2 class="text-3xl md:text-4xl font-black">
+              Ontvang het volledige Publieke Sector Marktrapport
+            </h2>
+            <p class="text-white/80 text-base leading-relaxed">
+              Inclusief diepgaande kwartaalcijfers, tariefbenchmarks per functieniveau en gedetailleerde prognoses voor 2026 en 2027.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4 w-full md:w-auto shrink-0 relative z-10">
+            <a href="/opdrachten.html" class="w-full sm:w-auto bg-accent-gold hover:bg-white hover:text-primary text-primary font-black px-8 py-4 rounded-xl shadow-xl transition-all text-center flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined">download</span>
+              Download PDF Rapport
+            </a>
+            <a href="/organisaties.html" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 font-bold px-8 py-4 rounded-xl transition-all text-center">
+              Plaats een Opdracht
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-10 px-6 lg:px-20 mt-auto border-t border-white/10">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div class="space-y-6">
+          <p class="text-slate-300 leading-relaxed text-sm">
+            De publieke sector naar een hoger niveau tillen door middel van deskundig advies, transparante contractering en innovatieve digitale oplossingen.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Professionals</h4>
+          <ul class="space-y-4 text-slate-300 text-sm">
+            <li><a class="hover:text-white" href="/opdrachten.html">Opdrachten Zoeken</a></li>
+            <li><a class="hover:text-white" href="/detachering.html">Detachering Overzicht</a></li>
+            <li><a class="text-accent-gold font-bold hover:text-white" href="/delance.html">Delance Model</a></li>
+            <li><a class="hover:text-white" href="/freelance.html">Freelance (ZZP)</a></li>
+            <li><a class="hover:text-white" href="/tarieven.html">Tarief Benchmark</a></li>
+            <li><a class="text-accent-gold font-bold hover:text-white" href="/markt-informatie.html">Marktinformatie</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Voor Organisaties</h4>
+          <ul class="space-y-4 text-slate-300 text-sm">
+            <li><a class="hover:text-white" href="/organisaties.html">Plaats een Opdracht</a></li>
+            <li><a class="hover:text-white" href="/opdrachtgevers.html">Opdrachtgevers</a></li>
+            <li><a class="hover:text-white" href="/team.html">Ons Team</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-6 text-accent-gold">Contact</h4>
+          <p class="text-sm text-slate-300">Amstelveen, Nederland<br>info@freep.nl<br>+31 (0) 20 123 4567</p>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-400">
+        <p>© 2026 Freep.nl. Alle rechten voorbehouden.</p>
+        <div class="flex gap-8">
+          <a class="hover:text-white" href="#">Privacybeleid</a>
+          <a class="hover:text-white" href="#">Algemene Voorwaarden</a>
+          <a class="hover:text-white" href="#">Cookies</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Script for Charts & Regional Selection -->
+    <script>
+      // Mobile Menu Toggle
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Volume Chart Data per segment
+      const chartData = {
+        all: [
+          { period: '2023 Q1', val: 3200, label: '3.200' },
+          { period: '2023 Q2', val: 3450, label: '3.450' },
+          { period: '2023 Q3', val: 3300, label: '3.300' },
+          { period: '2023 Q4', val: 3800, label: '3.800' },
+          { period: '2024 Q1', val: 3950, label: '3.950' },
+          { period: '2024 Q2', val: 4100, label: '4.100' },
+          { period: '2024 Q3', val: 3900, label: '3.900' },
+          { period: '2024 Q4', val: 4350, label: '4.350' },
+          { period: '2025 Q1', val: 4400, label: '4.400' },
+          { period: '2025 Q2', val: 4550, label: '4.550' },
+          { period: '2025 Q3', val: 4300, label: '4.300' },
+          { period: '2025 Q4', val: 4700, label: '4.700' },
+          { period: '2026 Q1', val: 4850, label: '4.850 (Actueel)', isCurrent: true },
+          { period: '2026 Q2 (P)', val: 5100, label: '5.100 (Prognose)', isProjected: true },
+        ],
+        rijk: [
+          { period: '2023 Q1', val: 1350, label: '1.350' },
+          { period: '2023 Q2', val: 1450, label: '1.450' },
+          { period: '2023 Q3', val: 1400, label: '1.400' },
+          { period: '2023 Q4', val: 1600, label: '1.600' },
+          { period: '2024 Q1', val: 1680, label: '1.680' },
+          { period: '2024 Q2', val: 1750, label: '1.750' },
+          { period: '2024 Q3', val: 1650, label: '1.650' },
+          { period: '2024 Q4', val: 1850, label: '1.850' },
+          { period: '2025 Q1', val: 1890, label: '1.890' },
+          { period: '2025 Q2', val: 1950, label: '1.950' },
+          { period: '2025 Q3', val: 1820, label: '1.820' },
+          { period: '2025 Q4', val: 2010, label: '2.010' },
+          { period: '2026 Q1', val: 2080, label: '2.080', isCurrent: true },
+          { period: '2026 Q2 (P)', val: 2200, label: '2.200', isProjected: true },
+        ],
+        gemeenten: [
+          { period: '2023 Q1', val: 1100, label: '1.100' },
+          { period: '2023 Q2', val: 1180, label: '1.180' },
+          { period: '2023 Q3', val: 1120, label: '1.120' },
+          { period: '2023 Q4', val: 1300, label: '1.300' },
+          { period: '2024 Q1', val: 1340, label: '1.340' },
+          { period: '2024 Q2', val: 1390, label: '1.390' },
+          { period: '2024 Q3', val: 1310, label: '1.310' },
+          { period: '2024 Q4', val: 1480, label: '1.480' },
+          { period: '2025 Q1', val: 1500, label: '1.500' },
+          { period: '2025 Q2', val: 1560, label: '1.560' },
+          { period: '2025 Q3', val: 1480, label: '1.480' },
+          { period: '2025 Q4', val: 1610, label: '1.610' },
+          { period: '2026 Q1', val: 1660, label: '1.660', isCurrent: true },
+          { period: '2026 Q2 (P)', val: 1740, label: '1.740', isProjected: true },
+        ],
+        waterschappen: [
+          { period: '2023 Q1', val: 480, label: '480' },
+          { period: '2023 Q2', val: 510, label: '510' },
+          { period: '2023 Q3', val: 490, label: '490' },
+          { period: '2023 Q4', val: 560, label: '560' },
+          { period: '2024 Q1', val: 580, label: '580' },
+          { period: '2024 Q2', val: 610, label: '610' },
+          { period: '2024 Q3', val: 570, label: '570' },
+          { period: '2024 Q4', val: 640, label: '640' },
+          { period: '2025 Q1', val: 660, label: '660' },
+          { period: '2025 Q2', val: 680, label: '680' },
+          { period: '2025 Q3', val: 640, label: '640' },
+          { period: '2025 Q4', val: 710, label: '710' },
+          { period: '2026 Q1', val: 730, label: '730', isCurrent: true },
+          { period: '2026 Q2 (P)', val: 770, label: '770', isProjected: true },
+        ]
+      };
+
+      function renderVolumeChart(segment) {
+        const container = document.getElementById('chart-bars-container');
+        if (!container) return;
+        
+        const items = chartData[segment] || chartData.all;
+        const maxVal = Math.max(...items.map(i => i.val)) * 1.15;
+        
+        container.innerHTML = '';
+        
+        items.forEach(item => {
+          const heightPct = Math.round((item.val / maxVal) * 100);
+          
+          let barBg = 'bg-primary/70 hover:bg-primary';
+          if (item.isCurrent) barBg = 'bg-primary border-2 border-accent-gold shadow-md';
+          if (item.isProjected) barBg = 'bg-accent-gold/80 hover:bg-accent-gold';
+
+          const col = document.createElement('div');
+          col.className = 'flex-1 flex flex-col items-center justify-end h-full group relative cursor-pointer';
+          col.innerHTML = `
+            <!-- Tooltip -->
+            <div class="absolute -top-10 opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-white text-[10px] font-black px-2 py-1 rounded shadow-lg pointer-events-none whitespace-nowrap z-20">
+              ${item.period}: ${item.label}
+            </div>
+            <div class="w-full max-w-[36px] ${barBg} rounded-t-lg transition-all duration-300" style="height: ${heightPct}%;"></div>
+            <span class="text-[9px] font-bold text-slate-500 mt-2 rotate-[-45%] sm:rotate-0">${item.period.replace(' (P)', '').replace(' 20', ' ')}</span>
+          `;
+          container.appendChild(col);
+        });
+      }
+
+      // Segment Toggle Buttons Listener
+      const segButtons = document.querySelectorAll('.volume-seg-btn');
+      const segmentTitle = document.getElementById('chart-segment-title');
+
+      segButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          segButtons.forEach(b => {
+            b.classList.remove('active', 'bg-primary', 'text-white', 'shadow-sm');
+            b.classList.add('text-slate-custom');
+          });
+          btn.classList.add('active', 'bg-primary', 'text-white', 'shadow-sm');
+          btn.classList.remove('text-slate-custom');
+
+          const seg = btn.getAttribute('data-seg');
+          if (segmentTitle) {
+            const titles = {
+              all: 'Totaal Publieke Sector',
+              rijk: 'Rijksoverheid & Ministeries',
+              gemeenten: 'Gemeenten & Decentraal',
+              waterschappen: 'Waterschappen & Provincies'
+            };
+            segmentTitle.textContent = titles[seg] || 'Totaal Publieke Sector';
+          }
+          renderVolumeChart(seg);
+        });
+      });
+
+      // Initial Chart Render
+      renderVolumeChart('all');
+
+      // Skill Filter Search
+      const skillInput = document.getElementById('skill-search-input');
+      const skillItems = document.querySelectorAll('.skill-item');
+
+      if (skillInput) {
+        skillInput.addEventListener('input', (e) => {
+          const q = e.target.value.toLowerCase().trim();
+          skillItems.forEach(item => {
+            const kw = item.getAttribute('data-keywords') || '';
+            const text = item.textContent.toLowerCase();
+            if (kw.includes(q) || text.includes(q)) {
+              item.classList.remove('hidden');
+            } else {
+              item.classList.add('hidden');
+            }
+          });
+        });
+      }
+
+      // Regional Detail Selector
+      const regionCards = document.querySelectorAll('.region-card');
+      const regTitle = document.getElementById('region-detail-title');
+      const regDesc = document.getElementById('region-detail-desc');
+      const regRoles = document.getElementById('region-detail-roles');
+      const regSpeed = document.getElementById('region-detail-speed');
+
+      const regionDetails = {
+        randstad: {
+          title: 'Metropoolregio Den Haag & Rijksoverheid',
+          desc: 'Met meer dan 48% van alle gepubliceerde opdrachten vormt de Haagse regio het onbetwiste hart van de interim inhuurmarkt binnen het Rijk. Vraag concentreert zich rond ministeries (BZK, VWS, J&V, I&W) en uitvoeringsorganisaties zoals Rijkswaterstaat.',
+          roles: 'Cloud Transformatie, Juridisch Bestuursrecht, Beleid & Tenders',
+          speed: 'Gemiddeld 18 dagen van uitvraag tot gunning'
+        },
+        noordholland: {
+          title: 'Amsterdam & Noord-Holland (Gemeenten & ZBO)',
+          desc: 'Sterke focus op gemeentelijke digitalisering, ruimtelijke ordening en vergunningverlening bij Gemeente Amsterdam. Hoge vraag naar ervaren IT-architecten, UX/Service Designers en Financieel Controllers.',
+          roles: 'UX Design, IT Architecture, Business Control & Omgevingswet',
+          speed: 'Gemiddeld 14 dagen van uitvraag tot gunning'
+        },
+        utrecht: {
+          title: 'Utrecht & Midden-Nederland (Knooppunt)',
+          desc: 'Centrale ligging maakt Utrecht aantrekkelijk voor landelijke waterschappen, Rijkswaterstaat Midden-Nederland en provinciale overheden. Veel uitvragen voor projectleiders infrastructurele werken.',
+          roles: 'Projectleiders Infra, Waterbeheer, Contractmanagement',
+          speed: 'Gemiddeld 16 dagen van uitvraag tot gunning'
+        },
+        oostnoord: {
+          title: 'Oost- & Noord-Nederland (Gemeenten & Veiligheid)',
+          desc: 'Regionale hubs rond Zwolle, Arnhem en Groningen laten sterke groei zien in uitvragen op het gebied van Wmo, Jeugdzorg, Omgevingsrecht en Regionale Samenwerkingsverbanden.',
+          roles: 'Adviseur Sociaal Domein, Jurist Handhaving, Veiligheidsregio',
+          speed: 'Gemiddeld 12 dagen van uitvraag tot gunning'
+        }
+      };
+
+      regionCards.forEach(card => {
+        card.addEventListener('click', () => {
+          regionCards.forEach(c => {
+            c.classList.remove('bg-primary/5', 'border-2', 'border-accent-gold', 'active');
+            c.classList.add('bg-background-light', 'border', 'border-primary/10');
+          });
+          card.classList.add('bg-primary/5', 'border-2', 'border-accent-gold', 'active');
+          card.classList.remove('bg-background-light', 'border-primary/10');
+
+          const reg = card.getAttribute('data-reg');
+          const data = regionDetails[reg] || regionDetails.randstad;
+
+          if (regTitle) regTitle.textContent = data.title;
+          if (regDesc) regDesc.textContent = data.desc;
+          if (regRoles) regRoles.textContent = data.roles;
+          if (regSpeed) regSpeed.textContent = data.speed;
+        });
+      });
+    </script>
+  </body>
+</html>
